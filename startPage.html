@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{margin:0;padding:0}
+
+        header{
+            position:relative;
+            background-color: transparent;
+            height:94px;
+        }
+
+        .container{
+            margin:0 auto;
+            width:1440px;
+            padding-left:30px;
+            padding-right:30px;
+        }
+
+        .wrap{
+            display:flex;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            position:relative;
+            float:left;
+            font-size:40px;
+        }
+
+        nav{
+            float:right;
+            position:relative;
+
+        }
+
+        .navbar{
+            display:flex;
+            flex-wrap:nowrap;
+            align-items:flex-start;
+        }
+
+        .menu_container{
+            display:inline-block;
+        }
+
+        .navi{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        ul{
+            list-style:none;
+        }
+        li{
+            padding:30px 30px;
+            position:relative;
+            overflow:hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="wrap">
+                        <h1 class="logo">WebSE</h1>
+                        <div class="nav">
+                            <div class="navbar">
+                                <div class="menu_container">
+                                    <ul id="menu" class="navi">
+                                        <li class="nav_item"><a href = "testPage.html">소개</a></li>
+                                        <li class="nav_item"><a href = "testPage.html">프레임워크</a></li>
+                                        <li class="nav_item"><a href = "testPage.html">연구</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+</html>
