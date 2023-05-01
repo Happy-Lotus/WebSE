@@ -1,27 +1,48 @@
+/*
+css 적용하는 방법 
+ 
+class(ex. <div class="header"> 의 경우) = .header{}
+id(ex.  <div id="wrapper"> 의 경우) = #wrapper{} 
+header나 div(ex. <header>의 경우) = header{}
+*/
+
+/*
+내가 기억하기 위해서 쓰는 것
+margin : 다른 요소와의 사이 공간
+padding : 내용과 테두리 사이의 여유 공간. 즉 object내의 내부여백
+*/
+
+/*
+색 지정 변수
+사용 방법: 아래와 같이 사용됨.
+
+body {
+  background-color: var(--maincolor);
+}
+*/
 :root{
-    --maincolor : #f29191;
-    --blue : blue;
+    --maincolor : blue;
+    --textColorlight : black;
+    --textColordark:white;
+    --textColorBold:rgba(0, 4, 255, 0.897);
     --skyblue: skyblue;
 }
 
+/*전체 페이지 기본 레이아웃*/
 *{margin:0;padding:0}
+#wrapper{
+    position:relative;
+    padding-top:10px;
+    margin-left:30px;
+    margin-right:30px;
 
+}
+
+/*header, nav 관련 css*/
 header{
     position:relative;
     background-color: transparent;
     height:94px;
-}
-
-.container{
-    margin:0 auto;
-    width:1440px;
-}
-
-#wrapper{
-    position:relative;
-    margin-left:30px;
-    margin-right:30px;
-
 }
 
 .wrap{
@@ -29,12 +50,6 @@ header{
     flex-wrap:nowrap;
     justify-content:space-between;
     align-items:center;
-}
-
-.logo{
-    position:relative;
-    float:left;
-    font-size:40px;
 }
 
 nav{
@@ -57,16 +72,39 @@ nav{
     display: flex;
     flex-wrap: nowrap;
 }
+
+.nav_item{
+    font-size:106.25%;
+}
+
 ul{
     list-style:none;
 }
+
 li{
     padding:30px 30px;
     position:relative;
     overflow:hidden;
 }
+
 a{
     text-decoration-line:none;
+}
+
+/*content 관련 css*/
+.container{
+    margin:0 auto;
+    width:1440px;
+}
+
+.content_container{
+    position:relative;
+}
+
+.logo{
+    position:relative;
+    float:left;
+    font-size:40px;
 }
 
 #content_title{
@@ -80,18 +118,12 @@ a{
     padding-top:127px;
 }
 
-.nav_item{
-    font-size:106.25%;
-}
-#circle{
-    position:absolute;
-}
 #content_text{
     z-index:1;
 }
 
 #content_container{
-    position:absolute;
+    position:relative;
 }
 
 #content_title{
