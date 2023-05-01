@@ -45,6 +45,13 @@ header{
     height:94px;
 }
 
+.logo{
+    position:relative;
+    float:left;
+    width:200px;
+    height:50px;
+}
+
 .wrap{
     display:flex;
     flex-wrap:nowrap;
@@ -101,12 +108,6 @@ a{
     position:relative;
 }
 
-.logo{
-    position:relative;
-    float:left;
-    font-size:40px;
-}
-
 #content_title{
     
     margin-right:100px;
@@ -118,19 +119,50 @@ a{
     padding-top:127px;
 }
 
-#content_text{
-    z-index:1;
-}
-
 #content_container{
     position:relative;
 }
 
-#content_title{
-    position:contents;
+
+/*회사 소개 파트 관련 css*/
+
+#introduceContent{
+    position:relative;
+    margin-left : 412px;
 }
-#content_main{
+
+#circlediv{
     position:relative;
 }
+
+.circle_img{
+    position:relative;
+}
+
+
+#introduceContentText{
+    position:absolute;
+    top:30%;
+    left:10%;
+}
+#introduceContentText>p{
+    font-size:1.5em;
+}
+
+#introducesamllcontent{
+    position:relative;
+    float:left;
+}
+
+.divsample{
+    position:absolute;
+    width:100px;
+    height:100px;
+    background-color:red;
+}
+
+
+
+
 
 
