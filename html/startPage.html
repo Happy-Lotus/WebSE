@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>startPage</title>
     <link rel="stylesheet" href="../css,js/main.css">
 </head>
@@ -11,7 +14,7 @@
             <div class="header">
                 <div class="container">
                     <div class="wrap">
-                        <img class="logo" src="../photo/logo.png" alt="로고">
+                        <a href = "startPage.html"><img class="logo" src="../photo/logo.png" alt="로고"></a>
                         <div class="nav">
                             <div class="navbar">
                                 <div class="menu_container">
@@ -24,10 +27,30 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
+
                 </div>
             </div>
+
         </header>
+        <hr>
+        <div id="bg">
+            <div id="start_container">
+                <div id="name_describe">
+                <p style="font-size:100px">WebSE</p>
+                <hr style="width:200px;height:2px;background-color:white;">
+                <br>
+                <br>
+                <br>
+                <p style="font-size:1.5em">WebSE는 고객들의 안전한 비즈니스 환경을 위해 웹서비스 보안 기술을 제공합니다.</p>
+            </div>           
+            <div id="scroll">
+                <p style="text-align:center;font-size:1.7em;font-weight:bold">Scroll</p>
+                <a href = "#content_title_term"><img style="width:100px;height:100px" src="../photo/arrow.png"
+                    alt="스크롤"></a>
+            </div>
+         </div>
+
+        </div>
         <div id="content_container">
             <div id="content_title_term"></div>
             <section id="introduceContent">
@@ -42,27 +65,34 @@
                         <p><span style=color:white>다른 서비스와는 차별화</span>된 <span style=color:blue;font-weight:bold>전문적인 서비스</span>를 제공합니다.</p>
                         <p><span style=color:white>WebSE가 개발한 프레임워크</span>를 통해 고객의 정보자산을 <span style=color:blue;font-weight:bold>안전하게 보호</span>합니다.</p>  
                     </div>
-                    <br>
-                    <hr style="width:1000px;">
+                    <div id="content_title_term2"></div>
+                    <hr style="width:1000px;">   
                 </div>
-                <div id="content_title_term"></div>
-                <div id="introducesmallcontent">
-                    <div class="divsample" id="content1">
-                        <h2>검사</h2>
-                    </div>
-                    <div class="divsample" id="content2">
-                        <h2>검사2</h2>
-                    </div>
-                    <div class="divsample" id="content3">
-                        <h2>검사3</h2>
-                    </div>
 
+                <div id="introducesmallcontent">
+                    <ul class="contentnavi">
+                        <li class="contentlist">
+                            <span class="listtitle">검사</span>
+                            <p>웹사이트의 취약점이 있는지 WebSE만의 도구를 이용하여 검사합니다.</p>
+                        </li>
+                        <li class="contentlist">
+                            <span class="listtitle">분석</span>
+                            <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+                        </li>
+                        <li class="contentlist">
+                            <span class="listtitle">솔루션</span>
+                            <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+                        </li>
+                    </ul>    
                 </div>
                 </div>
             </section>
-
-
         </div>
+        <div id="content_title_term"></div>
+        <div id="content_title_term"></div>
+        <div id="content_title_term"></div>
+        <div id="content_title_term"></div>
+        <div id="content_title_term"></div>
         <div>
 
         </div>
