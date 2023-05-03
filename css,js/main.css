@@ -48,6 +48,12 @@ header{
     z-index:90;
 }
 
+#act_header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 .logo{
     position:relative;
     float:left;
