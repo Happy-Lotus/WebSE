@@ -124,6 +124,11 @@ a{
     padding-top:127px;
 }
 
+#content_title_term_first{
+    margin:0 0 60px;
+    padding-top:127px;
+}
+
 #content_container{
     margin:0 auto;
     width:1440px;
@@ -226,8 +231,4 @@ a{
     left:50%;
     margin-top:150px;
     z-index:1;
-}
-
-#scroll>img{
-    
 }
