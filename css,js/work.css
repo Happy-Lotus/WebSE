@@ -107,24 +107,33 @@ a{
     text-decoration-line:none;
 }
 
-/*content 관련 css*/
 .container{
     margin:0 auto;
     width:1440px;
 }
 
+/*content 관련 css*/
+.work_content{
+    margin: 0 auto;
+    max-width: 100%;
+}
+.sub_header{
+    position: relative;
+    background-color: transparent;
+    padding: 100px;
+}
 
 /*첫화면 관련 css*/
 #bg{
     position:relative;
-    background-image:url("../photo/startPageSample.jpg");
-    height:800px;
+    background-image:url("../photo/workPage_bg.jpg");
+    background-size: cover;
     object-fit:fill;
 }
 
 #start_container{
     position:relative;
-    width:1440px;
+    max-width: 100%;
     margin:0 auto;
     top:30%;
     
@@ -133,6 +142,13 @@ a{
 #name_describe{
     color:white;
     position:relative;
+    height: 200px;
     z-index:1;
+}
+#name_describe h1{
+    color: white;
+    padding: 75px;
+    text-align: center; 
+    font-size:40px;
 }
 

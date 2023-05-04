@@ -212,7 +212,7 @@ a{
 #bg{
     position:relative;
     background-image:url("../photo/startPageSample.jpg");
-    height:800px;
+    background-size: cover;
     object-fit:fill;
 }
 
