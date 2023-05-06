@@ -4,7 +4,7 @@
 <head>
     <title>startPage</title>
     <link rel="stylesheet" href="../css,js/main.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -12,7 +12,9 @@
             <div class="header">
                 <div class="container">
                     <div class="wrap">
-                        <a href = "startPage.html"><img class="logo" src="../photo/logo.png" alt="로고"></a>
+                        <a href = "startPage.html">
+                            <h1 style="font-size: 50px;">WebSE</h1>
+                        </a>
                         <div class="nav">
                             <div class="navbar">
                                 <div class="menu_container">
@@ -25,22 +27,32 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
+            <script type="text/javascript">
+                $(window).on('scroll',function(){
+                    if($(window).scrollTop()){
+                        $('header > div').addClass('active');
+                        $('.nav_item').addClass('nav_item_act');
+                        $('.wrap h1').addClass('active');
+                    }else{
+                        $('header > div').removeClass('active');
+                        $('.nav_item').removeClass('nav_item_act');
+                        $('.wrap h1').removeClass('active');
+                    }
+                });
+            </script>
         </header>
-        <hr>
         <div id="bg">
             <div id="start_container">
                 <div id="name_describe">
-                <p style="font-size:100px">WebSE</p>
-                <hr style="width:200px;height:2px;background-color:white;">
-                <br>
-                <br>
-                <br>
-                <p style="font-size:1.5em">WebSE는 고객들의 안전한 비즈니스 환경을 위해 웹서비스 보안 기술을 제공합니다.</p>
-            </div>           
+                    <h6>WebSE</h6>
+                    <hr style="width:200px;height:2px;background-color:white;">
+                    <br>
+                    <br>
+                    <br>
+                    <p style="font-size:1.5em">WebSE는 고객들의 안전한 비즈니스 환경을 위해 웹서비스 보안 기술을 제공합니다.</p>
+                </div>           
             <div id="scroll">
                 <p style="text-align:center;font-size:1.7em;font-weight:bold">Scroll</p>
                 <a class="scrollbutton" href = "#content_title_term_first"><img style="width:100px;height:100px" src="../photo/arrow.png"
