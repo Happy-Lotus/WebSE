@@ -254,11 +254,10 @@ a{
     position:relative;
     z-index:1;
 }
-#name_describe p{
+#name_describe h6{
     color: white;
     padding: 75px 0px 0px 0px;
     font-size:100px;
-    font-weight: bold;
 }
 
 #scroll{
