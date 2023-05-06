@@ -228,8 +228,9 @@ a{
     align-items:center;
 }
 
-.contentlist{
-    padding:10px 30px;
+.container{
+    margin:0 auto;
+    padding: 0px 90px 0px 90px;
 }
 
 /*첫화면 관련 css*/
