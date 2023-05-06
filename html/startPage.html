@@ -4,6 +4,7 @@
 <head>
     <title>startPage</title>
     <link rel="stylesheet" href="../css,js/main.css">
+    <link rel="stylesheet" href="../css,js/share.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
@@ -29,19 +30,6 @@
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
-                $(window).on('scroll',function(){
-                    if($(window).scrollTop()){
-                        $('header > div').addClass('active');
-                        $('.nav_item').addClass('nav_item_act');
-                        $('.wrap h1').addClass('active');
-                    }else{
-                        $('header > div').removeClass('active');
-                        $('.nav_item').removeClass('nav_item_act');
-                        $('.wrap h1').removeClass('active');
-                    }
-                });
-            </script>
         </header>
         <div id="bg">
             <div id="start_container">
@@ -59,13 +47,12 @@
                     alt="스크롤"></a>
             </div>
          </div>
-
         </div>
         <div id="content_container">
             <div id="content_title_term_first"></div>
             <section id="introduceContent">
                 <div id="circlediv">
-                    <img class="circle_img" src="../photo/startPage_circle.png" 
+                    <img class="circle_img" src="../photo/startPage/startPage_circle.png" 
                     alt="원이미지">
                     
                     <div id="introduceContentText">
@@ -105,11 +92,16 @@
         <div id="content_title_term"></div>
         <div>
         </div>
-        <div id="footer">
-        </div>
+        <footer>
+            <div class="top">
+                <a href="#wrapper"><img src="../photo/up.png"alt=""></a>
+            </div>
+            <div class="container">
+                <h4>Web Security</h4>
+            </div>
+        </footer>
     </div>
-    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="../css,js/scroll.js"></script>    
+    <script src="../css,js/action.js"></script>    
 </body>
 </html>
 

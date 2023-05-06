@@ -3,6 +3,7 @@
 <head>
     <title>framework</title>
     <link rel="stylesheet" href="../css,js/frame.css">
+    <link rel="stylesheet" href="../css,js/share.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
@@ -28,19 +29,6 @@
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
-                $(window).on('scroll',function(){
-                    if($(window).scrollTop()){
-                        $('header > div').addClass('active');
-                        $('.nav_item').addClass('nav_item_act');
-                        $('.wrap h1').addClass('active');
-                    }else{
-                        $('header > div').removeClass('active');
-                        $('.nav_item').removeClass('nav_item_act');
-                        $('.wrap h1').removeClass('active');
-                    }
-                });
-            </script>
         </header>
         <div id="bg">
             <div id="start_container">
@@ -50,5 +38,14 @@
             </div>           
         </div>
     </div>
+    <footer>
+        <div class="top">
+            <a href="#wrapper"><img src="../photo/up.png"alt=""></a>
+        </div>
+        <div class="container">
+            <h4>Web Security</h4>
+        </div>
+    </footer>
+    <script src="../css,js/action.js"></script>
 </body>
 </html>

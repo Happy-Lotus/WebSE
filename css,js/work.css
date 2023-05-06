@@ -1,11 +1,3 @@
-:root{
-    --maincolor : rgb(32, 122, 196);
-    --textColorlight : black;
-    --textColordark:white;
-    --textColorBold:rgba(0, 4, 255, 0.897);
-    --skyblue: skyblue;
-}
-
 /*전체 페이지 기본 레이아웃*/
 *{margin:0;padding:0}
 #wrapper{
@@ -14,100 +6,6 @@
     background-color: rgb(244, 243, 243);
 }
 
-/*header, nav 관련 css*/
-header{
-    position:relative;
-    background-color: white;
-    height:90px;
-}
-
-.header{
-    width: 100%;
-    height:90px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    background-color: transparent;
-    transition: all 0.5s;
-}
-
-header .header.active {
-    background: rgba(0, 0, 0, 0.95);
-    height:90px;
-}
-
-#act_header{
-    background-color: rgb(255, 255, 255);
-    top: 0;
-}
-
-.wrap{
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.wrap h1.active{
-    color: white;
-}
-
-nav{
-    float:right;
-    position:relative;
-
-}
-
-.navbar{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap:nowrap;
-    align-items: center;
-}
-
-.menu_container{
-    display:inline-block;
-}
-
-.navi{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.nav_item{
-    font-size:106.25%;
-}
-
-.nav_item_act{
-    font-size:106.25%;
-}
-.nav_item_act > a{
-    color: white;
-}
-
-ul{
-    list-style:none;
-}
-
-li.nav_item{
-    padding:30px 30px;
-    position:relative;
-    overflow:hidden;
-}
-
-a{
-    text-decoration-line:none;
-    color: rgb(0, 0, 0);
-}
-.navi a:hover{
-    color: rgb(23, 146, 247);
-}
-
-.container{
-    margin:0 auto;
-    padding: 0px 90px 0px 90px;
-}
 /*page 배경 이미지*/
 #bg{
     position:relative;
@@ -218,43 +116,4 @@ p, b{
 }
 .text_warp h4:hover{
     color: rgb(23, 146, 247);
-}
-
-/*하단 바*/
-footer{
-    background-color: black;
-    color: white;
-    position : relative;
-}
-footer .top{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
-    background-color: transparent;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-footer img{
-    width: 50px;
-    height: 50px;
-}
-.top:hover{
-    background-color: rgb(23, 146, 247);
-}
-
-footer .container{
-    margin:0 auto;
-    max-width: 100%;
-    height: 80px;
-    padding: 39px 90px 0px 90px;
-}
-
-footer h4{
-    text-align: center;
-    font-size: 35px;
 }
