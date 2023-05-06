@@ -4,7 +4,7 @@
 <head>
     <title>workPage</title>
     <link rel="stylesheet" href="../css,js/work.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -12,7 +12,9 @@
             <div class="header">
                 <div class="container">
                     <div class="wrap">
-                        <a href = "startPage.html"><img class="logo" src="../photo/logo.png" alt="로고"></a>
+                        <a href = "startPage.html">
+                            <h1 style="font-size: 50px;">WebSe</h1>
+                        </a>
                         <div class="nav">
                             <div class="navbar">
                                 <div class="menu_container">
@@ -27,21 +29,83 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">
+                $(window).on('scroll',function(){
+                    if($(window).scrollTop()){
+                        $('header > div').addClass('active');
+                        $('.nav_item').addClass('nav_item_act');
+                        $('.wrap h1').addClass('active');
+                    }else{
+                        $('header > div').removeClass('active');
+                        $('.nav_item').removeClass('nav_item_act');
+                        $('.wrap h1').removeClass('active');
+                    }
+                });
+            </script>
         </header>
-        <hr>
         <div id="bg">
             <div id="start_container">
                 <div id="name_describe">
-                    <b><h1>연구 보고서</h1></b>
+                    <h1 style="font-size: 60px;">연구 보고서</h1>
                 </div>
             </div>           
         </div>
         <div class="work_content">
-            <header class="sub_header">
-                <p>보고서</p>
-            </header>
+            <div class="sub_header">
+                <div style="display: flex;">
+                    <p>총 </p>
+                    <b>3</b>
+                    <p>개</p>
+                </div>
+            </div>
+            <ul class="list_box">
+                <li class="ov">
+                    <a href="research1.html">
+                        <div class="content_wrap">
+                            <div class="img_wrap">
+                                <img src="../photo/spring2023.jpg">
+                            </div>
+                            <div class="text_wrap">
+                                <h4>Spring 2023 Report</h4>
+                                <p class="text">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium."
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="ov">
+                    <a href="research1.html">
+                        <div class="content_wrap">
+                            <div class="img_wrap">
+                                <img src="../photo/winter2022.png">
+                            </div>
+                            <div class="text_wrap">
+                                <h4>Winter 2022 Report</h4>
+                                <p class="text">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium."
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="ov">
+                    <a href="research1.html">
+                        <div class="content_wrap">
+                            <div class="img_wrap">
+                                <img src="../photo/fall2022.jpg">
+                            </div>
+                            <div class="text_wrap">
+                                <h4>Fall 2022 Report</h4>
+                                <p class="text">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium."
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
 </html>
-

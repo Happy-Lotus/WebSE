@@ -21,7 +21,7 @@ body {
 }
 */
 :root{
-    --maincolor : blue;
+    --maincolor : rgb(32, 122, 196);
     --textColorlight : black;
     --textColordark:white;
     --textColorBold:rgba(0, 4, 255, 0.897);
@@ -38,19 +38,28 @@ body {
 /*header, nav 관련 css*/
 header{
     position:relative;
-    background-color: transparent;
-    height:94px;
+    background-color: white;
+    height:90px;
 }
 
 .header{
-    width:100%;
-    position:fixed;
-    z-index:90;
+    width: 100%;
+    height:90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+header .header.active {
+    background: rgba(0, 0, 0, 0.95);
+    height:90px;
 }
 
 #act_header{
-    position: -webkit-sticky;
-    position: sticky;
+    background-color: rgb(255, 255, 255);
     top: 0;
 }
 
@@ -68,6 +77,10 @@ header{
     align-items:center;
 }
 
+.wrap h1.active{
+    color: white;
+}
+
 nav{
     float:right;
     position:relative;
@@ -76,8 +89,9 @@ nav{
 
 .navbar{
     display:flex;
+    justify-content: space-between;
     flex-wrap:nowrap;
-    align-items:flex-start;
+    align-items: center;
 }
 
 .menu_container{
@@ -93,6 +107,13 @@ nav{
     font-size:106.25%;
 }
 
+.nav_item_act{
+    font-size:106.25%;
+}
+.nav_item_act > a{
+    color: white;
+}
+
 ul{
     list-style:none;
 }
@@ -105,6 +126,10 @@ li.nav_item{
 
 a{
     text-decoration-line:none;
+    color: rgb(0, 0, 0);
+}
+.navi a:hover{
+    color: rgb(32, 122, 196);
 }
 
 /*content 관련 css*/
@@ -228,6 +253,12 @@ a{
     color:white;
     position:relative;
     z-index:1;
+}
+#name_describe p{
+    color: white;
+    padding: 75px 0px 0px 0px;
+    font-size:100px;
+    font-weight: bold;
 }
 
 #scroll{
