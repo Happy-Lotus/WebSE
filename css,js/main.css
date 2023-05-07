@@ -39,7 +39,9 @@ body {
 /*content 관련 css*/
 .container{
     margin:0 auto;
-    padding: 0px 90px 0px 90px;
+    max-width:1440px;
+    padding-left:30px;
+    padding-right:30px
 }
 
 .content_container{
@@ -75,7 +77,9 @@ body {
 
 #introduceContent{
     position:relative;
-    margin-left:200px;
+    left:200px;
+    margin: 0 auto;
+    width:100%;
 
 }
 
@@ -148,9 +152,11 @@ body {
 
 #start_container{
     position:relative;
-    max-width: 100%;
+    max-width:1440px;
     margin:0 auto;
     top:30%;
+    padding-left:30px;
+    padding-right:30px;
     
 }
 
@@ -174,3 +180,8 @@ body {
     margin-top:150px;
     z-index:1;
 }
+
+.logo_active{
+    display:none;
+}
+

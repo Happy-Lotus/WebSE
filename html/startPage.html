@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html";charset=utf-8>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0 minimum-scale=1.0 initial-scale=1.0 user-scalable=no">
     <title>startPage</title>
     <link rel="stylesheet" href="../css,js/main.css">
     <link rel="stylesheet" href="../css,js/share.css">
@@ -9,6 +12,7 @@
 </head>
 <body>
     <div id="wrapper">
+        <div class="dimmend"></div>
         <header id="act_header">
             <div class="header">
                 <div class="container">
@@ -17,7 +21,23 @@
                             <h1 style="font-size: 50px;">WebSE</h1>
                         </a>
                         <div class="nav">
+                            <div class="nav-icon">
+                                <div>
+                                    <div id="menu-box">
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="navbar">
+                                <div class="logo_active">
+                                    <a href = "startPage.html">
+                                        <h1 style="font-size: 50px;color:white;">WebSE</h1>
+                                    </a>
+                                <div class="exit_active">
+                                    <h1 style="font-size: 50px;color:white;font-weight:lighter;">X</h1>
+                                </div>
+
+                                </div>
                                 <div class="menu_container">
                                     <ul id="menu" class="navi">
                                         <li class="nav_item"><a href = "startPage.html">소개</a></li>
@@ -41,13 +61,14 @@
                     <br>
                     <p style="font-size:1.5em">WebSE는 고객들의 안전한 비즈니스 환경을 위해 웹서비스 보안 기술을 제공합니다.</p>
                 </div>           
-            <div id="scroll">
-                <p style="text-align:center;font-size:1.7em;font-weight:bold">Scroll</p>
-                <a class="scrollbutton" href = "#content_title_term_first"><img style="width:100px;height:100px" src="../photo/arrow.png"
-                    alt="스크롤"></a>
+                <div id="scroll">
+                    <p style="text-align:center;font-size:1.7em;font-weight:bold">Scroll</p>
+                    <a class="scrollbutton" href = "#content_container"><img style="width:100px;height:100px" src="../photo/arrow.png"
+                        alt="스크롤"></a>
+                </div>
             </div>
-         </div>
         </div>
+
         <div id="content_container">
             <div id="content_title_term_first"></div>
             <section id="introduceContent">
@@ -82,7 +103,6 @@
                         </li>
                     </ul>    
                 </div>
-                </div>
             </section>
         </div>
         <div id="content_title_term"></div>
@@ -101,7 +121,17 @@
             </div>
         </footer>
     </div>
-    <script src="../css,js/action.js"></script>    
+    <script src="../css,js/action.js"></script>  
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $('.nav-icon').click(function(){
+            $('.navbar').addClass('active');
+            $('.dimmend').addClass('active');
+        });
+        $('.exit_active').click(function(){
+            $('.navbar').removeClass('active');
+            $('.dimmend').removeClass('active');
+        });
+    </script>  
 </body>
 </html>
-
