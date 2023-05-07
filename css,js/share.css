@@ -1,4 +1,9 @@
 *{margin:0;padding:0}
+html,
+body {
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;    letter-spacing: -0.05em;
+    word-break: break-word;
+}
 
 :root{
     --maincolor : rgb(32, 122, 196);
@@ -83,6 +88,8 @@ ul{
 }
 
 a{
+    font-size:1.2em;
+    font-weight:bold;
     text-decoration-line:none;
     color: rgb(0, 0, 0);
 }
@@ -201,10 +208,10 @@ footer h4{
 
     }
     .navi{
-        width:100vh;
         display:flex;
         flex-wrap:nowrap;
         flex-direction:column;
+        width:544px;
     }
 
     .navi>li{
@@ -213,11 +220,11 @@ footer h4{
 
     .navbar.active{
         position:fixed;
-        width:100vh;
+        width:50%;
         height:100%;
         right:0;
         top:0;
-        padding:50px 30px 40px;
+        padding:100px 30px 40px;
         z-index:2100;
         background-color:black;
         color:white;

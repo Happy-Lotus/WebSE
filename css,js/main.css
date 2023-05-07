@@ -45,6 +45,7 @@ body {
 #bg{
     position:relative;
     background-image:url("../photo/startPage/startPageSample.jpg");
+    background-position:center;
     background-size: cover;
     object-fit:fill;
 }
