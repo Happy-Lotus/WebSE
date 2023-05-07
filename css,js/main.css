@@ -28,116 +28,20 @@ body {
     --skyblue: skyblue;
 }
 */
-/*전체 페이지 기본 레이아웃
- *{margin:0;padding:0}*/
+
+/*전체 페이지 기본 레이아웃*/
 #wrapper{
     background-color: white;
     position:relative;
     margin:0 auto;
 }
 
-/*content 관련 css*/
-#header-container{
-    margin:0 auto;
-    max-width:1440px;
-    padding-left:30px;
-    padding-right:30px
+/*header-container 관련 css*/
+.logo-active{
+    display:none;
 }
 
-#content_title{
-    
-    margin-right:100px;
-    margin-left:100px;
-}
-
-#content-term.third{
-    margin:0 0 60px;
-    padding-top:127px;
-}
-
-#content-term.first{
-    margin:0 0 60px;
-    padding-top:127px;
-}
-
-#content-container{
-    margin:0 auto;
-    width:1440px;
-    position:relative;
-}
-
-
-/*회사 소개 파트 관련 css*/
-
-
-#introduce.section-img{
-    position:relative;
-    left:200px;
-    margin: 0 auto;
-    width:100%;
-
-}
-
-#circlediv{
-    position:relative;
-}
-
-.circle-img{
-    position:relative;
-}
-
-
-#introduce.section-text{
-    position:absolute;
-    top:30%;
-    left:10%;
-}
-#introduce.section-text>p{
-    font-size:1.5em;
-}
-
-#introduce.section-smallText{
-    position:relative;
-    float:left;
-}
-
-.divsample{
-    position:absolute;
-    width:100px;
-    height:100px;
-    background-color:red;
-}
-
-.list-title{
-    display:inline-block;
-    color:blue;
-    font-weight:bold;
-    font-size:1.5em;
-    margin-bottom:20px;
-}
-
-#content-term.second{
-    margin:0 0 20px;   
-}
-
-.sublist{
-    float:left;
-    width:300px;
-}
-
-.subnavi{
-    display:flex;
-    flex-wrap:nowrap;
-    align-items:center;
-}
-
-#header-container{
-    margin:0 auto;
-    padding: 0px 90px 0px 90px;
-}
-
-/*첫화면 관련 css*/
-
+/*start-container 관련 css*/
 #bg{
     position:relative;
     background-image:url("../photo/startPage/startPageSample.jpg");
@@ -196,8 +100,87 @@ body {
     width:100px;
     height:100px;
 }
+/*content-container 관련 css*/
 
-.logo-active{
-    display:none;
+#content-container{
+    margin:0 auto;
+    width:1440px;
+    position:relative;
 }
+
+#content_title{
+    
+    margin-right:100px;
+    margin-left:100px;
+}
+
+#introduce.section-img{
+    position:relative;
+    left:200px;
+    margin: 0 auto;
+    width:100%;
+
+}
+
+#introduce.section-text{
+    position:absolute;
+    top:30%;
+    left:10%;
+}
+
+#circlediv{
+    position:relative;
+}
+
+.circle-img{
+    position:relative;
+}
+
+#introduce.section-text>p{
+    font-size:1.5em;
+}
+
+#introduce.section-smallText{
+    position:relative;
+    float:left;
+}
+
+.list-title{
+    display:inline-block;
+    color:blue;
+    font-weight:bold;
+    font-size:1.5em;
+    margin-bottom:20px;
+}
+
+.sublist{
+    float:left;
+    width:300px;
+}
+
+.subnavi{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+}
+
+#content-term.first{
+    margin:0 0 60px;
+    padding-top:127px;
+}
+
+#content-term.second{
+    margin:0 0 20px;   
+}
+
+#content-term.third{
+    margin:0 0 60px;
+    padding-top:127px;
+}
+
+/*#header-container{
+    margin:0 auto;
+    padding: 0px 90px 0px 90px;
+}
+*/
 
