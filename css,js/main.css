@@ -19,7 +19,7 @@ padding : 내용과 테두리 사이의 여유 공간. 즉 object내의 내부�
 body {
   background-color: var(--maincolor);
 }
-*/
+
 :root{
     --maincolor : rgb(32, 122, 196);
     --textColorlight : black;
@@ -27,9 +27,9 @@ body {
     --textColorBold:rgba(0, 4, 255, 0.897);
     --skyblue: skyblue;
 }
-
-/*전체 페이지 기본 레이아웃*/
-*{margin:0;padding:0}
+*/
+/*전체 페이지 기본 레이아웃
+ *{margin:0;padding:0}*/
 #wrapper{
     background-color: white;
     position:relative;
@@ -37,17 +37,11 @@ body {
 }
 
 /*content 관련 css*/
-.container{
+#header-container{
     margin:0 auto;
     max-width:1440px;
     padding-left:30px;
     padding-right:30px
-}
-
-.content_container{
-    position:relative;
-    margin:0 auto;
-    width: 1440px;
 }
 
 #content_title{
@@ -56,17 +50,17 @@ body {
     margin-left:100px;
 }
 
-#content_title_term{
+#content-term.third{
     margin:0 0 60px;
     padding-top:127px;
 }
 
-#content_title_term_first{
+#content-term.first{
     margin:0 0 60px;
     padding-top:127px;
 }
 
-#content_container{
+#content-container{
     margin:0 auto;
     width:1440px;
     position:relative;
@@ -75,7 +69,8 @@ body {
 
 /*회사 소개 파트 관련 css*/
 
-#introduceContent{
+
+#introduce.section-img{
     position:relative;
     left:200px;
     margin: 0 auto;
@@ -87,21 +82,21 @@ body {
     position:relative;
 }
 
-.circle_img{
+.circle-img{
     position:relative;
 }
 
 
-#introduceContentText{
+#introduce.section-text{
     position:absolute;
     top:30%;
     left:10%;
 }
-#introduceContentText>p{
+#introduce.section-text>p{
     font-size:1.5em;
 }
 
-#introducesamllcontent{
+#introduce.section-smallText{
     position:relative;
     float:left;
 }
@@ -113,7 +108,7 @@ body {
     background-color:red;
 }
 
-.listtitle{
+.list-title{
     display:inline-block;
     color:blue;
     font-weight:bold;
@@ -121,22 +116,22 @@ body {
     margin-bottom:20px;
 }
 
-#content_title_term2{
+#content-term.second{
     margin:0 0 20px;   
 }
 
-.contentlist{
+.sublist{
     float:left;
     width:300px;
 }
 
-.contentnavi{
+.subnavi{
     display:flex;
     flex-wrap:nowrap;
     align-items:center;
 }
 
-.container{
+#header-container{
     margin:0 auto;
     padding: 0px 90px 0px 90px;
 }
@@ -150,7 +145,7 @@ body {
     object-fit:fill;
 }
 
-#start_container{
+#start-container{
     position:relative;
     max-width:1440px;
     margin:0 auto;
@@ -160,16 +155,26 @@ body {
     
 }
 
-#name_describe{
+#name-describe{
     padding: 0px 90px;
     color:white;
     position:relative;
     z-index:1;
 }
-#name_describe h6{
+#name-describe h6{
     color: white;
     padding: 75px 0px 0px 0px;
     font-size:100px;
+}
+
+#name-describe p{
+    font-size:1.5em;
+}
+
+#name-describe hr{
+    width:200px;
+    height:2px;
+    background-color:white;
 }
 
 #scroll{
@@ -181,7 +186,18 @@ body {
     z-index:1;
 }
 
-.logo_active{
+#scroll p{
+    text-align:center;
+    font-size:1.7em;
+    font-weight:bold;
+}
+
+#scroll img{
+    width:100px;
+    height:100px;
+}
+
+.logo-active{
     display:none;
 }
 
