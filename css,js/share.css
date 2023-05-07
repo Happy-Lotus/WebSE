@@ -1,3 +1,5 @@
+*{margin:0;padding:0}
+
 :root{
     --maincolor : rgb(32, 122, 196);
     --textColorlight : black;
@@ -6,11 +8,18 @@
     --skyblue: skyblue;
 }
 
-/*header, nav 관련 css*/
+/*header 관련 css*/
 header{
     position:relative;
     background-color: white;
     height:90px;
+}
+
+#header-container{
+    margin:0 auto;
+    max-width:1440px;
+    padding-left:30px;
+    padding-right:30px
 }
 
 .header{
@@ -34,17 +43,7 @@ header .header.active {
     top: 0;
 }
 
-.wrap{
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.wrap h1.active{
-    color: white;
-}
-
+/*nav 관련 css*/
 nav{
     float:right;
     position:relative;
@@ -56,7 +55,7 @@ nav{
     float:right;
 }
 
-.menu_container{
+#menu-container{
     display:inline-block;
 }
 
@@ -65,25 +64,22 @@ nav{
     flex-wrap: nowrap;
 }
 
-.nav_item{
+.nav-item{
+    padding:30px 30px;
+    position:relative;
+    overflow:hidden;
     font-size:106.25%;
 }
 
-.nav_item_act{
+.nav-item_act{
     font-size:106.25%;
 }
-.nav_item_act > a{
+.nav-item_act > a{
     color: white;
 }
 
 ul{
     list-style:none;
-}
-
-li.nav_item{
-    padding:30px 30px;
-    position:relative;
-    overflow:hidden;
 }
 
 a{
@@ -94,20 +90,32 @@ a{
     color: rgb(23, 146, 247);
 }
 
-.container{
-    margin:0 auto;
-    max-width:1440px;
-    padding-left:30px;
-    padding-right:30px
+
+.wrap{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:center;
 }
 
+.wrap h1.active{
+    color: white;
+}
 
-/*하단 바*/
+/*footer 관련 css*/
 footer{
     background-color: black;
     color: white;
     position : relative;
 }
+
+footer .container{
+    margin:0 auto;
+    max-width: 100%;
+    height: 80px;
+    padding: 39px 90px 0px 90px;
+}
+
 footer .top{
     position: fixed;
     bottom: 0;
@@ -121,19 +129,14 @@ footer .top{
     justify-content: center;
     z-index: 1;
 }
+
 footer img{
     width: 50px;
     height: 50px;
 }
+
 .top:hover{
     background-color: rgb(23, 146, 247);
-}
-
-footer .container{
-    margin:0 auto;
-    max-width: 100%;
-    height: 80px;
-    padding: 39px 90px 0px 90px;
 }
 
 footer h4{
@@ -141,10 +144,10 @@ footer h4{
     font-size: 35px;
 }
 
-
+/*화면 축소 시 css 변경*/
 @media (max-width:1200px)
 {
-
+    
     .nav>.nav-icon>div::after{
 
         display:inline-block;
@@ -159,7 +162,7 @@ footer h4{
         cursor:pointer;
     }
 
-    .nav>.navbar>.logo_active{
+    .nav>.navbar>.logo-active{
         display:flex;
         content:"";
         position:relative;
@@ -172,16 +175,15 @@ footer h4{
         height:20px;
     }
 
-    .nav_item>a{
+    .nav-item>a{
         color:white;
     }
-    li.nav_item{
+    li.nav-item{
         padding:0;
     }
     
 
     .navbar{
-
         position:fixed;
         width:100%;
         height:100%;
@@ -228,11 +230,17 @@ footer h4{
     }
 
 
-    .menu_container{
+    #menu-container{
         padding-bottom:60px;
     }
-    .exit_active{
+    .exit-active{
         cursor:pointer;
+    }
+
+    .exit-active>h1{
+        font-size:50px;
+        color:white;
+        font-weight:lighter;
     }
 
     .dimmend.active{
@@ -247,7 +255,7 @@ footer h4{
         transition:all 1.0s ease;
     }
 
-    .container{
+    #header-container{
         line-height:90px;
     }
 }

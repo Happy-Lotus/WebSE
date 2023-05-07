@@ -12,37 +12,34 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="dimmend"></div>
+        <div id="opacityScreen" class="dimmend"></div>
         <header id="act_header">
             <div class="header">
-                <div class="container">
+                <div id="header-container">
                     <div class="wrap">
                         <a href = "startPage.html">
                             <h1 style="font-size: 50px;">WebSE</h1>
                         </a>
                         <div class="nav">
-                            <div class="nav-icon">
+                            <div id="active-navicon" class="nav-icon">
                                 <div>
-                                    <div id="menu-box">
-
-                                    </div>
+                                    <div id="menu-box"></div>
                                 </div>
                             </div>
                             <div class="navbar">
-                                <div class="logo_active">
+                                <div id="active-logoicon" class="logo-active">
                                     <a href = "startPage.html">
                                         <h1 style="font-size: 50px;color:white;">WebSE</h1>
                                     </a>
-                                <div class="exit_active">
-                                    <h1 style="font-size: 50px;color:white;font-weight:lighter;">X</h1>
+                                <div id="active-exiticon" class="exit-active">
+                                    <h1>X</h1>
                                 </div>
-
                                 </div>
-                                <div class="menu_container">
+                                <div id="menu-container">
                                     <ul id="menu" class="navi">
-                                        <li class="nav_item"><a href = "startPage.html">소개</a></li>
-                                        <li class="nav_item"><a href = "frameworkPage.html">프레임워크</a></li>
-                                        <li class="nav_item"><a href = "workPage.html">연구</a></li>
+                                        <li class="nav-item"><a href = "startPage.html">소개</a></li>
+                                        <li class="nav-item"><a href = "frameworkPage.html">프레임워크</a></li>
+                                        <li class="nav-item"><a href = "workPage.html">연구</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -52,64 +49,64 @@
             </div>
         </header>
         <div id="bg">
-            <div id="start_container">
-                <div id="name_describe">
+            <div id="start-container">
+                <div id="name-describe">
                     <h6>WebSE</h6>
-                    <hr style="width:200px;height:2px;background-color:white;">
+                    <hr>
                     <br>
                     <br>
                     <br>
-                    <p style="font-size:1.5em">WebSE는 고객들의 안전한 비즈니스 환경을 위해 웹서비스 보안 기술을 제공합니다.</p>
+                    <p>WebSE는 고객들의 안전한 비즈니스 환경을 위해 웹서비스 보안 기술을 제공합니다.</p>
                 </div>           
                 <div id="scroll">
-                    <p style="text-align:center;font-size:1.7em;font-weight:bold">Scroll</p>
-                    <a class="scrollbutton" href = "#content_container"><img style="width:100px;height:100px" src="../photo/arrow.png"
-                        alt="스크롤"></a>
+                    <p>Scroll</p>
+                    <a id="scrollBTN" href = "#content-container">
+                        <img src="../photo/arrow.png"alt="스크롤"></a>
                 </div>
             </div>
         </div>
 
-        <div id="content_container">
-            <div id="content_title_term_first"></div>
-            <section id="introduceContent">
+        <div id="content-container">
+            <div id="content-term" class="first"></div>
+            <section id="introduce" class="section-img">
                 <div id="circlediv">
-                    <img class="circle_img" src="../photo/startPage/startPage_circle.png" 
+                    <img class="circle-img" src="../photo/startPage/startPage_circle.png" 
                     alt="원이미지">
                     
-                    <div id="introduceContentText">
+                    <div id="introduce" class="section-text">
                         <p><span style=color:white>WebSe는 ‘Web Search’의</span>합성어로써,</p>
                         <p><span style=color:white>웹사이트의 취약점을 분석</span>하고 <span style=color:blue;font-weight:bold>최적의 솔루션을 제공</span>합니다.</p> 
                         <p><span style=color:white>최근의 웹 해킹 트렌드를</span> 설명하고 공격 시나리오를 통한 연구를 통해</p>
                         <p><span style=color:white>다른 서비스와는 차별화</span>된 <span style=color:blue;font-weight:bold>전문적인 서비스</span>를 제공합니다.</p>
                         <p><span style=color:white>WebSE가 개발한 프레임워크</span>를 통해 고객의 정보자산을 <span style=color:blue;font-weight:bold>안전하게 보호</span>합니다.</p>  
                     </div>
-                    <div id="content_title_term2"></div>
+                    <div id="content-term" class="second"></div>
                     <hr style="width:1000px;">   
                 </div>
 
-                <div id="introducesmallcontent">
-                    <ul class="contentnavi">
-                        <li class="contentlist">
-                            <span class="listtitle">검사</span>
+                <div id="introduce" class="section-smallText">
+                    <ul class="subnavi">
+                        <li class="sublist">
+                            <span class="list-title">검사</span>
                             <p>웹사이트의 취약점이 있는지 WebSE만의 도구를 이용하여 검사합니다.</p>
                         </li>
-                        <li class="contentlist">
-                            <span class="listtitle">분석</span>
+                        <li class="sublist">
+                            <span class="list-title">분석</span>
                             <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
                         </li>
-                        <li class="contentlist">
-                            <span class="listtitle">솔루션</span>
+                        <li class="sublist">
+                            <span class="list-title">솔루션</span>
                             <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
                         </li>
                     </ul>    
                 </div>
             </section>
         </div>
-        <div id="content_title_term"></div>
-        <div id="content_title_term"></div>
-        <div id="content_title_term"></div>
-        <div id="content_title_term"></div>
-        <div id="content_title_term"></div>
+        <div id="content-term" class="third"></div>
+        <div id="content-term" class="third"></div>
+        <div id="content-term" class="third"></div>
+        <div id="content-term" class="third"></div>
+        <div id="content-term" class="third"></div>
         <div>
         </div>
         <footer>
@@ -123,15 +120,5 @@
     </div>
     <script src="../css,js/action.js"></script>  
     <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $('.nav-icon').click(function(){
-            $('.navbar').addClass('active');
-            $('.dimmend').addClass('active');
-        });
-        $('.exit_active').click(function(){
-            $('.navbar').removeClass('active');
-            $('.dimmend').removeClass('active');
-        });
-    </script>  
 </body>
 </html>

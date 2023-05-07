@@ -19,7 +19,7 @@ padding : 내용과 테두리 사이의 여유 공간. 즉 object내의 내부�
 body {
   background-color: var(--maincolor);
 }
-*/
+
 :root{
     --maincolor : rgb(32, 122, 196);
     --textColorlight : black;
@@ -27,122 +27,21 @@ body {
     --textColorBold:rgba(0, 4, 255, 0.897);
     --skyblue: skyblue;
 }
+*/
 
 /*전체 페이지 기본 레이아웃*/
-*{margin:0;padding:0}
 #wrapper{
     background-color: white;
     position:relative;
     margin:0 auto;
 }
 
-/*content 관련 css*/
-.container{
-    margin:0 auto;
-    max-width:1440px;
-    padding-left:30px;
-    padding-right:30px
+/*header-container 관련 css*/
+.logo-active{
+    display:none;
 }
 
-.content_container{
-    position:relative;
-    margin:0 auto;
-    width: 1440px;
-}
-
-#content_title{
-    
-    margin-right:100px;
-    margin-left:100px;
-}
-
-#content_title_term{
-    margin:0 0 60px;
-    padding-top:127px;
-}
-
-#content_title_term_first{
-    margin:0 0 60px;
-    padding-top:127px;
-}
-
-#content_container{
-    margin:0 auto;
-    width:1440px;
-    position:relative;
-}
-
-
-/*회사 소개 파트 관련 css*/
-
-#introduceContent{
-    position:relative;
-    left:200px;
-    margin: 0 auto;
-    width:100%;
-
-}
-
-#circlediv{
-    position:relative;
-}
-
-.circle_img{
-    position:relative;
-}
-
-
-#introduceContentText{
-    position:absolute;
-    top:30%;
-    left:10%;
-}
-#introduceContentText>p{
-    font-size:1.5em;
-}
-
-#introducesamllcontent{
-    position:relative;
-    float:left;
-}
-
-.divsample{
-    position:absolute;
-    width:100px;
-    height:100px;
-    background-color:red;
-}
-
-.listtitle{
-    display:inline-block;
-    color:blue;
-    font-weight:bold;
-    font-size:1.5em;
-    margin-bottom:20px;
-}
-
-#content_title_term2{
-    margin:0 0 20px;   
-}
-
-.contentlist{
-    float:left;
-    width:300px;
-}
-
-.contentnavi{
-    display:flex;
-    flex-wrap:nowrap;
-    align-items:center;
-}
-
-.container{
-    margin:0 auto;
-    padding: 0px 90px 0px 90px;
-}
-
-/*첫화면 관련 css*/
-
+/*start-container 관련 css*/
 #bg{
     position:relative;
     background-image:url("../photo/startPage/startPageSample.jpg");
@@ -150,7 +49,7 @@ body {
     object-fit:fill;
 }
 
-#start_container{
+#start-container{
     position:relative;
     max-width:1440px;
     margin:0 auto;
@@ -160,16 +59,26 @@ body {
     
 }
 
-#name_describe{
+#name-describe{
     padding: 0px 90px;
     color:white;
     position:relative;
     z-index:1;
 }
-#name_describe h6{
+#name-describe h6{
     color: white;
     padding: 75px 0px 0px 0px;
     font-size:100px;
+}
+
+#name-describe p{
+    font-size:1.5em;
+}
+
+#name-describe hr{
+    width:200px;
+    height:2px;
+    background-color:white;
 }
 
 #scroll{
@@ -181,7 +90,97 @@ body {
     z-index:1;
 }
 
-.logo_active{
-    display:none;
+#scroll p{
+    text-align:center;
+    font-size:1.7em;
+    font-weight:bold;
 }
+
+#scroll img{
+    width:100px;
+    height:100px;
+}
+/*content-container 관련 css*/
+
+#content-container{
+    margin:0 auto;
+    width:1440px;
+    position:relative;
+}
+
+#content_title{
+    
+    margin-right:100px;
+    margin-left:100px;
+}
+
+#introduce.section-img{
+    position:relative;
+    left:200px;
+    margin: 0 auto;
+    width:100%;
+
+}
+
+#introduce.section-text{
+    position:absolute;
+    top:30%;
+    left:10%;
+}
+
+#circlediv{
+    position:relative;
+}
+
+.circle-img{
+    position:relative;
+}
+
+#introduce.section-text>p{
+    font-size:1.5em;
+}
+
+#introduce.section-smallText{
+    position:relative;
+    float:left;
+}
+
+.list-title{
+    display:inline-block;
+    color:blue;
+    font-weight:bold;
+    font-size:1.5em;
+    margin-bottom:20px;
+}
+
+.sublist{
+    float:left;
+    width:300px;
+}
+
+.subnavi{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+}
+
+#content-term.first{
+    margin:0 0 60px;
+    padding-top:127px;
+}
+
+#content-term.second{
+    margin:0 0 20px;   
+}
+
+#content-term.third{
+    margin:0 0 60px;
+    padding-top:127px;
+}
+
+/*#header-container{
+    margin:0 auto;
+    padding: 0px 90px 0px 90px;
+}
+*/
 

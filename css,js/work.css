@@ -1,5 +1,5 @@
 /*전체 페이지 기본 레이아웃*/
-*{margin:0;padding:0}
+
 #wrapper{
     position:relative;
     margin:0 auto;
@@ -16,18 +16,18 @@
     height: 230px;
 }
 
-#start_container{
+#start-container{
     position:relative;
     max-width: 100%;
     margin:0 auto;    
 }
 
-#name_describe{
+#name-describe{
     color:white;
     position:relative;
     z-index:1;
 }
-#name_describe h1{
+#name-describe h1{
     color: white;
     padding: 75px;
     text-align: center; 
