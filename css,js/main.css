@@ -35,6 +35,7 @@ body {
     margin:0 auto;
 }
 
+
 /*header, nav 관련 css*/
 header{
     position:relative;
@@ -88,10 +89,8 @@ nav{
 }
 
 .navbar{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap:nowrap;
-    align-items: center;
+    position:relative;
+    float:right;
 }
 
 .menu_container{
@@ -119,7 +118,7 @@ ul{
 }
 
 li.nav_item{
-    padding:30px 30px;
+    padding-right:50px;
     position:relative;
     overflow:hidden;
 }
@@ -135,7 +134,11 @@ a{
 /*content 관련 css*/
 .container{
     margin:0 auto;
-    width:1440px;
+    max-width:1440px;
+    line-height:90px;
+    padding-left:30px;
+    padding-right:30px
+    
 }
 
 .content_container{
@@ -162,7 +165,7 @@ a{
 
 #content_container{
     margin:0 auto;
-    width:1440px;
+    max-width:1440px;
     position:relative;
 }
 
@@ -171,7 +174,9 @@ a{
 
 #introduceContent{
     position:relative;
-    margin-left:200px;
+    left:200px;
+    margin: 0 auto;
+    width:100%;
 
 }
 
@@ -193,7 +198,7 @@ a{
     font-size:1.5em;
 }
 
-#introducesamllcontent{
+#introducesmallcontent{
     position:relative;
     float:left;
 }
@@ -243,9 +248,11 @@ a{
 
 #start_container{
     position:relative;
-    width:1440px;
+    max-width:1440px;
     margin:0 auto;
     top:30%;
+    padding-left:30px;
+    padding-right:30px;
     
 }
 
@@ -267,4 +274,117 @@ a{
     left:50%;
     margin-top:150px;
     z-index:1;
+}
+
+.logo_active{
+    display:none;
+}
+
+
+
+
+@media (max-width:1200px)
+{
+
+    .nav>.nav-icon>div::after{
+
+        display:inline-block;
+        content:"";
+        background-image:url("../photo/menubar_black.png");
+        width:30px;
+        height:30px;
+        position:absolute;
+        top:0;
+        right:20%;
+        background-size:contain;
+        cursor:pointer;
+    }
+
+    .nav>.navbar>.logo_active{
+        display:flex;
+        content:"";
+        position:relative;
+        justify-content:space-between;
+
+    }
+
+    .nav-icon>div{
+        position:relative;
+        height:20px;
+    }
+
+    .nav_item>a{
+        color:white;
+    }
+    li.nav_item{
+        padding:0;
+    }
+    
+
+    .navbar{
+
+        position:fixed;
+        width:100%;
+        height:100%;
+        right:-200%;
+        top:0;
+        padding:110px 30px 40px;
+        z-index:99;
+        background-color:black;
+        margin:0;
+        -webkit-transition:all 1.0s ease;
+        -moz-transition: opacity 1.0s ease;
+        -o-transition:opacity 1.0s ease;
+        -ms-transition:opacity 1.0s ease;
+        transition:all 1.0s ease;
+
+    }
+    .navi{
+        width:100vh;
+        display:flex;
+        flex-wrap:nowrap;
+        flex-direction:column;
+    }
+
+    .navi>li{
+        border-bottom:1px solid;
+    }
+
+    .navbar.active{
+        position:fixed;
+        width:100vh;
+        height:100%;
+        right:0;
+        top:0;
+        padding:50px 30px 40px;
+        z-index:2100;
+        background-color:black;
+        color:white;
+        -webkit-transition:all 1.0s ease;
+        -moz-transition: opacity 1.0s ease;
+        -o-transition:opacity 1.0s ease;
+        -ms-transition:opacity 1.0s ease;
+        transition:all 1.0s ease;
+        margin:0;
+    }
+
+
+    .menu_container{
+        padding-bottom:60px;
+    }
+    .exit_active{
+        cursor:pointer;
+    }
+
+    .dimmend.active{
+        position:fixed;
+        z-index:80;
+        overflow:auto;
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,.7);
+        box-sizing:border-box;
+        padding:50px;
+        transition:all 1.0s ease;
+    }
 }
