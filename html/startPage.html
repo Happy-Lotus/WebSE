@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html";charset=utf-8>
     <meta name="viewport" content="width=device-width, maximum-scale=1.0 minimum-scale=1.0 initial-scale=1.0 user-scalable=no">
     <title>startPage</title>
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png">
     <link rel="stylesheet" href="../css,js/main.css">
     <link rel="stylesheet" href="../css,js/share.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -37,9 +38,9 @@
                                 </div>
                                 <div id="menu-container">
                                     <ul id="menu" class="navi">
-                                        <li class="nav-item"><a href = "startPage.html">소개</a></li>
-                                        <li class="nav-item"><a href = "frameworkPage.html">프레임워크</a></li>
-                                        <li class="nav-item"><a href = "workPage.html">연구</a></li>
+                                        <li  class="nav-item"><a id="nav-item-first" href = "startPage.html">소개</a></li>
+                                        <li  class="nav-item"><a id="nav-item-second" href = "frameworkPage.html">프레임워크</a></li>
+                                        <li  class="nav-item"><a id="nav-item-third" href = "workPage.html">연구</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -107,11 +108,10 @@
         <div id="content-term" class="third"></div>
         <div id="content-term" class="third"></div>
         <div id="content-term" class="third"></div>
-        <div>
-        </div>
+        <div></div>
         <footer>
             <div class="top">
-                <a href="#wrapper"><img src="../photo/up.png"alt=""></a>
+                <a id="upBTN" href="#wrapper"><img src="../photo/up.png"alt=""></a>
             </div>
             <div class="container">
                 <h4>Web Security</h4>

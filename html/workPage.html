@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html";charset=utf-8>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0 minimum-scale=1.0 initial-scale=1.0 user-scalable=no">
     <title>workPage</title>
     <link rel="stylesheet" href="../css,js/work.css">
     <link rel="stylesheet" href="../css,js/share.css">
@@ -9,6 +12,7 @@
 </head>
 <body>
     <div id="wrapper">
+        <div id="opacityScreen" class="dimmend"></div>
         <header id="act_header">
             <div class="header">
                 <div id="header-container">
@@ -17,7 +21,20 @@
                             <h1 style="font-size: 50px;">WebSE</h1>
                         </a>
                         <div class="nav">
+                            <div id="active-navicon" class="nav-icon">
+                                <div>
+                                    <div id="menu-box"></div>
+                                </div>
+                            </div>
                             <div class="navbar">
+                                <div id="active-logoicon" class="logo-active">
+                                    <a href = "startPage.html">
+                                        <h1 style="font-size: 50px;color:white;">WebSE</h1>
+                                    </a>
+                                <div id="active-exiticon" class="exit-active">
+                                    <h1>X</h1>
+                                </div>
+                                </div>
                                 <div id="menu-container">
                                     <ul id="menu" class="navi">
                                         <li class="nav-item"><a href = "startPage.html">소개</a></li>
@@ -149,5 +166,6 @@
         </footer>
     </div>
     <script src="../css,js/action.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script> 
 </body>
 </html>

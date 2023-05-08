@@ -37,15 +37,11 @@ body {
     overflow-x:hidden;
 }
 
-/*header-container 관련 css*/
-.logo-active{
-    display:none;
-}
 
 /*start-container 관련 css*/
 #bg{
     position:relative;
-    background-image:url("../photo/startPage/startPageSample.jpg");
+    max-width:100%;
     background-position:center;
     background-size: cover;
     object-fit:fill;
@@ -111,7 +107,7 @@ body {
 
 #content-container{
     margin:0 auto;
-    width:1440px;
+    max-width:1440px;
     position:relative;
 }
 
@@ -122,10 +118,10 @@ body {
 }
 
 #introduce.section-img{
-    position:relative;
-    left:200px;
-    margin: 0 auto;
+    display:flex;
     width:100%;
+    flex-direction: column;
+    align-items:center;
 
 }
 
@@ -162,7 +158,10 @@ body {
 
 .sublist{
     float:left;
-    width:300px;
+    width:330px;
+    text-align:center;
+    margin-left:10px;
+    margin-top:30px;
 }
 
 .subnavi{

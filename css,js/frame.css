@@ -16,20 +16,25 @@
     height: 230px;
 }
 
-#start_container{
+#start-container{
     position:relative;
     max-width: 100%;
     margin:0 auto;   
 }
 
-#name_describe{
+#name-describe{
     color:white;
     position:relative;
     z-index:1;
 }
-#name_describe h1{
+#name-describe h1{
     color: white;
     padding: 75px;
     text-align: center; 
     font-size:40px;
+}
+
+#content-term.third{
+    margin:0 0 60px;
+    padding-top:127px;
 }
