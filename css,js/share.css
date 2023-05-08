@@ -1,7 +1,12 @@
-*{margin:0;padding:0}
+*{margin:0;padding:0;}
 html,
 body {
-    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,sans-serif;    letter-spacing: -0.05em;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;box-sizing: border-box;
+    font-family:"Outfit", "Pretendard", AppleGothic, sans-serif;
+    letter-spacing:-0.05em;
     word-break: break-word;
 }
 
@@ -48,6 +53,10 @@ header .header.active {
     top: 0;
 }
 
+.logo-active{
+    display:none;
+}
+
 /*nav 관련 css*/
 nav{
     float:right;
@@ -60,9 +69,6 @@ nav{
     float:right;
 }
 
-#menu-container{
-    display:inline-block;
-}
 
 .navi{
     display: flex;
@@ -125,8 +131,8 @@ footer .container{
 
 footer .top{
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 2%;
+    right: 2%;
     cursor: pointer;
     background-color: transparent;
     width: 80px;
@@ -142,17 +148,13 @@ footer img{
     height: 50px;
 }
 
-.top:hover{
-    background-color: rgb(23, 146, 247);
-}
-
 footer h4{
     text-align: center;
     font-size: 35px;
 }
 
 /*화면 축소 시 css 변경*/
-@media (max-width:1200px)
+@media (max-width:1080px)
 {
     
     .nav>.nav-icon>div::after{
@@ -205,13 +207,11 @@ footer h4{
         -o-transition:opacity 1.0s ease;
         -ms-transition:opacity 1.0s ease;
         transition:all 1.0s ease;
-
     }
     .navi{
         display:flex;
         flex-wrap:nowrap;
         flex-direction:column;
-        width:544px;
     }
 
     .navi>li{
@@ -259,6 +259,10 @@ footer h4{
         background-color:rgba(0,0,0,.7);
         box-sizing:border-box;
         padding:50px;
+        -webkit-transition:all 1.0s ease;
+        -moz-transition: opacity 1.0s ease;
+        -o-transition:opacity 1.0s ease;
+        -ms-transition:opacity 1.0s ease;
         transition:all 1.0s ease;
     }
 

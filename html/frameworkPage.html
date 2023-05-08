@@ -8,20 +8,34 @@
 </head>
 <body>
     <div id="wrapper">
+        <div id="opacityScreen" class="dimmend"></div>
         <header id="act_header">
             <div class="header">
-                <div class="container">
+                <div id="header-container">
                     <div class="wrap">
                         <a href = "startPage.html">
                             <h1 style="font-size: 50px;">WebSE</h1>
                         </a>
                         <div class="nav">
+                            <div id="active-navicon" class="nav-icon">
+                                <div>
+                                    <div id="menu-box"></div>
+                                </div>
+                            </div>
                             <div class="navbar">
-                                <div class="menu_container">
+                                <div id="active-logoicon" class="logo-active">
+                                    <a href = "startPage.html">
+                                        <h1 style="font-size: 50px;color:white;">WebSE</h1>
+                                    </a>
+                                <div id="active-exiticon" class="exit-active">
+                                    <h1>X</h1>
+                                </div>
+                                </div>
+                                <div class="menu-container">
                                     <ul id="menu" class="navi">
-                                        <li class="nav_item"><a href = "startPage.html">소개</a></li>
-                                        <li class="nav_item"><a href = "frameworkPage.html">프레임워크</a></li>
-                                        <li class="nav_item"><a href = "workPage.html">연구</a></li>
+                                        <li class="nav-item"><a href = "startPage.html">소개</a></li>
+                                        <li class="nav-item"><a href = "frameworkPage.html">프레임워크</a></li>
+                                        <li class="nav-item"><a href = "workPage.html">연구</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -31,13 +45,18 @@
             </div>
         </header>
         <div id="bg">
-            <div id="start_container">
+            <div id="start-container">
                 <div id="name-describe">
-                    <h1 style="font-size: 70px;">FrameWork</h1>
+                    <h1 style="font-size: 60px;">FrameWork</h1>
                 </div>
             </div>           
         </div>
-    </div>
+        <div id="content-term" class="third"></div>
+        <div id="content-term" class="third"></div>
+        <div id="content-term" class="third"></div>
+        <div id="content-term" class="third"></div>
+        <div id="content-term" class="third"></div>
+
     <footer>
         <div class="top">
             <a href="#wrapper"><img src="../photo/up.png"alt=""></a>
@@ -46,6 +65,7 @@
             <h4>Web Security</h4>
         </div>
     </footer>
+</div>
     <script src="../css,js/action.js"></script>
 </body>
 </html>

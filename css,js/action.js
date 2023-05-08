@@ -1,10 +1,17 @@
 
-/**startPage 스크롤 */
+/**startPage 상단 스크롤 버튼 스크롤 액션*/
 
 $("#scrollBTN").click(function(event){
 	event.preventDefault();
-	$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+	$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 });
+
+/*startPage 하단 up 버튼 스크롤 액션*/
+$("#upBTN").click(function(event){
+	event.preventDefault();
+	$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+});
+
 /*header 액션 */
 $(window).on('scroll',function(){
 	if($(window).scrollTop()){
@@ -17,9 +24,6 @@ $(window).on('scroll',function(){
 		$('.wrap h1').removeClass('active');
 	}
 });
-/* up 스크롤 */
-
-
 
 /*navbar 액션*/
 $('.nav-icon').click(function(){
@@ -27,8 +31,8 @@ $('.nav-icon').click(function(){
 	$('.dimmend').addClass('active');
 });
 $('.exit-active').click(function(){
-	$('.navbar').removeClass('active');
 	$('.dimmend').removeClass('active');
+	$('.navbar').removeClass('active');
 });
 
 
@@ -39,10 +43,14 @@ imgArray[1]="url(\"../photo/work_content/spring2022.jpg\")";
 imgArray[2]="url(\"../photo/work_content/spring2023.jpg\")";
 imgArray[3]-"url(\"../photo/work_content/summer2022.jpg\")";
 imgArray[4]-"url(\"../photo/work_content/winter2022.jpg\")";
+var imgNum=0;
 
 function showImage(){
-var imgNum=Math.round(Math.random()*4);
+	if(imgNum == 4){
+		imgNum=0;
+	}
 var imgRoute=imgArray[imgNum];
+imgNum++;
 document.getElementById('bg').style.backgroundImage =imgRoute;
 document.getElementById('bg').style.backgroundRepeat="no-repeat";
 setTimeout(showImage,5000);
