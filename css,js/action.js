@@ -30,3 +30,20 @@ $('.exit-active').click(function(){
 	$('.navbar').removeClass('active');
 	$('.dimmend').removeClass('active');
 });
+
+
+/*startPage 배경이미지 자동 변경 액션*/
+var imgArray=new Array();
+imgArray[0]="url(\"../photo/work_content/fall2022.jpg\")";
+imgArray[1]="url(\"../photo/work_content/spring2022.jpg\")";
+imgArray[2]="url(\"../photo/work_content/spring2023.jpg\")";
+imgArray[3]-"url(\"../photo/work_content/summer2022.jpg\")";
+imgArray[4]-"url(\"../photo/work_content/winter2022.jpg\")";
+
+function showImage(){
+var imgNum=Math.round(Math.random()*4);
+var imgRoute=imgArray[imgNum];
+document.getElementById('bg').style.backgroundImage =imgRoute;
+document.getElementById('bg').style.backgroundRepeat="no-repeat";
+setTimeout(showImage,5000);
+};

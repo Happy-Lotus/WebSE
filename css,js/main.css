@@ -34,6 +34,7 @@ body {
     background-color: white;
     position:relative;
     margin:0 auto;
+    overflow-x:hidden;
 }
 
 /*header-container 관련 css*/
@@ -48,6 +49,11 @@ body {
     background-position:center;
     background-size: cover;
     object-fit:fill;
+    -webkit-transition:all 1.0s ease;
+    -moz-transition: opacity 1.0s ease;
+    -o-transition:opacity 1.0s ease;
+    -ms-transition:opacity 1.0s ease;
+    transition:all 1.0s ease;
 }
 
 #start-container{

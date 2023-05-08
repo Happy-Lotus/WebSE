@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css,js/share.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
+<body onload="showImage();">
     <div id="wrapper">
         <div id="opacityScreen" class="dimmend"></div>
         <header id="act_header">
@@ -120,23 +120,5 @@
     </div>
     <script src="../css,js/action.js"></script>  
     <script src="http://code.jquery.com/jquery-3.4.1.js"></script> 
-    <script type="text/javascript">
-        var imgArray=new Array();
-        imgArray[0]="\"../photo/work_content/fall2022.jpg\"";
-        imgArray[1]="\"../photo/work_content/spring2022.jpg\"";
-        imgArray[2]="\"../photo/work_content/spring2023.jpg\"";
-        imgArray[3]-"\"../photo/work_content/summer2022.jpg\"";
-        imgArray[4]-"\"../photo/work_content/winter2022.jpg\"";
-
-        function showImage(){
-	    var imgNum=Math.round(Math.random()*4);
-        var imgRoute=imgArray[imgNum];
-        document.getElementById('bg').style.backgroundImage ="url("+imgRoute+")";
-        document.getElementById('bg').style.backgroundRepeat="no-repeat";
-	    setTimeout(showImage,5000);
-    }
-
-    showImage();
-    </script>
 </body>
 </html>
