@@ -34,6 +34,10 @@ $('.exit-active').click(function(){
 	$('.dimmend').removeClass('active');
 	$('.navbar').removeClass('active');
 });
+$('#opacityScreen').click(function(){
+	$('.dimmend').removeClass('active');
+	$('.navbar').removeClass('active');
+});
 
 
 /*startPage 배경이미지 자동 변경 액션*/
