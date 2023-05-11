@@ -38,7 +38,7 @@
 .work_content{
     margin: 0 auto;
     background-color: rgb(244, 243, 243);
-    max-width: 100%;
+    max-width: 1440px;
     padding: 0px 90px 150px 90px;
 }
 .sub_header{
@@ -95,6 +95,8 @@
 }
 .text_wrap h4:hover{
     color:rgb(23, 146, 247);
+    transition-duration:0.5s;
+    -webkit-transition-duration:0.5s;
 }
 
 .list_box li .text{

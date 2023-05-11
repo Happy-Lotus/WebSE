@@ -12,8 +12,15 @@ $("#upBTN").click(function(event){
 	$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 });
 
+AOS.init({
+	duration:1200,
+	easing:'ease-in-out-back'
+});
+
+
 /*header 액션 */
 $(window).on('scroll',function(){
+	
 	if($(window).scrollTop()){
 		$('header > div').addClass('active');
 		$('.nav-item').addClass('nav-item_act');
@@ -53,9 +60,9 @@ function showImage(){
 	if(imgNum == 4){
 		imgNum=0;
 	}
-var imgRoute=imgArray[imgNum];
-imgNum++;
-document.getElementById('bg').style.backgroundImage =imgRoute;
-document.getElementById('bg').style.backgroundRepeat="no-repeat";
-setTimeout(showImage,5000);
+	var imgRoute=imgArray[imgNum];
+	imgNum++;
+	document.getElementById('bg').style.backgroundImage =imgRoute;
+	document.getElementById('bg').style.backgroundRepeat="no-repeat";
+	setTimeout(showImage,5000);
 };
