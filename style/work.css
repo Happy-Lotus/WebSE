@@ -38,13 +38,9 @@
 .work_content{
     margin: 0 auto;
     background-color: rgb(244, 243, 243);
-<<<<<<< HEAD
     max-width: 100%;
     padding: 0px 90px 10px 90px;
-=======
-    max-width: 1440px;
-    padding: 0px 90px 150px 90px;
->>>>>>> 3a08f61709f65fa6af88a2117c67b423c382363a
+
 }
 .sub_header{
     position: relative;
