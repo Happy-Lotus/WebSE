@@ -39,7 +39,7 @@
     margin: 0 auto;
     background-color: rgb(244, 243, 243);
     max-width: 100%;
-    padding: 0px 90px 150px 90px;
+    padding: 0px 90px 10px 90px;
 }
 .sub_header{
     position: relative;
@@ -118,3 +118,46 @@ p, b{
     margin-inline-end: 0px;
 }
 
+/* 페이지 네비게이션*/
+.page_navigation{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.page_navigation .nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links a:hover{
+    color: #ffffff;
+    background-color: #0f0f0f;
+}
+
+.page_navigation .page-numbers {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    color: #0f0f0f;
+    font-size: 0.94rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+.page_navigation .current{
+    color: #ffffff;
+    background-color: #0f0f0f;
+}
+.page_navigation .page-numbers.prev.disabled, .page_navigation .page-numbers.next.disabled {
+    opacity: 0.2;
+    cursor: auto;
+    pointer-events: none;
+}
+.page_navigation .page-numbers.prev {
+    margin-right: 8px;
+    transform: rotate(180deg);
+}
+.page_navigation .page-numbers.prev, .page_navigation .page-numbers.next {
+    background: url(../photo/ic_page.png) no-repeat center;
+    background-size: 11px 18px;
+}
