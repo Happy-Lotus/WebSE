@@ -66,3 +66,7 @@ function showImage(){
 	document.getElementById('bg').style.backgroundRepeat="no-repeat";
 	setTimeout(showImage,5000);
 };
+
+function showImage(){
+	
+}
