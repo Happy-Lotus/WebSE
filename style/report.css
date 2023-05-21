@@ -7,6 +7,13 @@
     height: 230px;
 }
 
+#wrapper{
+    position:relative;
+    margin:0 auto;
+    background-color: rgb(244, 243, 243);
+}
+
+/* 시작 헤더 부분 */
 #start-container{
     position:relative;
     max-width: 100%;
@@ -25,15 +32,16 @@
     font-size:40px;
 }
 
-
+/* 리포트 content*/
 #report-container{
     animation:fadeInDown 1s;
 }
 
 #report-content{
-
-    background-color:#f3f3f3;
-    padding: 130px 90px 150px 90px
+    margin: 0 auto;
+    background-color: rgb(244, 243, 243);
+    max-width: 1440px;
+    padding: 0px 90px 10px 90px;
 }
 
 #report-container{
@@ -42,10 +50,75 @@
     position:relative;
 }
 
+.report-header{
+    position: relative;
+    background-color: transparent;
+    padding: 150px 0px 10px 0px;
+}
 .report-header>h2{
     font-size:2.47rem;
     line-height:1.2;
 
+}
+
+/* conent 내용 */
+.view-content{
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+figure{
+    display:block;
+}
+#reportImg{
+    padding-bottom:50px;
+    text-align: center;
+}
+
+.content-subtitle{
+    color:var(--maincolor);
+    font-weight:bolder;
+    font-size:36px;
+}
+.middle-font-size{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.view-content p{
+    padding: 10px 0px;
+}
+
+/* download*/
+.download_nav{
+    display: flex;
+    padding: 20px 0px;
+    border-top: 1px solid rgba(15, 15, 15, 0.2);
+}
+
+.download_nav p{
+   margin-right: 20px;
+}
+
+.report_file{
+    margin-right: 5px;
+    height: 30px;
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--maincolor);
+    color: white;
+}
+.report_file div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.report_file img{
+    height: 25px;
+    width: 25px;
 }
 
 .date{
@@ -54,27 +127,6 @@
     bottom:0;
     padding:52px 0 32px;
     border-bottom:1px solid rgba(15,15,15,0.15);
-}
-
-.view-content{
-    padding:80px 0;
-    line-height:1.77;
-    max-width:1073px;
-    margin:0 auto;
-}
-
-#reportImg{
-    padding:10px 0;
-}
-#reportImg.first{
-    max-width:1440px;
-}
-
-#reportImg.first>img{
-    display: block;
-    margin: 0 auto 3em;
-    height: auto;
-    max-width: 100%;
 }
 
 #downloadReport{
@@ -86,14 +138,3 @@
     position:relative;
     width:200px;
 }
-figure{
-    display:block;
-}
-
-.content-subtitle{
-    padding:10px 0;
-    color:var(--maincolor);
-    font-weight:bolder;
-    font-size:42px;
-}
-
