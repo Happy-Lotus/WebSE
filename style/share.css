@@ -141,13 +141,13 @@ footer{
 footer .container{
     margin:0 auto;
     max-width: 100%;
-    height: 80px;
-    padding: 39px 90px 0px 90px;
+    height: 70px;
+    padding: 34px 90px 0px 90px;
 }
 
 footer .top{
     position: fixed;
-    bottom: 2%;
+    bottom: 1%;
     right: 1%;
     cursor: pointer;
     background-color: black;
