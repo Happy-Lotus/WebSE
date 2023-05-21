@@ -103,7 +103,7 @@ figure{
 }
 
 .report_file{
-    margin-right: 5px;
+    margin-right: 3px;
     height: 30px;
     width: 130px;
     border: none;
@@ -117,6 +117,26 @@ figure{
     align-items: center;
 }
 .report_file img{
+    height: 25px;
+    width: 25px;
+}
+
+.report_file:hover{
+    cursor: pointer;
+    margin-right: 5px;
+    height: 30px;
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--maincolor);
+    color: white; 
+}
+.report_file div:hover{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.report_file img:hover{
     height: 25px;
     width: 25px;
 }
