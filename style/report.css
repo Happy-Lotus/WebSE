@@ -103,12 +103,12 @@ figure{
 }
 
 .report_file{
-    margin-right: 3px;
+    margin-right: 5px;
     height: 30px;
     width: 130px;
     border: none;
     border-radius: 5px;
-    background-color: var(--maincolor);
+    background-color: black;
     color: white;
 }
 .report_file div{
