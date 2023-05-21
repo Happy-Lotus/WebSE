@@ -1,0 +1,160 @@
+[
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Active Scanning",
+        "subtechniques":[
+            {
+                "subtechnique":"Scanning IP Block"
+            },
+            {
+                "subtechnique":"Vulnerability Scanning"
+            },
+            {
+                "subtechnique":"Wordlist Scanning"
+            }
+        ]
+    },
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Gather Victim Host Information",
+        "subtechniques":[
+            {
+                "subtechnique":"Hardware"
+            },
+            {
+                "subtechnique":"Software"
+            },
+            {
+                "subtechnique":"Firmware"
+            },
+            {
+                "subtechnique":"Client Configurations"
+            }
+        ]
+    },
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Gather Victim Identity Information",
+        "subtechniques":[
+            {
+                "subtechnique":"Credentials"
+            },
+            {
+                "subtechnique":"Email Address"
+            },
+            {
+                "subtechnique":"Employee Names"
+            }
+        ]
+    },
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Gather Victim Network Information",
+        "subtechniques":[
+            {
+                "subtechnique":"Domain Properties"
+            },
+            {
+                "subtechnique":"DNS"
+            },
+            {
+                "subtechnique":"Network Trust Dependencies"
+            },
+            {
+                "subtechnique":"Network Topology"
+            },
+            {
+                "subtechnique":"IP Addresses"
+            },
+            {
+                "subtechnique":"Network Security Appliances"
+            }
+        ]
+    },
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Gather Victim Org Information",
+        "subtechniques":[
+            {
+                "subtechnique":"Determine Physical Locations"
+            },
+            {
+                "subtechnique":"Business Relationships"
+            },
+            {
+                "subtechnique":"Identify Business Tempo"
+            },
+            {
+                "subtechnique":"Identify Roles"
+            }
+        ]
+    },
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Phishing for Information",
+        "subtechniques":[
+            {
+                "subtechnique":"Spearphishing Service"
+            },
+            {
+                "subtechnique":"Spearphishing Attachment"
+            },
+            {
+                "subtechnique":"Spearphishing Link"
+            }
+        ]
+    },    
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Search Closed Sources",
+        "subtechniques":[
+            {
+                "subtechnique":"Threat Intel Vendors"
+            },
+            {
+                "subtechnique":"Purchase Technical Data"
+            }
+        ]
+    },
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Search Open Technical Databases",
+        "subtechniques":[
+            {
+                "subtechnique":"DNS/Passive DNS"
+            },
+            {
+                "subtechnique":"WHOIS"
+            },
+            {
+                "subtechnique":"Digital Certificates"
+            },
+            {
+                "subtechnique":"CDNs"
+            },
+            {
+                "subtechnique":"Scan Databases"
+            }
+        ]
+    },
+    {
+        "tatic" : "Reconnaissance",
+        "technique" : "Search Open Websites/Domains",
+        "subtechniques":[
+            {
+                "subtechnique":"Social Media"
+            },
+            {
+                "subtechnique":"Search Engines"
+            },
+            {
+                "subtechnique":"Code Repositories"
+            }
+        ]
+    },
+    {
+        "tatic" : "Reconnaissance",
+        "technique":"Search Victim-Owned Websites",
+        "subtechniques":[]
+    }
+]
