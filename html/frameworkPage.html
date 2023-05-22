@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>framework</title>
     <link rel="stylesheet" href="../style/frame.css">
     <link rel="stylesheet" href="../style/share.css">
-    <link rel="stylesheet" href="../style/framework.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -53,6 +55,11 @@
                 </div>
             </div>           
         </div>
+        <div id="situation">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div id="matrix-container">
             <div id="matrix-term"></div>
             <div id="matrix-header">
@@ -60,6 +67,1614 @@
                 <p class="title">MITRE ATT&CK Matrix</p>
                 <hr>
                 <p style="font-weight:bold; font-size:1.0em;">공격 시나리오에 따른 공격 기법을 MITRE ATT&CK Matrix와 연결합니다.</p>
+            </div>
+            <div id="matrix-main">
+
+        <div class="matrix-container" style=" margin:0 auto;width:1440px;">
+        <table id="demo">
+            <thead>
+                <tr>
+                    <td>
+                        <div class="tactic-box">
+                            <a class="tatic_name" href="/tactics/TA0043">Reconnaissance</a>
+                            <p class="tatic_count">10&nbsp;techniques</p>
+                        </div>
+                    </td>
+                    <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Resource Development</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Initial Access</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Execution</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Persistence</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Privilege Escalation</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Defense Evasion</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Credential Access</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Discovery</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Lateral Movement</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Collection</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Command and Control</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Exfiltration</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="tactic-box">
+                        <a class="tatic_name" href="/tactics/TA0043">Impact</a>
+                        <p class="tatic_count">10&nbsp;techniques</p>
+                    </div>
+                </td>
+            </tr>
+
+                <!--<td class="tactic_name"><a href="/tactics/TA0043">Reconnaissance</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0042">Resource Development</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0001">Initial Access</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0002">Execution</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0003">Persistence</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0004">Privilege Escalation</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0005">Defense Evasion</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0006">Credential Access</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0007">Discovery</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0008">Lateral Movement</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0009">Collection</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0011">Command and Control</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0010">Exfiltration</a></td>
+                <td class="tactic_name"><a href="/tactics/TA0040">Impact</a></td>
+            </tr>
+            <tr>
+                <td class="tactic_count">10&nbsp;techniques</td>
+                <td class="tactic_count">8&nbsp;techniques</td>
+                <td class="tactic_count">9&nbsp;techniques</td>
+                <td class="tactic_count">14&nbsp;techniques</td>
+                <td class="tactic_count">19&nbsp;techniques</td>
+                <td class="tactic_count">13&nbsp;techniques</td>
+                <td class="tactic_count">42&nbsp;techniques</td>
+                <td class="tactic_count">17&nbsp;techniques</td>
+                <td class="tactic_count">31&nbsp;techniques</td>
+                <td class="tactic_count">9&nbsp;techniques</td>
+                <td class="tactic_count">17&nbsp;techniques</td>
+                <td class="tactic_count">16&nbsp;techniques</td>
+                <td class="tactic_count">9&nbsp;techniques</td>
+                <td class="tactic_count">13&nbsp;techniques</td>
+            </tr>-->
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Active Scanning&nbsp;<sub>(3)</sub></a></div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                    <a>Gather Victim Host Information&nbsp;<sub>(4)</sub></a>         </div>
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Gather Victim Identity Information&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Gather Victim Network Information&nbsp;<sub>(4)</sub></a> </div>       
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Gather Victim Org Information&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Phishing for Information&nbsp;<sub>(4)</sub></a>        </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Search Closed Soruces&nbsp;<sub>(4)</sub></a>        </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Search Open Technical Databases&nbsp;<sub>(4)</sub></a>     </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Search Open Websites/Domains&nbsp;<sub>(4)</sub></a>        </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Search Victim-Owned Websites&nbsp;<sub>(4)</sub></a>        </div> 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Acquire Access&nbsp;<sub>(3)</sub></a></div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                    <a>Acquire Infrastructure&nbsp;<sub>(4)</sub></a>        </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Compromise Accounts&nbsp;<sub>(4)</sub></a>        </div>
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Compromise Infrastructure&nbsp;<sub>(4)</sub></a>        </div>
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Develop Capabilities&nbsp;<sub>(4)</sub></a>        </div>
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Establish Accounts&nbsp;<sub>(4)</sub></a>        </div>
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Obtain Capabilities&nbsp;<sub>(4)</sub></a>        </div>
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Stage Capabilities&nbsp;<sub>(4)</sub></a>        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Drive-by Compromise&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Exploit Public-Facing Application&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>External Remote Services&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Hardwaare Additions&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Phishing&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Replication Through Removable Media&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Supply Chain Compromise&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Trusted Relationship&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Valid Accounts&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Cloud Administration Command&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Command and Scripting Interpreter&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Container Administration Command&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Deploy Container&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exploitation for Client Execution&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Inter-Process Communication&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Native API&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Scheduled Task/Job&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Serverless Execution&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Shared Modules&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Software Deployment Tools&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Services&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>User Execution&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Windows Management Instrumentation&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Account Manipulation&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>BITS Jobs&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Boot or Logon Autostart Execution&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Boot or Logon Initialization Scripts&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Browser Extensions&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Compromise Client Software Binary&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Create Account&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Create or Modify System Process&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Event Triggered Execution&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>External Remote Services&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Hijack Execution Flow&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Implant Internal Image&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Modify Authentication Process&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Office Application Startup&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Pre-OS Boot&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Scheduled Task/Job&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Server Software Component&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Traffic Signaling&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Valid Accounts&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Abuse Elevation Control Mechanism&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Access Token Manipulation&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Boot or Logon Autostart Execution&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Boot or Logon Initialization Scripts&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Create of Modify System Process&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Domain Policy Modification&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Escape to Host&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Event Triggered Execution&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exploitation for Privilege Escalation&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Hijack Execution Flow&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Process Injection&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Scheduled Task/Job&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Valid Accounts&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Abuse Elevation Control Mechanism&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Access Token Manipulation&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>BITS Jobs&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Build Image on Host&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Debugger Evasion&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Deobfuscate/Decode Files or Information&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Deploy Container&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Direct Volume Access&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Domain Policy Modification&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Executopm Guardrails&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exploitation for Defense Evasion&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>File and Directory Permissions Modification&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Hide Artifacts&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Hijack Execution Flow&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Inpair Defenses&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Indicator Removal&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Indirect Command Execution&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Masquerading&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Modify Authentication Process&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Modify Colud Compute Infrastructure&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Modify Registry&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Modify System Image&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Network Boundary Bridging&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Obfuscated Files or Information&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Plist File Modification&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Pre-OS Boot&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Process Injection&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Reflective Code Loading&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Rogue Domain Controller&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Rootkit&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Subvert Trust Controls&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Binary Proxy Execution&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Script Proxy Execution&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Template Injection&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Traffic Signaling&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Trusted Developer Utilities Proxy Execution&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Unused/Unsupported Colud Regions&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Use Alternate Authentication Material&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Vakud Accounts&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Virtualization.Sandbox Evasion&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Weaken Encryption&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>XSL Script Processing&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Adversary-in-the-Middle&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Brute Force&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Credentials from Password Stores&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exploitation for Credential Access&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Forced Authentication&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Forge Web Credentials&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Input Capture&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Modify Authentication Process&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Multi-Factor Authentication Interception&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Multi-Factor Authentication Request Generation&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Network Sniffing&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>OS Credential Dumping&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Steal Application Access Token&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Steal or Forge Authentication Certificates&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Steal or Forge Kerberos Tickets&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Steal Web Session Cookie&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Unsecured Credentials&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Account Discovery&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Application Window Discovery&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Browser Information Discovery&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Cloud Infrastructure Discovery&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Colud Service Dashboard&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Cloud Service Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Cloud Storage Object Discovery&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Container and Resource Discovery&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Debugger EvasionValid Accounts&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Device Driver Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Domain Trust Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>File and Directory Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Group Policy Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Network Service Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Network Service Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Network Share Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Network Sniffing&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Password Policy Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Permission Groups Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Process Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Query Registry&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Remote System Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Software Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Information Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Location Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Network Configuration Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Network Connections Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Owner/User Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Service Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Time Discovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Virtualization/Sandbox Evasion&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Exploitation of Remote Services&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Internal Spearphishing&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Lateral Tool Transfer&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Remote Service Session Hijacking&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Remote Services&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Replication Through Removable Media&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Software Deployment Tools&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Taint Shared Content&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Use Alternate Authentication Material&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Adversary-in-the-Middle&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Archive Collected Data&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Audio Capture&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Automated Collection&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Browser Session Hijacking&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Clipboard Data&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data from Cloud Storage&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data from Configuration Repository&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data from Local System&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data from Network Shared Drive&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data from Removable Media&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data Staged&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Email Collection&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Input Capture&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Screen Capture&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Video Capture&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Application Layer Protocol&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Communication Through Removable Media&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data Encoding&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data Obfuscation&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Dynamic Resolution&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Encrypted Channel&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Fallback Channels&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Ingress Tool Transfer&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Multi-Stage Channels&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Non-Application Layer Protocol&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Non-Standard Port&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Protocol Tunneling&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Proxy&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Remote Access Software&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Traffic Signaling&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Web Service&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Automated Exfiltration&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Data Transfer Size Limits&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exfiltration Over Alternative Protocol&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exfiltration Over C2 Channel&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exfiltration Over Other Network Medium&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exfiltration Over Physical Medium&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Exfiltration Over Web Service&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Scheduled Transfer&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Transfer Data to Colud Account&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="tatic">
+                    <table class="techniques-table">
+                        <tbody>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                        <a>Account Access Removal&nbsp;<sub>(3)</sub></a>
+                                    </div>
+                                </td>    
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">                    
+                                        <a>Data Destruction&nbsp;<sub>(4)</sub></a>
+                                    </div>         
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data Encrypted for Impact&nbsp;<sub>(4)</sub></a>
+                                    </div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Data Manipulation&nbsp;<sub>(4)</sub></a></div>        
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Defacement&nbsp;<sub>(4)</sub></a>  </div>      
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Disk Wipe&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Endpoiont Denial of Service&nbsp;<sub>(4)</sub></a>    </div>    
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Firmware Corruption&nbsp;<sub>(4)</sub></a>       </div> 
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Inhibit System Recovery&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Network Denial of Service&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Resource Hijacking&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>Service Stop&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                            <tr class="technique-row">
+                                <td class="technique">
+                                    <div class="technique-cell">
+                                    <a>System Shutdown/Reboot&nbsp;<sub>(4)</sub></a>   </div>     
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+   </table> 
+</div>  
             </div>
         </div>
 
