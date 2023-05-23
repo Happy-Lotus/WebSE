@@ -14,8 +14,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+  
   </head>
-  <body>
+  <body onload="buttonClick();buttonDown();">
     <div id="wrapper">
       <div id="opacityScreen" class="dimmend"></div>
       <header id="act_header">
@@ -75,6 +76,33 @@
           </p>
         </div>
         <div id="matrix-main">
+          <div id="detail-content">
+            <div id="technique-container">
+           <button id="popcloseBTN" onclick="buttonDown();">X</button>
+           <div id="title">
+             <h1>Sub-technique</h1>
+             <h5>Gather Victim Org Information</h5>
+           </div>
+           <div id="subtech-table">
+             <table class ="tg">
+             <thead>
+               <tr>
+                 <th class="tg-baqh">Name</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr><td class="tg-baqh">Additional Cloud Credentials</td></tr>
+               <tr> <td class="tg-baqh">Additional Email Delegate Permissions</td></tr>
+               <tr> <td class="tg-baqh">Additional Cloud Roles</td></tr>
+               <tr><td class="tg-baqh">SSH Authorized Keys</td></tr>
+               <tr> <td class="tg-baqh">Device Registration</td></tr>
+             </tbody>
+             
+           </table>
+           </div>
+           
+         </div>
+         </div>
           <div class="matrix-container">
             <table id="matrix-table">
               <thead>
@@ -82,148 +110,150 @@
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0043/"
                         >Reconnaissance</a
                       >
-                      <p class="tatic-count">10&nbsp;techniques</p>
+                      <p class="tactic-count">10&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0042/"
+                        style="text-align:center;"
                         >Resource Development</a
                       >
-                      <p class="tatic-count">8&nbsp;techniques</p>
+                      <p class="tactic-count">8&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0001/"
                         >Initial Access</a
                       >
-                      <p class="tatic-count">9&nbsp;techniques</p>
+                      <p class="tactic-count">9&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0002/"
                         >Execution</a
                       >
-                      <p class="tatic-count">14&nbsp;techniques</p>
+                      <p class="tactic-count">14&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0002/"
                         >Persistence</a
                       >
-                      <p class="tatic-count">19&nbsp;techniques</p>
+                      <p class="tactic-count">19&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0004/"
                         >Privilege Escalation</a
                       >
-                      <p class="tatic-count">13&nbsp;techniques</p>
+                      <p class="tactic-count">13&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0005/"
                         >Defense Evasion</a
                       >
-                      <p class="tatic-count">42&nbsp;techniques</p>
+                      <p class="tactic-count">42&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0006/"
                         >Credential Access</a
                       >
-                      <p class="tatic-count">17&nbsp;techniques</p>
+                      <p class="tactic-count">17&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0007/"
                         >Discovery</a
                       >
-                      <p class="tatic-count">31&nbsp;techniques</p>
+                      <p class="tactic-count">31&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0008/"
                         >Lateral Movement</a
                       >
-                      <p class="tatic-count">9&nbsp;techniques</p>
+                      <p class="tactic-count">9&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0009/"
                         >Collection</a
                       >
-                      <p class="tatic-count">17&nbsp;techniques</p>
+                      <p class="tactic-count">17&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0011/"
+                        style="text-align:center;"
                         >Command and Control</a
                       >
-                      <p class="tatic-count">16&nbsp;techniques</p>
+                      <p class="tactic-count">16&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0010/"
                         >Exfiltration</a
                       >
-                      <p class="tatic-count">9&nbsp;techniques</p>
+                      <p class="tactic-count">9&nbsp;techniques</p>
                     </div>
                   </td>
                   <td>
                     <div class="tactic-box">
                       <a
-                        class="tatic-name"
+                        class="tactic-name"
                         href="https://attack.mitre.org/tactics/TA0040/"
                         >Impact</a
                       >
-                      <p class="tatic-count">13&nbsp;techniques</p>
+                      <p class="tactic-count">13&nbsp;techniques</p>
                     </div>
                   </td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -275,13 +305,15 @@
                         <tr class="technique-row">
                           <td class="technique">
                             <div class="technique-cell">
-                              <a
-                                href="https://attack.mitre.org/techniques/T1591/"
-                                >Gather Victim Org Information&nbsp;<sub
-                                  >(4)</sub
-                                ></a
-                              >
+                              <a href="https://attack.mitre.org/techniques/T1591/">
+                                Gather Victim Org Information&nbsp;
+                                <sub onclick="buttonClick();">(4)</sub 
+                                ></a>
                             </div>
+                            
+                          </td>
+                          <td class="popup" onclick="buttonClick();">
+                            <div class="mark">=</div>
                           </td>
                         </tr>
                         <tr class="technique-row">
@@ -341,7 +373,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -429,7 +461,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -525,7 +557,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -675,7 +707,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -867,7 +899,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -999,7 +1031,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -1382,7 +1414,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -1542,7 +1574,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -1817,7 +1849,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -1903,7 +1935,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -2052,7 +2084,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -2190,7 +2222,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -2280,7 +2312,7 @@
                       </tbody>
                     </table>
                   </td>
-                  <td class="tatic">
+                  <td class="tactic">
                     <table class="techniques-table">
                       <tbody>
                         <tr class="technique-row">
@@ -2403,9 +2435,10 @@
           </div>
         </div>
       </div>
-      <div id="content-term" class="third"></div>
-      <div id="content-term" class="third"></div>
-      <div id="content-term" class="third"></div>
+      <div id="matrix-describe">
+        
+      </div>
+
       <div id="content-term" class="third"></div>
       <div id="content-term" class="third"></div>
 
