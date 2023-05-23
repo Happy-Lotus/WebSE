@@ -1,161 +1,158 @@
 /*전체 페이지 기본 레이아웃*/
-*{margin:0;padding:0}
-#wrapper{
-    background-color: white;
-    position:relative;
-    margin:0 auto;
+* {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
 }
 
 /*page 배경 이미지*/
-#bg{
-    position:relative;
-    background-image:url("../photo/frameworkPage_bg.jpg");
-    background-size: cover;
-    object-fit:fill;
-    max-width: 100%;
-    height: 230px;
+#bg {
+  position: relative;
+  background-image: url("../photo/frameworkPage_bg.jpg");
+  background-size: cover;
+  object-fit: fill;
+  max-width: 100%;
+  height: 230px;
 }
 
-#start-container{
-    position:relative;
-    max-width: 100%;
-    margin:0 auto;   
+#start-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-#name-describe{
-    color:white;
-    position:relative;
-    z-index:1;
+#name-describe {
+  color: white;
+  position: relative;
+  z-index: 1;
 }
-#name-describe h1{
-    color: white;
-    padding: 75px;
-    text-align: center; 
-    font-size:40px;
+#name-describe h1 {
+  color: white;
+  padding: 75px;
+  text-align: center;
+  font-size: 40px;
 }
 
-#content-term.third{
-    margin:0 0 60px;
-    padding-top:127px;
+#content-term.third {
+  margin: 0 0 60px;
+  padding-top: 127px;
 }
 
 /* 프레임 워크 content*/
-#matrix-header{
-    margin: 0 auto;
-    max-width: 1440px;
-    height:144px;
-    padding:16px;
+#matrix-header {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 144px;
+  padding: 16px;
 }
 
-#matrix-term{
-    padding-top:150px;
+#matrix-term {
+  padding-top: 150px;
 }
 
-#matrix-header>p.title{
-    font-size:xxx-large;
-    font-weight:bold;
+#matrix-header > p.title {
+  font-size: xxx-large;
+  font-weight: bold;
 }
 
-#matrix-header > hr{
-    width:342px;
-    border:3px solid rgba(0, 4, 255, 0.897);
-    margin-bottom:10px;
+#matrix-header > hr {
+  width: 342px;
+  border: 3px solid rgba(0, 4, 255, 0.897);
+  margin-bottom: 10px;
 }
 
+/*matrix 관련 css*/
 
-#demo{
-    white-space:normal;
-    line-height:14px;
-}
-
-
-.tactic_count{
-    font-size:13px;
-    border-bottom:1px solid black;
-    padding-bottom:5px;
-    margin-bottom:5px;
+#matrix-table {
+  white-space: normal;
+  line-height: 14px;
 }
 
-#demo>.tactic:first-child{
-    padding:2px 5px 2px 2px;
-}
-.tatic{
-    vertical-align:top;
-}
-.techniques-table{
-    border-collapse:collapse;
-    width:200px;
-}
-.techniques-table>tr{
-    height:1px;
-}
-td.technique{
-    outline:1px solid #6a7279;
-    outline-offset:-1px;
+.tactic_count {
+  font-size: 13px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-
-.technique-cell{
-    
-    display:flex;
-   
-    font-size:13px;
-    line-height:14px;
-    align-items:center;
+#matrix-table > .tactic:first-child {
+  padding: 2px 5px 2px 2px;
 }
-.technique-cell>a{
-    display:block;
-    width:100%;
-    height:100%;
-    padding:7px 3px;
+.tatic {
+  vertical-align: top;
 }
-.technique-row{
-    text-align:center;
-    background-color:white;
+.techniques-table {
+  border-collapse: collapse;
+  width: 200px;
+}
+.techniques-table > tr {
+  height: 1px;
+}
+td.technique {
+  outline: 1px solid #6a7279;
+  outline-offset: -1px;
 }
 
-a{
-    align-content: center;
+.technique-cell {
+  display: flex;
+
+  font-size: 13px;
+  line-height: 14px;
+  align-items: center;
+}
+.technique-cell > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 7px 3px;
+}
+.technique-row {
+  text-align: center;
+  background-color: white;
 }
 
-.tactic_name{
-    font-weight : bold;
-    padding:2px 5px;
+a {
+  align-content: center;
 }
 
-.tactic_name,.tactic_count{
-    text-align:center;
-    font-size:16px;
+.tactic_name {
+  font-weight: bold;
+  padding: 2px 5px;
 }
 
-.matrix-container{
-    padding:16px;
+.tactic_name,
+.tactic_count {
+  text-align: center;
+  font-size: 16px;
 }
 
-
-.tactic-box{
-
-    background-color:var(--maincolor);
-    height:60px;
-    width:200px;
-    line-height:30px;
-    text-align:center;
+.tactic-box {
+  background-color: var(--maincolor);
+  height: 60px;
+  width: 200px;
+  line-height: 30px;
+  text-align: center;
 }
 
-.tatic_name{
-    color:white;
+.tatic-name {
+  color: white;
 }
 
-.tatic_count{
-    color:white;
+.tatic-count {
+  color: white;
 }
 
-.matrix-container{
-   
-    position:relative;
-    overflow-x:scroll;
+.matrix-container {
+  margin: 0 auto;
+  width: 1440px;
+  position: relative;
+  overflow-x: scroll;
 }
 .scroll {
-    -ms-overflow-style: none; /* 인터넷 익스플로러 */
-    scrollbar-width: none; /* 파이어폭스 */
-  }
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
