@@ -206,16 +206,20 @@ td.technique {
 
 .popup {
   cursor: pointer;
-  height: 100%;
+  padding: 7px 0px;
+  height: 33px;
+  width: 15px;
   background-color: rgb(23 146 247 / 48%);
 }
 
 .popup > .mark {
   text-align: center;
+  padding-bottom: 5px;
+  margin-top: 10px;
   transform: rotate(-90deg);
   color: white;
   height: 12px;
-  width: 12px;
+  width: 15px;
   font-size: 16px;
 }
 
