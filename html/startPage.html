@@ -1,126 +1,253 @@
-
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-   
+  <head>
     <title>startPage</title>
-    <link rel="icon" type="image/png" href="http://example.com/myicon.png">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/share.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/share.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-
-</head>
-<body onload="showImage();">
+  </head>
+  <body onload="showImage();">
     <div id="wrapper">
-        <div id="opacityScreen" class="dimmend"></div>
-        <header id="act_header">
-            <div class="header">
-                <div id="header-container">
-                    <div class="wrap">
-                        <a href = "startPage.html">
-                            <h1 style="font-size: 50px;">WebSE</h1>
-                        </a>
-                        <div class="nav">
-                            <div id="active-navicon" class="nav-icon">
-                                <div>
-                                    <div id="menu-box"></div>
-                                </div>
-                            </div>
-                            <div class="navbar">
-                                <div id="active-logoicon" class="logo-active">
-                                    <a href = "startPage.html">
-                                        <h1 style="font-size: 50px;color:white;">WebSE</h1>
-                                    </a>
-                                <div id="active-exiticon" class="exit-active">
-                                    <h1>X</h1>
-                                </div>
-                                </div>
-                                <div id="menu-container">
-                                    <ul id="menu" class="navi">
-                                        <li  class="nav-item"><a id="nav-item-first" href = "startPage.html">소개</a></li>
-                                        <li  class="nav-item"><a id="nav-item-second" href = "frameworkPage.html">프레임워크</a></li>
-                                        <li  class="nav-item"><a id="nav-item-third" href = "workPage.html">연구</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+      <div id="opacityScreen" class="dimmend"></div>
+      <header id="act_header">
+        <div class="header">
+          <div id="header-container">
+            <div class="wrap">
+              <a href="startPage.html">
+                <h1 style="font-size: 50px">WebSE</h1>
+              </a>
+              <div class="nav">
+                <div id="active-navicon" class="nav-icon">
+                  <div>
+                    <div id="menu-box"></div>
+                  </div>
+                </div>
+                <div class="navbar">
+                  <div id="active-logoicon" class="logo-active">
+                    <a href="startPage.html">
+                      <h1 style="font-size: 50px; color: white">WebSE</h1>
+                    </a>
+                    <div id="active-exiticon" class="exit-active">
+                      <h1>X</h1>
                     </div>
+                  </div>
+                  <div id="menu-container">
+                    <ul id="menu" class="navi">
+                      <li class="nav-item">
+                        <a id="nav-item-first" href="startPage.html">소개</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="nav-item-second" href="frameworkPage.html"
+                          >프레임워크</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a id="nav-item-third" href="workPage.html">연구</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-        </header>
-        <div id="bg">
-            <div id="start-container">
-                <div id="name-describe">
-                    <h6>WebSE</h6>
-                    <hr>
-                    <br>
-                    <br>
-                    <br>
-                    <p>WebSE는 고객들의 안전한 비즈니스 환경을 위해 웹서비스 보안 기술을 제공합니다.</p>
-                </div>           
-                <div id="scroll">
-                    <p>Scroll</p>
-                    <a id="scrollBTN" href = "#down">
-                        <img src="../photo/icon/arrow.png"alt="스크롤"></a>
-                </div>
-            </div>
+          </div>
         </div>
-        <div id="down">
+      </header>
+      <div id="bg">
+        <div id="start-container">
+          <div id="name-describe">
+            <h6>WebSE</h6>
+            <hr />
+            <br />
+            <br />
+            <br />
+            <p>
+              WebSE는 고객들의 안전한 비즈니스 환경을 위해 웹서비스 보안 기술을
+              제공합니다.
+            </p>
+          </div>
+          <div id="scroll">
+            <p>Scroll</p>
+            <a id="scrollBTN" href="#down">
+              <img src="../photo/icon/arrow.png" alt="스크롤"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div id="down">
         <div id="content-container" data-aos="fade-up">
-            <section id="introduce" class="section-img">
-                <div id="circlediv">
-                    <img class="circle-img" src="../photo/startPage/startPage_circle.png" 
-                    alt="원이미지">
-                    
-                    <div id="introduce" class="section-text">
-                        <p><span style=color:white>WebSe는 ‘Web Search’의</span>합성어로써,</p>
-                        <p><span style=color:white>웹사이트의 취약점을 분석</span>하고 <span style=color:blue;font-weight:bold>최적의 솔루션을 제공</span>합니다.</p> 
-                        <p><span style=color:white>최근의 웹 해킹 트렌드를</span> 설명하고 공격 시나리오를 통한 연구를 통해</p>
-                        <p><span style=color:white>다른 서비스와는 차별화</span>된 <span style=color:blue;font-weight:bold>전문적인 서비스</span>를 제공합니다.</p>
-                        <p><span style=color:white>WebSE가 개발한 프레임워크</span>를 통해 고객의 정보자산을 <span style=color:blue;font-weight:bold>안전하게 보호</span>합니다.</p>  
-                    </div>
-                    <div id="content-term" class="second"></div>
-                    <hr style="width:1000px;">   
-                </div>
+          <section id="introduce" class="section-img">
+            <div id="circlediv">
+              <img
+                class="circle-img"
+                src="../photo/startPage/startPage_circle.png"
+                alt="원이미지"
+              />
 
-                <div id="introduce" class="section-smallText">
-                    <ul class="subnavi">
-                        <li class="sublist">
-                            <span class="list-title">검사</span>
-                            <p>웹사이트의 취약점이 있는지 WebSE만의 도구를 이용하여 검사합니다.</p>
-                        </li>
-                        <li class="sublist">
-                            <span class="list-title">분석</span>
-                            <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
-                        </li>
-                        <li class="sublist">
-                            <span class="list-title">솔루션</span>
-                            <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
-                        </li>
-                    </ul>    
+              <div id="introduce" class="section-text">
+                <p>
+                  <span style="color: white">WebSe는 ‘Web Search’의</span
+                  >합성어로써,
+                </p>
+                <p>
+                  <span style="color: white">웹사이트의 취약점을 분석</span>하고
+                  <span style="color: blue; font-weight: bold"
+                    >최적의 솔루션을 제공</span
+                  >합니다.
+                </p>
+                <p>
+                  <span style="color: white">최근의 웹 해킹 트렌드를</span>
+                  설명하고 공격 시나리오를 통한 연구를 통해
+                </p>
+                <p>
+                  <span style="color: white">다른 서비스와는 차별화</span>된
+                  <span style="color: blue; font-weight: bold"
+                    >전문적인 서비스</span
+                  >를 제공합니다.
+                </p>
+                <p>
+                  <span style="color: white">WebSE가 개발한 프레임워크</span>를
+                  통해 고객의 정보자산을
+                  <span style="color: blue; font-weight: bold"
+                    >안전하게 보호</span
+                  >합니다.
+                </p>
+              </div>
+              <div id="content-term" class="second"></div>
+              <hr style="width: 1000px" />
+            </div>
+
+            <div id="introduce" class="section-smallText">
+              <ul class="subnavi">
+                <li class="sublist">
+                  <span class="list-title">검사</span>
+                  <p>
+                    웹사이트의 취약점이 있는지 WebSE만의 도구를 이용하여
+                    검사합니다.
+                  </p>
+                </li>
+                <li class="sublist">
+                  <span class="list-title">분석</span>
+                  <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+                </li>
+                <li class="sublist">
+                  <span class="list-title">솔루션</span>
+                  <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="framework-container" data-aos="fade-up" class="framework">
+        <section id="framework">
+          <p class="title">MITRE ATT&CK Matrix</p>
+          <hr />
+          <p style="font-weight: bold; font-size: 1em">안녕하세요 반갑습니다</p>
+
+          <div id="frameworkImg" style="margin-top: 60px">
+            <img src="../photo/startPage/matrix.png" />
+          </div>
+        </section>
+      </div>
+
+      <div id="report-container" data-aos="fade-up" class="report">
+        <section id="report">
+          <div class="report-title">
+            <p>
+              WebSE가 제공하는
+              <br />
+              보안 정보들을 확인하세요
+            </p>
+            <a href="workPage.html" class="workbutton">
+              <div id="button">더보기</div>
+            </a>
+          </div>
+          <ul class="report-list">
+            <li>
+              <a href="" class="report-link">
+                <p class="reportImg">
+                  <img src="../photo/work_content/fall2022.jpg" />
+                </p>
+                <div class="reportContent">
+                  <p class="content-title">Report 제목</p>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
                 </div>
-            </section>
+              </a>
+            </li>
+            <li>
+              <a href="" class="report-link">
+                <p class="reportImg">
+                  <img src="../photo/work_content/spring2022.jpg" />
+                </p>
+                <div class="reportContent">
+                  <p class="content-title">Report 제목</p>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="report-link">
+                <p class="reportImg">
+                  <img src="../photo/work_content/spring2023.jpg" />
+                </p>
+                <div class="reportContent">
+                  <p class="content-title">Report 제목</p>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" class="report-link">
+                <p class="reportImg">
+                  <img src="../photo/work_content/summer2022.jpg" />
+                </p>
+                <div class="reportContent">
+                  <p class="content-title">Report 제목</p>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div id="content-term" class="third"></div>
+
+      <footer>
+        <div class="top">
+          <a id="upBTN" href="#wrapper"
+            ><img src="../photo/icon/arrow.png" alt=""
+          /></a>
         </div>
+        <div class="container">
+          <h4>Web Security</h4>
         </div>
-        <div id="content-term" class="third"></div>
-        <div id="content-term" class="third"></div>
-        <div id="content-term" class="third"></div>
-        <div id="content-term" class="third"></div>
-        <div id="content-term" class="third"></div>
-        <div></div>
-        <footer>
-            <div class="top">
-                <a id="upBTN" href="#wrapper"><img src="../photo/icon/arrow.png"alt=""></a>
-            </div>
-            <div class="container">
-                <h4>Web Security</h4>
-            </div>
-        </footer>
+      </footer>
     </div>
-    <script src="../style/action.js"></script>  
-    <script src="http://code.jquery.com/jquery-3.4.1.js"></script> 
-</body>
+    <script src="../style/action.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+  </body>
 </html>

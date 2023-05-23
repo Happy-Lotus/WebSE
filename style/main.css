@@ -30,166 +30,253 @@ body {
 */
 
 /*전체 페이지 기본 레이아웃*/
-#wrapper{
-    background-color: white;
-    position:relative;
-    margin:0 auto;
-    overflow-x:hidden;
+#wrapper {
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
-
 
 /*start-container 관련 css*/
-#bg{
-    position:relative;
-    height:900px;
-    max-width:100%;
-    background-position:center;
-    background-size: cover;
-    object-fit:fill;
-    -webkit-transition:all 1.0s ease;
-    -moz-transition: opacity 1.0s ease;
-    -o-transition:opacity 1.0s ease;
-    -ms-transition:opacity 1.0s ease;
-    transition:all 1.0s ease;
+#bg {
+  position: relative;
+  height: 900px;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: fill;
+  -webkit-transition: all 1s ease;
+  -moz-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  transition: all 1s ease;
 }
 
-#start-container{
-    position:relative;
-    max-width:1440px;
-    margin:0 auto;
-    top:20%;
-    padding-left:30px;
-    padding-right:30px;    
+#start-container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  top: 20%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-#name-describe{
-    color:white;
-    position:relative;
-    z-index:1;
-    animation:fadeInDown 2s;
-
+#name-describe {
+  color: white;
+  position: relative;
+  z-index: 1;
+  animation: fadeInDown 2s;
 }
-#name-describe h6{
-    color: white;
-    padding: 75px 0px 0px 0px;
-    font-size:100px;
-}
-
-#name-describe p{
-    font-size:1.7em;
+#name-describe h6 {
+  color: white;
+  padding: 75px 0px 0px 0px;
+  font-size: 100px;
 }
 
-#name-describe hr{
-    width:200px;
-    height:2px;
-    background-color:white;
+#name-describe p {
+  font-size: 1.7em;
 }
 
-#scroll{
-    width:100px;
-    color:white;
-    position:relative;
-    left:50%;
-    margin-top:260px;
-    z-index:1;
+#name-describe hr {
+  width: 200px;
+  height: 2px;
+  background-color: white;
 }
 
-#scroll p{
-    text-align:center;
-    font-size:1.7em;
-    font-weight:bold;
+#scroll {
+  width: 100px;
+  color: white;
+  position: relative;
+  left: 50%;
+  margin-top: 260px;
+  z-index: 1;
 }
 
-#scroll img{
-    width:100px;
-    height:100px;
+#scroll p {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+#scroll img {
+  width: 100px;
+  height: 100px;
 }
 /*content-container 관련 css*/
 
-#content-container{
-    margin:0 auto;
-    max-width:1440px;
-    height:1000px;
-    display:flex;
-    align-items:center;
-    position:relative;
+#content-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-#content_title{
-    
-    margin-right:100px;
-    margin-left:100px;
+#content_title {
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
-#introduce.section-img{
-    display:flex;
-    width:100%;
-    flex-direction: column;
-    align-items:center;
-
+#introduce.section-img {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
-#introduce.section-text{
-    position:absolute;
-    top:30%;
-    left:10%;
+#introduce.section-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
 }
 
-#circlediv{
-    position:relative;
+#circlediv {
+  position: relative;
 }
 
-.circle-img{
-    position:relative;
+.circle-img {
+  position: relative;
 }
 
-#introduce.section-text>p{
-    font-size:1.5em;
+#introduce.section-text > p {
+  font-size: 1.5em;
 }
 
-#introduce.section-smallText{
-    position:relative;
-    float:left;
+#introduce.section-smallText {
+  position: relative;
+  float: left;
 }
 
-.list-title{
-    display:inline-block;
-    color:blue;
-    font-weight:bold;
-    font-size:1.5em;
-    margin-bottom:20px;
+.list-title {
+  display: inline-block;
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
-.sublist{
-    float:left;
-    width:330px;
-    text-align:center;
-    margin-left:10px;
-    margin-top:30px;
+.sublist {
+  float: left;
+  width: 330px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 30px;
 }
 
-.subnavi{
-    display:flex;
-    flex-wrap:nowrap;
-    align-items:center;
+.subnavi {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-#content-term.first{
-    margin:0 0 90px;
+#content-term.first {
+  margin: 0 0 90px;
 }
 
-#content-term.second{
-    margin:0 0 20px;   
+#content-term.second {
+  margin: 0 0 20px;
 }
 
-#content-term.third{
-    margin:0 0 60px;
-    padding-top:127px;
+#content-term.third {
+  margin: 0 0 60px;
+  padding-top: 127px;
 }
 
-/*#header-container{
-    margin:0 auto;
-    padding: 0px 90px 0px 90px;
-}
-*/
+/**/
+#framework-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 1000px;
 
+  position: relative;
+}
+
+#framework > p.title {
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+#framework > hr {
+  width: 342px;
+  border: 3px solid rgba(0, 4, 255, 0.897);
+  margin-bottom: 10px;
+}
+
+#frameworkImg {
+  text-align: center;
+}
+
+#report-container {
+  height: 600px;
+  position: relative;
+}
+
+#report {
+  max-width: 1440px;
+  margin: 213px auto 174px;
+  display: flex;
+  justify-content: space-between;
+}
+.report-list {
+  flex: 0 0 900px;
+}
+.report-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 159px;
+}
+
+.reportImg {
+  flex: 0 0 200px;
+  height: 129px;
+}
+
+.reportImg > img {
+  width: 100%;
+  height: 100%;
+}
+
+.report-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.workbutton > #button {
+  width: 200px;
+  height: 60px;
+  background: rgba(0, 4, 255, 0.897);
+  margin-top: 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+}
+
+.reportContent {
+  margin-left: 20px;
+  padding-right: 50px;
+}
+
+.report-list > li > a {
+  height: 150px;
+}
+.report-list > li:nth-child(1) {
+  border-top: 1px solid rgba(15, 15, 15, 0.2);
+}
+
+.report-list > li {
+  border-bottom: 1px solid rgba(15, 15, 15, 0.2);
+}
+
+.reportContent {
+  font-weight: lighter;
+}
+
+.content-title {
+  font-weight: bold;
+  font-size: 1em;
+  padding-bottom: 10px;
+}

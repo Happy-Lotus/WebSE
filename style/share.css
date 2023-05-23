@@ -1,294 +1,290 @@
-@keyframes fadeInDown{
-    0%{
-        opacity:0;
-        transform:translate3d(0,-3%,0);
-    }
-    to{
-        opacity:1;
-        transform:translateZ(0);
-    }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 
-*{margin:0;padding:0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;box-sizing: border-box;
-    font-family:"Outfit", "Pretendard", AppleGothic, sans-serif;
-    letter-spacing:-0.05em;
-    word-break: break-word;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Outfit", "Pretendard", AppleGothic, sans-serif;
+  letter-spacing: -0.05em;
+  word-break: break-word;
 }
 
-:root{
-    --maincolor : rgb(23, 146, 247);
-    --textColorlight : black;
-    --textColordark:white;
-    --textColorBold:rgba(0, 4, 255, 0.897);
-    --skyblue: skyblue;
-    --font-small:13px;
-    --font-medium:20px;
-    --font-large:36px;
-    --font-bigLarge:42px;
-
+:root {
+  --maincolor: rgb(23, 146, 247);
+  --textColorlight: black;
+  --textColordark: white;
+  --textColorBold: rgba(0, 4, 255, 0.897);
+  --skyblue: skyblue;
+  --boxColor: #f08692;
+  --font-small: 13px;
+  --font-medium: 20px;
+  --font-large: 36px;
+  --font-bigLarge: 42px;
 }
 
 /*header 관련 css*/
-header{
-    position:relative;
-    background-color: white;
-    height:90px;
+header {
+  position: relative;
+  background-color: white;
+  height: 90px;
 }
 
-#header-container{
-    margin:0 auto;
-    max-width:1440px;
-    padding-left:30px;
-    padding-right:30px
+#header-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.header{
-    width: 100%;
-    height:90px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    background-color: transparent;
-    transition: all 0.5s;
+.header {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  background-color: transparent;
+  transition: all 0.5s;
 }
 
 header .header.active {
-    background: rgba(0, 0, 0, 0.95);
-    height:90px;
+  background: rgba(0, 0, 0, 0.95);
+  height: 90px;
 }
 
-#act_header{
-    background-color: rgb(255, 255, 255);
-    top: 0;
+#act_header {
+  background-color: rgb(255, 255, 255);
+  top: 0;
 }
 
-.logo-active{
-    display:none;
+.logo-active {
+  display: none;
 }
 
 /*nav 관련 css*/
-nav{
-    float:right;
-    position:relative;
-
+nav {
+  float: right;
+  position: relative;
 }
 
-.navbar{
-    position:relative;
-    float:right;
+.navbar {
+  position: relative;
+  float: right;
 }
 
-
-.navi{
-    display: flex;
-    flex-wrap: nowrap;
+.navi {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.nav-item{
-    padding:30px 30px;
-    position:relative;
-    overflow:hidden;
-    font-size:106.25%;
+.nav-item {
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  font-size: 106.25%;
 }
 
-.nav-item_act{
-    font-size:106.25%;
+.nav-item_act {
+  font-size: 106.25%;
 }
-.nav-item_act > a{
-    color: white;
-}
-
-ul{
-    list-style:none;
+.nav-item_act > a {
+  color: white;
 }
 
-a{
-    font-size:1.2em;
-    font-weight:bold;
-    text-decoration-line:none;
-    color: rgb(0, 0, 0);
-}
-.navi a:hover{
-    color: rgb(23, 146, 247);
+ul {
+  list-style: none;
 }
 
-
-.wrap{
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content:space-between;
-    align-items:center;
+a {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration-line: none;
+  color: rgb(0, 0, 0);
+}
+.navi a:hover {
+  color: rgb(23, 146, 247);
 }
 
-.wrap h1.active{
-    color: white;
+.wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrap h1.active {
+  color: white;
 }
 
 /*footer 관련 css*/
-footer{
-    background-color: black;
-    color: white;
-    position : relative;
+footer {
+  background-color: black;
+  color: white;
+  position: relative;
 }
 
-footer .container{
-    margin:0 auto;
-    max-width: 100%;
-    height: 70px;
-    padding: 34px 90px 0px 90px;
+footer .container {
+  margin: 0 auto;
+  max-width: 100%;
+  height: 70px;
+  padding: 34px 90px 0px 90px;
 }
 
-footer .top{
-    position: fixed;
-    bottom: 1%;
-    right: 1%;
-    cursor: pointer;
-    background-color: black;
-    width: 75px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+footer .top {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  cursor: pointer;
+  background-color: black;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
-.top:hover{
-    width: 75px;
-    height: 75px;
-    background-color: rgb(23, 146, 247);
-}
-
-footer img{
-    width: 50px;
-    height: 50px;
-    transform: rotate(180deg);
+.top:hover {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(23, 146, 247);
 }
 
-footer h4{
-    text-align: center;
-    font-size: 35px;
+footer img {
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+}
+
+footer h4 {
+  text-align: center;
+  font-size: 35px;
 }
 
 /*화면 축소 시 css 변경*/
-@media (max-width:1080px)
-{
-    
-    .nav>.nav-icon>div::after{
+@media (max-width: 1080px) {
+  .nav > .nav-icon > div::after {
+    display: inline-block;
+    content: "";
+    background-image: url("../photo/icon/menubar_black.jpg");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 20%;
+    background-size: contain;
+    cursor: pointer;
+  }
 
-        display:inline-block;
-        content:"";
-        background-image:url("../photo/icon/menubar_black.jpg");
-        width:30px;
-        height:30px;
-        position:absolute;
-        top:0;
-        right:20%;
-        background-size:contain;
-        cursor:pointer;
-    }
+  .nav > .navbar > .logo-active {
+    display: flex;
+    content: "";
+    position: relative;
+    justify-content: space-between;
+  }
 
-    .nav>.navbar>.logo-active{
-        display:flex;
-        content:"";
-        position:relative;
-        justify-content:space-between;
+  .nav-icon > div {
+    position: relative;
+    height: 20px;
+  }
 
-    }
+  .nav-item > a {
+    color: white;
+  }
+  li.nav-item {
+    padding: 0;
+  }
 
-    .nav-icon>div{
-        position:relative;
-        height:20px;
-    }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: -200%;
+    top: 0;
+    padding: 110px 30px 40px;
+    z-index: 99;
+    background-color: black;
+    margin: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: all 1s ease;
+  }
+  .navi {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 
-    .nav-item>a{
-        color:white;
-    }
-    li.nav-item{
-        padding:0;
-    }
-    
+  .navi > li {
+    border-bottom: 1px solid;
+  }
 
-    .navbar{
-        position:fixed;
-        width:100%;
-        height:100%;
-        right:-200%;
-        top:0;
-        padding:110px 30px 40px;
-        z-index:99;
-        background-color:black;
-        margin:0;
-        -webkit-transition:all 1.0s ease;
-        -moz-transition: opacity 1.0s ease;
-        -o-transition:opacity 1.0s ease;
-        -ms-transition:opacity 1.0s ease;
-        transition:all 1.0s ease;
-    }
-    .navi{
-        display:flex;
-        flex-wrap:nowrap;
-        flex-direction:column;
-    }
+  .navbar.active {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    padding: 100px 30px 40px;
+    z-index: 2100;
+    background-color: black;
+    color: white;
+    -webkit-transition: all 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: all 1s ease;
+    margin: 0;
+  }
 
-    .navi>li{
-        border-bottom:1px solid;
-    }
+  #menu-container {
+    padding-bottom: 60px;
+  }
+  .exit-active {
+    cursor: pointer;
+  }
 
-    .navbar.active{
-        position:fixed;
-        width:50%;
-        height:100%;
-        right:0;
-        top:0;
-        padding:100px 30px 40px;
-        z-index:2100;
-        background-color:black;
-        color:white;
-        -webkit-transition:all 1.0s ease;
-        -moz-transition: opacity 1.0s ease;
-        -o-transition:opacity 1.0s ease;
-        -ms-transition:opacity 1.0s ease;
-        transition:all 1.0s ease;
-        margin:0;
-    }
+  .exit-active > h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: lighter;
+  }
 
+  .dimmend.active {
+    position: fixed;
+    z-index: 80;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    padding: 50px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: all 1s ease;
+  }
 
-    #menu-container{
-        padding-bottom:60px;
-    }
-    .exit-active{
-        cursor:pointer;
-    }
-
-    .exit-active>h1{
-        font-size:50px;
-        color:white;
-        font-weight:lighter;
-    }
-
-    .dimmend.active{
-        position:fixed;
-        z-index:80;
-        overflow:auto;
-        width:100%;
-        height:100%;
-        background-color:rgba(0,0,0,.7);
-        box-sizing:border-box;
-        padding:50px;
-        -webkit-transition:all 1.0s ease;
-        -moz-transition: opacity 1.0s ease;
-        -o-transition:opacity 1.0s ease;
-        -ms-transition:opacity 1.0s ease;
-        transition:all 1.0s ease;
-    }
-
-    #header-container{
-        line-height:90px;
-    }
+  #header-container {
+    line-height: 90px;
+  }
 }
