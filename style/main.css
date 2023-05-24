@@ -105,9 +105,9 @@ body {
 /*content-container 관련 css*/
 
 #content-container {
-  margin: 0 auto;
+  margin: 213px auto 174px;
   max-width: 1440px;
-  height: 1000px;
+  /*height: 1000px;*/
   display: flex;
   align-items: center;
   position: relative;
@@ -185,19 +185,18 @@ body {
 
 /**/
 #framework-container {
-  margin: 0 auto;
+  margin: 213px auto 174px;
   max-width: 1440px;
-  height: 1000px;
-
+  /*height: 1000px;*/
   position: relative;
 }
 
-#framework > p.title {
+#matrix-title > p.title {
   font-size: xxx-large;
   font-weight: bold;
 }
 
-#framework > hr {
+#matrix-title > hr {
   width: 342px;
   border: 3px solid rgba(0, 4, 255, 0.897);
   margin-bottom: 10px;
@@ -256,7 +255,7 @@ body {
 }
 
 .reportContent {
-  margin-left: 20px;
+  margin-left: 40px;
   padding-right: 50px;
 }
 
@@ -279,4 +278,91 @@ body {
   font-weight: bold;
   font-size: 1em;
   padding-bottom: 10px;
+}
+
+/*footer container*/
+.footer-container {
+  width: 1440px;
+  display: flex;
+  padding: 138px 120px 140px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  justify-content: space-between;
+}
+
+.footer-box-left {
+  flex: 1 0 50%;
+}
+.footer-box-right {
+  font-size: 16px;
+  flex: 1 0 50%;
+  text-align: right;
+}
+
+.footer-box-left > .logo {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#box-content {
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.utility {
+  color: white;
+  border-left: 1px solid gray;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-box-right > .github > a > img {
+  width: 50px;
+  height: 50px;
+  transform: rotate(0deg);
+}
+
+.footer-box-right > .github {
+  margin-bottom: 30px;
+}
+
+#matrix-describe {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto 0 0;
+}
+
+.slider {
+  border-color: #9abad9;
+  box-shadow: 2px 4px 20px 0px #607b93;
+  border-radius: 70px;
+  width: 70%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin: 88px auto 0 auto;
+}
+
+ul#imgslider {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+ul#imgslider li {
+  transition-delay: 1s;
+  padding: 30px;
+  margin: 0;
+}
+
+#step {
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 500;
 }
