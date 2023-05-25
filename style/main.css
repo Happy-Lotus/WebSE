@@ -335,34 +335,146 @@ body {
   margin: 0 auto 0 0;
 }
 
-.slider {
-  border-color: #9abad9;
-  box-shadow: 2px 4px 20px 0px #607b93;
-  border-radius: 70px;
-  width: 70%;
-  height: 600px;
-  overflow: hidden;
+/*framework slider 관련 css*/
+
+.slidewrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.framework-slide .slidelist {
   position: relative;
-  margin: 88px auto 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-ul#imgslider {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.framework-slide .slidelist > li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.framework-slide .slidelist > li > a {
+  position: relative;
+  display: block;
+}
+
+.framework-slide .slidelist > li > a img {
+  width: 100%;
+}
+
+.framework-slide .slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+}
+
+.slide-button > div {
+  display: none;
+}
+
+.framework-slide input[id*="step"] {
+  display: none;
+}
+
+.framework-slide .left {
+  left: 30px;
+  background: url("../photo/icon/ic_page.png") center center / 100% no-repeat;
+}
+
+.framework-slide .right {
+  right: 30px;
+  background: url("../photo/icon/ic_page.png") center center / 100% no-repeat;
+}
+
+.framework-slide
+  input[id="step1"]:checked
+  ~ .slidewrapper
+  .slide-button
+  > div:nth-child(1) {
+  display: block;
+}
+
+.framework-slide
+  input[id="step2"]:checked
+  ~ .slidewrapper
+  .slide-button
+  > div:nth-child(2) {
+  display: block;
+}
+
+.framework-slide
+  input[id="step3"]:checked
+  ~ .slidewrapper
+  .slide-button
+  > div:nth-child(3) {
+  display: block;
+}
+
+.framework-slide input[id="step1"]:checked ~ .slidewrapper .slidelist > li {
+  transform: translateX(0%);
+}
+
+.framework-slide input[id="step2"]:checked ~ .slidewrapper .slidelist > li {
+  transform: translateX(-100%);
+}
+
+.framework-slide input[id="step3"]:checked ~ .slidewrapper .slidelist > li {
+  transform: translateX(-201%);
+}
+
+.slidebar {
   text-align: center;
+  padding: 20px;
+}
+.slidebar > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.slidebar > li > label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #ccc;
+  margin: 20px 30px;
+  cursor: pointer;
+}
+.framework-slide
+  input[id="step1"]:checked
+  ~ .slidewrapper
+  .slidebar
+  > li:nth-child(1)
+  > label {
+  background: var(--maincolor);
 }
 
-ul#imgslider li {
-  transition-delay: 1s;
-  padding: 30px;
-  margin: 0;
+.framework-slide
+  input[id="step2"]:checked
+  ~ .slidewrapper
+  .slidebar
+  > li:nth-child(2)
+  > label {
+  background: var(--maincolor);
 }
 
-#step {
-  margin: 50px auto 0 auto;
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: 500;
+.framework-slide
+  input[id="step3"]:checked
+  ~ .slidewrapper
+  .slidebar
+  > li:nth-child(3)
+  > label {
+  background: var(--maincolor);
+}
+
+#slidedescribe {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
