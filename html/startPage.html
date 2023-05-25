@@ -152,7 +152,7 @@
       >
         <section id="framework">
           <div id="matrix-title">
-            <p class="title">MITRE ATT&CK Matrix</p>
+            <p class="title">MITRE ATT&CK Matrix </p>
             <hr />
             <p style="font-weight: bold; font-size: 1em">
               MITRE ATT&CK을 이용하여 공격자의 공격 과정을 시각적으로
@@ -172,24 +172,40 @@
               매핑하여 좀 더 시각적으로 공격 기법을 확인해볼 수 있습니다.
             </p>
           </div>
-          <button><</button>
-          <div class="slider">
-            <button><</button>
-            <ul id="imgslider">
-              <li>
-                <img
-                  src="../photo/startPage/matrix.png"
-                  style="width: 100%; height: 534px"
-                />
-              </li>
-              <li><img src="../photo/startPage/matrix.png" /></li>
-              <li><img src="../photo/startPage/matrix.png" /></li>
-            </ul>
-          </div>
-          <div id="step">1. step</div>
+          <div class="framework-slide">
+            <input type="radio" name="step" id="step1" checked>
+            <input type="radio" name="step" id="step2">
+            <input type="radio" name="step" id="step3">
+            <div class="slidewrapper">  
+              <ul class="slidebar">
+                <li><label for="step1" id="step1BTN"></label></li>
+                <li><label for="step2" id="step1BTN"></label></li>
+                <li><label for="step3" id="step1BTN"></label></li>
+              </ul>
+              <ul class="slidelist">
+                    <li class="slidecontent">
+                        <a>
+                            <img src="../photo/startPage/matrix.png">
+                        </a>
+                    </li>
+                    <li class="slidecontent">
+                        <a>
+                            <img src="../photo/work_content/spring2022.jpg">
+                        </a>
+                    </li>
+                    <li class="slidecontent">
+                        <a>
+                            <img src="../photo/work_content/summer2022.jpg">
+                        </a>
+                    </li class="slidecontent">
+                    </div>
+                  </ul>
+                <div id="slidedescribe">
+                </div>
+            </div>
+        </div>
         </section>
       </div>
-
       <div
         id="report-container"
         data-aos="fade-up"
@@ -311,5 +327,7 @@
     </div>
     <script src="../style/action.js"></script>
     <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+    </script>
   </body>
 </html>
