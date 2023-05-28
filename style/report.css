@@ -10,7 +10,7 @@
 #wrapper{
     position:relative;
     margin:0 auto;
-    background-color: rgb(244, 243, 243);
+    background-color: white;
 }
 
 /* 시작 헤더 부분 */
@@ -39,7 +39,7 @@
 
 #report-content{
     margin: 0 auto;
-    background-color: rgb(244, 243, 243);
+    background-color: white;
     max-width: 1440px;
     padding: 0px 90px 10px 90px;
 }
@@ -82,13 +82,41 @@ figure{
     font-weight:bolder;
     font-size:36px;
 }
-.middle-font-size{
+.view-content .middle-font-size{
     font-size: 20px;
     font-weight: bolder;
+    padding: 10px 0px;
 }
 
+#content_img{
+    padding: 15px 0px;
+    width: 800px;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 1080px){
+    #content_img{
+        width: 600px;
+        height: 100%;
+    }
+}
+
+#content_big{
+    padding-top: 20px;
+}
+#content_write{
+    padding-bottom: 20px;
+}
+#content_write h4{
+    padding-top: 10px;
+}
+#content_write li{
+    margin-left: 15px;
+    font-weight: bold;
+}
 .view-content p{
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 /* download*/
