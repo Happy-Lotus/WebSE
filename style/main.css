@@ -280,61 +280,6 @@ body {
   padding-bottom: 10px;
 }
 
-/*footer container*/
-.footer-container {
-  width: 1440px;
-  display: flex;
-  padding: 138px 120px 140px;
-  margin: 0 auto;
-  font-size: 1.2em;
-  justify-content: space-between;
-}
-
-.footer-box-left {
-  flex: 1 0 50%;
-}
-.footer-box-right {
-  font-size: 16px;
-  flex: 1 0 50%;
-  text-align: right;
-}
-
-.footer-box-left > .logo {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-#box-content {
-  padding-left: 10px;
-  margin-left: 10px;
-  margin-top: 30px;
-}
-
-.utility {
-  color: white;
-  border-left: 1px solid gray;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.footer-box-right > .github > a > img {
-  width: 50px;
-  height: 50px;
-  transform: rotate(0deg);
-}
-
-.footer-box-right > .github {
-  margin-bottom: 30px;
-}
-
-#matrix-describe {
-  padding-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  margin: 0 auto 0 0;
-}
-
 /*framework slider 관련 css*/
 
 .slidewrapper {
