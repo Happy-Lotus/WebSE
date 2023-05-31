@@ -1,0 +1,98 @@
+[
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Active Scanning",
+    "subtechnique": [
+      "Scanning IP Blocks",
+      "Vulnerability Scanning",
+      "Wordlist Scanning"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Host Information",
+    "subtechnique": [
+      "Hardware",
+      "Software",
+      "Firmware",
+      "Client Configurations"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Identity Information",
+    "subtechnique": ["Credentials", "Email Addresses", "Employee Names"]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Network Information",
+    "subtechnique": [
+      "Domain Properties",
+      "DNS",
+      "Network Trust Dependencies",
+      "Network Topology",
+      "IP Addresses",
+      "Network Security Appliances"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Org Information",
+    "subtechnique": []
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Org Information",
+    "subtechnique": [
+      "Device Registration",
+      "SSH Authorized Keys",
+      "Additional Cloud Roles",
+      "Additional Email Delegate Permissions",
+      "Additional Cloud Credentials"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Org Information",
+    "subtechnique": [
+      "Device Registration",
+      "SSH Authorized Keys",
+      "Additional Cloud Roles",
+      "Additional Email Delegate Permissions",
+      "Additional Cloud Credentials"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Org Information",
+    "subtechnique": [
+      "Device Registration",
+      "SSH Authorized Keys",
+      "Additional Cloud Roles",
+      "Additional Email Delegate Permissions",
+      "Additional Cloud Credentials"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Org Information",
+    "subtechnique": [
+      "Device Registration",
+      "SSH Authorized Keys",
+      "Additional Cloud Roles",
+      "Additional Email Delegate Permissions",
+      "Additional Cloud Credentials"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Gather Victim Org Information",
+    "subtechnique": [
+      "Device Registration",
+      "SSH Authorized Keys",
+      "Additional Cloud Roles",
+      "Additional Email Delegate Permissions",
+      "Additional Cloud Credentials"
+    ]
+  }
+]

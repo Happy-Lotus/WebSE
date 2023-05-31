@@ -7,6 +7,7 @@
     <title>framework</title>
     <link rel="stylesheet" href="../style/frame.css" />
     <link rel="stylesheet" href="../style/share.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -14,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   
   </head>
   <body onload="buttonClick();buttonDown();">
@@ -84,19 +86,10 @@
              <h5>Gather Victim Org Information</h5>
             </div>
             <div id="subtech-table">
-             <table class ="tg">
-              <thead>
+             <table id ="tg">
                 <tr>
                  <th class="tg-baqh">Name</th>
                 </tr>
-              </thead>
-              <tbody>
-               <tr><td class="tg-baqh">Additional Cloud Credentials</td></tr>
-               <tr> <td class="tg-baqh">Additional Email Delegate Permissions</td></tr>
-               <tr> <td class="tg-baqh">Additional Cloud Roles</td></tr>
-               <tr><td class="tg-baqh">SSH Authorized Keys</td></tr>
-               <tr> <td class="tg-baqh">Device Registration</td></tr>
-              </tbody>
               </table>
             </div>
           </div>
@@ -260,6 +253,9 @@
                                 href="https://attack.mitre.org/techniques/T1595/"
                                 >Active Scanning&nbsp;<sub>(3)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Active Scanning');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -272,6 +268,9 @@
                                   >(4)</sub
                                 ></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Gather Victim Host Information');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -284,6 +283,9 @@
                                   >(3)</sub
                                 ></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Gather Victim Identity Information');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -296,6 +298,9 @@
                                   >(6)</sub
                                 ></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Gather Victim Network Information');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -304,9 +309,9 @@
                             <div class="technique-cell">
                               <a href="https://attack.mitre.org/techniques/T1591/">
                                 Gather Victim Org Information&nbsp;
-                                <sub onclick="buttonClick();">(4)</sub>
+                                <sub>(4)</sub>
                               </a>
-                              <div class="popup" onclick="buttonClick();">
+                              <div class="popup" onclick="buttonClick();returnData('Reconnaissance')">
                                 <div class="mark">=</div>
                               </div>
                             </div>
@@ -318,6 +323,9 @@
                                 href="https://attack.mitre.org/techniques/T1598/"
                                 >Phishing for Information&nbsp;<sub>(3)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Reconnaissance');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -328,6 +336,9 @@
                                 href="https://attack.mitre.org/techniques/T1597/"
                                 >Search Closed Soruces&nbsp;<sub>(2)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Reconnaissance');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -340,6 +351,9 @@
                                   >(5)</sub
                                 ></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Reconnaissance');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -352,6 +366,9 @@
                                   >(3)</sub
                                 ></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Reconnaissance');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -388,6 +405,9 @@
                                 href="https://attack.mitre.org/techniques/T1583/"
                                 >Acquire Infrastructure&nbsp;<sub>(8)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Resource Development');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -398,6 +418,9 @@
                                 href="https://attack.mitre.org/techniques/T1586/"
                                 >Compromise Accounts&nbsp;<sub>(3)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Resource Development');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -410,6 +433,9 @@
                                   >(7)</sub
                                 ></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Resource Development');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -420,6 +446,9 @@
                                 href="https://attack.mitre.org/techniques/T1587/"
                                 >Develop Capabilities&nbsp;<sub>(4)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Resource Development');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -430,6 +459,9 @@
                                 href="https://attack.mitre.org/techniques/T1585/"
                                 >Establish Accounts&nbsp;<sub>(3)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Resource Development');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -440,6 +472,9 @@
                                 href="https://attack.mitre.org/techniques/T1588/"
                                 >Obtain Capabilities&nbsp;<sub>(6)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Resource Development');">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -450,6 +485,9 @@
                                 href="https://attack.mitre.org/techniques/T1608/"
                                 >Stage Capabilities&nbsp;<sub>(6)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();returnData('Resource Development')">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -506,6 +544,9 @@
                                 href="https://attack.mitre.org/techniques/T1566/"
                                 >Phishing&nbsp;<sub>(3)</sub></a
                               >
+                              <div class="popup" onclick="buttonClick();">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -525,7 +566,9 @@
                               <a
                                 href="https://attack.mitre.org/techniques/T1195/"
                                 >Supply Chain Compromise&nbsp;<sub>(3)</sub></a
-                              >
+                              ><div class="popup" onclick="buttonClick();">
+                                <div class="mark">=</div>
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -2481,6 +2524,7 @@
             <div class="company-info">
               <p>경기도 수원시 영통구 광교산로 154-42</p>
               <p>T.031-249-9114</p>
+              <p id="test"></p>
             </div>
             <div id="box-content">
               <a class="utility">개인정보처리방침</a>
@@ -2491,5 +2535,55 @@
       </footer>
     </div>
   <script src="../style/action.js"></script>
+  <script type="text/javascript">
+    var data;
+    var returnData = function(techName){
+      data=techName;
+      sendRequest();
+    }
+
+    function sendRequest(){
+      let xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (xhttp.readyState == 4 && xhttp.status == 200 && data!=undefined) {
+          jsonfunc(this.responseText);
+        }
+      };
+
+      xhttp.open("GET", "tableInfo.json", true);
+      xhttp.send();
+    }
+
+      function jsonfunc(jsonText) {
+
+        const tb_delete = document.getElementById("tg");
+        const rowcnt = tb_delete.rows.length;
+        console.log(rowcnt);
+      
+        if(rowcnt>1){
+          for (i = rowcnt - 1; i > 0; i--) {
+            tb_delete.deleteRow(i);
+          }
+        }
+        
+        let json = JSON.parse(jsonText);
+        let table = document.getElementById("tg");
+        console.log(typeof(data));
+      
+        for(i=0;i<json.length;i++){
+          if(json[i].technique == data){
+            for(j=0;j<json[i].subtechnique.length;j++){
+              let tr = document.createElement("tr");
+              let td1 = document.createElement("td");
+              td1.classList.add("tg-baqh");
+              td1.appendChild(document.createTextNode(json[i].subtechnique[j] + ""));
+              tr.appendChild(td1);
+              table.appendChild(tr);
+            }
+          }
+        }
+      }
+      
+  </script>
   </body>
 </html>
