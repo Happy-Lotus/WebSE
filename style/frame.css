@@ -237,7 +237,7 @@ td.technique {
   margin-top: 50px;
 }
 
-.tg {
+#tg {
   border-collapse: separate;
   border-color: #9abad9;
   border-spacing: 0;
@@ -249,7 +249,7 @@ th.tg-baqh {
   border-bottom-width: 1px solid;
 }
 
-.tg td {
+#tg td {
   background-color: #fbfbfb;
   border-color: #9abad9;
   border-style: solid;
@@ -263,7 +263,7 @@ th.tg-baqh {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.tg th {
+#tg th {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-color: #9abad9;
@@ -277,7 +277,7 @@ th.tg-baqh {
   word-break: normal;
   background-color: rgb(199 220 237);
 }
-.tg .tg-baqh {
+#tg .tg-baqh {
   text-align: center;
   vertical-align: top;
 }
