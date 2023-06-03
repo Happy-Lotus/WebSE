@@ -346,3 +346,41 @@ th.tg-baqh {
   color: white;
   font-size: 1.5em;
 }
+
+#scenario-button {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 16px;
+}
+
+#scenario {
+  width: 200px;
+  height: 60px;
+
+  border: 1px solid rgba(15, 15, 15, 0.2);
+  border-radius: 40px;
+  background-color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#reset > button {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 0;
+  border: 1px solid rgba(15, 15, 15, 0.2);
+  border-radius: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#reset > button img {
+  width: 30px;
+  height: 30px;
+}
+
+#matrix-main {
+  margin: 0 auto;
+  width: 1440px;
+}
