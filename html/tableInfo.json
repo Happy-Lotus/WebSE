@@ -38,61 +38,130 @@
   {
     "tatic": "Reconnaissance",
     "technique": "Gather Victim Org Information",
+    "subtechnique": [
+      "Determine Physical Locations",
+      "Business Relationships",
+      "Identify Business Tempo",
+      "Identify Roles"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Phishing for Information",
+    "subtechnique": [
+      "Spearphishing Service",
+      "Spearphishing Attachment",
+      "Spearphishing Link"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Search Closed Sources",
+    "subtechnique": ["Threat Intel Vendors", "Purchase Technical Data"]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Search Open Technical",
+    "subtechnique": [
+      "DNS/Passive DNS",
+      "WHOIS",
+      "Digital Certificates",
+      "CDNs",
+      "Scan Databases"
+    ]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Search Open Websites/Domains",
+    "subtechnique": ["Social Media", "Search Engines", "Code Repositories"]
+  },
+  {
+    "tatic": "Reconnaissance",
+    "technique": "Search Victim-Owned Websites",
     "subtechnique": []
   },
   {
-    "tatic": "Reconnaissance",
-    "technique": "Gather Victim Org Information",
+    "tatic": "Resource Development",
+    "technique": "Acquire Access",
+    "subtechnique": []
+  },
+  {
+    "tatic": "Resource Development",
+    "technique": "Acquire Infrastructure",
     "subtechnique": [
-      "Device Registration",
-      "SSH Authorized Keys",
-      "Additional Cloud Roles",
-      "Additional Email Delegate Permissions",
-      "Additional Cloud Credentials"
+      "Domains",
+      "DNS Server",
+      "Virtual Private Server",
+      "Server",
+      "Botnet",
+      "Web Services",
+      "Serverless",
+      "Malvertising"
     ]
   },
   {
-    "tatic": "Reconnaissance",
-    "technique": "Gather Victim Org Information",
+    "tatic": "Resource Development",
+    "technique": "Compromise Accounts",
     "subtechnique": [
-      "Device Registration",
-      "SSH Authorized Keys",
-      "Additional Cloud Roles",
-      "Additional Email Delegate Permissions",
-      "Additional Cloud Credentials"
+      "Social Media Accounts",
+      "Email Accounts",
+      "Cloud Accounts"
     ]
   },
   {
-    "tatic": "Reconnaissance",
-    "technique": "Gather Victim Org Information",
+    "tatic": "Resource Development",
+    "technique": "Compromise Infrastructure",
     "subtechnique": [
-      "Device Registration",
-      "SSH Authorized Keys",
-      "Additional Cloud Roles",
-      "Additional Email Delegate Permissions",
-      "Additional Cloud Credentials"
+      "Domains",
+      "DNS Server",
+      "Virtual Private Server",
+      "Server",
+      "Botnet",
+      "Web Services",
+      "Serverless"
     ]
   },
   {
-    "tatic": "Reconnaissance",
-    "technique": "Gather Victim Org Information",
+    "tatic": "Resource Development",
+    "technique": "Develop Capabilities",
     "subtechnique": [
-      "Device Registration",
-      "SSH Authorized Keys",
-      "Additional Cloud Roles",
-      "Additional Email Delegate Permissions",
-      "Additional Cloud Credentials"
+      "Malware",
+      "Code Signing Certificates",
+      "Digital Certificates",
+      "Exploits"
     ]
   },
   {
-    "tatic": "Reconnaissance",
-    "technique": "Gather Victim Org Information",
+    "tatic": "Resource Development",
+    "technique": "Establish Accounts",
     "subtechnique": [
-      "Device Registration",
-      "SSH Authorized Keys",
-      "Additional Cloud Roles",
-      "Additional Email Delegate Permissions",
-      "Additional Cloud Credentials"
+      "Social Media Accounts",
+      "Email Accounts",
+      "Cloud Accounts"
+    ]
+  },
+  {
+    "tatic": "Resource Development",
+    "technique": "Obtain Capabilities",
+    "subtechnique": [
+      "Malware",
+      "Tool",
+      "Code Signing Certificates",
+      "Digital Certificates",
+      "Exploits",
+      "Vulnerabilities"
+    ]
+  },
+  {
+    "tatic": "Resource Development",
+    "technique": "Stage Capabilities",
+    "subtechnique": [
+      "Upload Malware",
+      "Upload Tool",
+      "Install Digital Certificate",
+      "Drive-by Target",
+      "Link Target",
+      "SEO Poisoning"
     ]
   }
 ]
