@@ -66,6 +66,25 @@
 }
 
 /*matrix 관련 css*/
+#matrix-main {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.matrix-container::-webkit-scrollbar {
+  height: 20px;
+}
+
+.matrix-container::-webkit-scrollbar-track {
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+.matrix-container::-webkit-scrollbar-thumb {
+  background-color: #343a47;
+  border-radius: 10px;
+}
 
 .matrix-container {
   margin: 0 auto;
@@ -173,8 +192,8 @@ td.technique {
 }
 
 .scroll {
-  -ms-overflow-style: none; /* 인터넷 익스플로러 */
-  scrollbar-width: none; /* 파이어폭스 */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #technique-container {
@@ -182,7 +201,7 @@ td.technique {
   position: absolute;
   background: white;
   width: 500px;
-  /*display: none;*/
+  display: none;
   z-index: 80;
   border-radius: 20px;
   box-shadow: 0px 1px 4px 0px #607b93;
@@ -356,7 +375,6 @@ th.tg-baqh {
 #scenario {
   width: 200px;
   height: 60px;
-
   border: 1px solid rgba(15, 15, 15, 0.2);
   border-radius: 40px;
   background-color: white;
@@ -378,9 +396,4 @@ th.tg-baqh {
 #reset > button img {
   width: 30px;
   height: 30px;
-}
-
-#matrix-main {
-  margin: 0 auto;
-  width: 1440px;
 }
