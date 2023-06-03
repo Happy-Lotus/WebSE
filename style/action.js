@@ -47,7 +47,7 @@ $("#opacityScreen").click(function () {
 var imgArray = new Array();
 imgArray[0] = 'url("../photo/work_content/fall2022.jpg")';
 imgArray[1] = 'url("../photo/work_content/spring2022.jpg")';
-imgArray[2] = 'url("../photo/work_content/spring2023.jpg")';
+imgArray[2] = 'url("../photo/work_content/spring2023.png")';
 imgArray[3] - 'url("../photo/work_content/summer2022.jpg")';
 imgArray[4] - 'url("../photo/work_content/winter2022.jpg")';
 var imgNum = 0;
