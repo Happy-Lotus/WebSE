@@ -56,7 +56,7 @@
         <div id="report-content">
             <div id="report-container">
                 <div class="report-header">
-                    <h2>최신 보안 트렌드 분석 및 취약점 분석 (랜섬웨이 편) </h2>
+                    <h2>최신 보안 트렌드 분석 및 취약점 분석 (랜섬웨어 편) </h2>
                     <h3 style="padding-top:10px;">Latest security trend analysis and vulnerability analysis (Ransomway)</h3>
                     <div class="date">
                         <p>2023.03.10</p>
@@ -67,13 +67,12 @@
                     <figure id="reportImg">
                         <img style="width: 800px; height: 500px;" src="../photo/work_content/spring2023.png" alt="image">
                     </figure>
-                    <!--
-                        <p>
-                        서론 어쩌구 저쩌구 요즘 어쩌구 저쩌구 서론 어쩌구 저쩌구 요즘 어쩌구 저쩌구 서론 어쩌구 저쩌구 요즘 어쩌구 저쩌구
-                        서론 어쩌구 저쩌구 요즘 어쩌구 저쩌구 서론 어쩌구 저쩌구 요즘 어쩌구 저쩌구 서론 어쩌구 저쩌구 요즘 어쩌구 저쩌구
+                    <p>
+                        국내에서 1년동안 랜섬웨어에 대한 관심도는 2022월 8월 30일 발생한 알약 랜섬웨어 오진 사태를 제외하면 한자리에 머물 정도로 낮은 관심을 보이며
+                        다른 내용인 해킹이나 보안 키워드와 비교했을 때 랜섬웨어라는 주제는 상대적으로 낮은 관심을 보이는 것을 알 수 있다.
+                        이스트 시큐리티의 2022년 7월 설문조사에서도 역시나 랜섬웨어가 무엇인지 잘 알고있는 비중은 17%에 불과하였고, 약 13%의 사람들은 잘 모른다고 답하였다. 
+                        이 통계로 랜섬웨어에 대한 일반 사용자의 수준이 아직 부족하다는 걸 알 수 있으나, 2022년 해킹 사고 유형별 피해에서는 랜섬웨어 피해가 개인정보 유출 피해 다음으로 24%의 비중을 담당하는 것으로 알려졌다. 
                     </p>
-                     -->
-                    
 
                     <div id="content_big">
                         <p class="content-subtitle">
@@ -222,6 +221,12 @@
                             <img src="../photo/icon/download.png" alt="">
                         </div>
                     </button>
+                    <script>
+                        $("#A_Report").click(function(){
+                            var url = "../photo/report/Spring 2023 Report.pdf";
+                            location.href=url;
+                        })
+                    </script>
                     <button class="report_file" id="B_Report"> 
                         <div>
                             <span>유료 보고서</span>
