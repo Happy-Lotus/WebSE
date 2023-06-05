@@ -1,205 +1,247 @@
-
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <title>workPage</title>
-    <link rel="stylesheet" href="../style/work.css">
-    <link rel="stylesheet" href="../style/share.css">
+    <link rel="stylesheet" href="../style/work.css" />
+    <link rel="stylesheet" href="../style/share.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-<body id="page">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body id="page">
     <div id="wrapper">
-        <div id="opacityScreen" class="dimmend"></div>
-        <header id="act_header">
-            <div class="header">
-                <div id="header-container">
-                    <div class="wrap">
-                        <a href = "startPage.html">
-                            <h1 style="font-size: 50px;">WebSE</h1>
-                        </a>
-                        <div class="nav">
-                            <div id="active-navicon" class="nav-icon">
-                                <div>
-                                    <div id="menu-box"></div>
-                                </div>
-                            </div>
-                            <div class="navbar">
-                                <div id="active-logoicon" class="logo-active">
-                                    <a href = "startPage.html">
-                                        <h1 style="font-size: 50px;color:white;">WebSE</h1>
-                                    </a>
-                                <div id="active-exiticon" class="exit-active">
-                                    <h1>X</h1>
-                                </div>
-                                </div>
-                                <div id="menu-container">
-                                    <ul id="menu" class="navi">
-                                        <li class="nav-item"><a href = "startPage.html">소개</a></li>
-                                        <li class="nav-item"><a href = "frameworkPage.html">프레임워크</a></li>
-                                        <li class="nav-item"><a href = "workPage.html">연구</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+      <div id="opacityScreen" class="dimmend"></div>
+      <header id="act_header">
+        <div class="header">
+          <div id="header-container">
+            <div class="wrap">
+              <a href="startPage.html">
+                <h1 style="font-size: 50px">WebSE</h1>
+              </a>
+              <div class="nav">
+                <div id="active-navicon" class="nav-icon">
+                  <div>
+                    <div id="menu-box"></div>
+                  </div>
+                </div>
+                <div class="navbar">
+                  <div id="active-logoicon" class="logo-active">
+                    <a href="startPage.html">
+                      <h1 style="font-size: 50px; color: white">WebSE</h1>
+                    </a>
+                    <div id="active-exiticon" class="exit-active">
+                      <h1>X</h1>
                     </div>
+                  </div>
+                  <div id="menu-container">
+                    <ul id="menu" class="navi">
+                      <li class="nav-item">
+                        <a href="startPage.html">소개</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="frameworkPage.html">프레임워크</a>
+                      </li>
+                      <li class="nav-item"><a href="workPage.html">연구</a></li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-        </header>
-        <div id="bg">
-            <div id="start-container">
-                <div id="name-describe">
-                    <h1 style="font-size: 60px;">연구 보고서</h1>
-                </div>
-            </div>           
+          </div>
         </div>
-        <div class="work_content">
-            <div class="sub_header">
-                <div style="display: flex;">
-                    <p>총 </p>
-                    <b>5</b>
-                    <p>개</p>
+      </header>
+
+      <div id="bg">
+        <div id="start-container">
+          <div id="name-describe">
+            <h1 style="font-size: 60px">연구 보고서</h1>
+          </div>
+        </div>
+      </div>
+      <div class="work_content">
+        <div class="sub_header">
+          <div style="display: flex">
+            <p>총</p>
+            <b>5</b>
+            <p>개</p>
+          </div>
+        </div>
+        <ul class="list_box">
+          <li class="ov">
+            <a href="spring2023.html">
+              <div class="content_wrap">
+                <div class="img_wrap">
+                  <img src="../photo/work_content/spring2023.png" />
                 </div>
+                <div class="text_wrap">
+                  <h4>Spring 2023 Report</h4>
+                  <p class="text">
+                    오픈AI(OpenAI)의 최신 대규모 언어 모델(LLM) GPT-4의 등장이
+                    사회에 미치는 긍정적인 영향과 함께 챗GPT(ChatGPT) 확산으로
+                    인해 발생 가능한 어두운 이면에 대해 알아보고자 한다.
+                  </p>
+                  <div class="date_box">
+                    <p>2023.03.01</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="ov">
+            <a href="winter2022.html">
+              <div class="content_wrap">
+                <div class="img_wrap">
+                  <img src="../photo/work_content/winter2022.png" />
+                </div>
+                <div class="text_wrap">
+                  <h4>Winter 2022 Report</h4>
+                  <p class="text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi rutrum pretium elit, at iaculis dui congue facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    augue lectus, sagittis quis commodo commodo, congue a nibh.
+                    Donec ornare leo in ipsum consectetur euismod. Sed lorem
+                    urna, adipiscing eget pharetra ullamcorper, facilisis id
+                    sapien. Phasellus ac pellentesque odio. Curabitur quis
+                    tortor vel odio dignissim congue ac sit amet nisl. Nulla
+                    placerat nibh quis mi tincidunt pretium."
+                  </p>
+                  <div class="date_box">
+                    <p>2022.12.01</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="ov">
+            <a href="Fall2022.html">
+              <div class="content_wrap">
+                <div class="img_wrap">
+                  <img src="../photo/work_content/fall2022.jpg" />
+                </div>
+                <div class="text_wrap">
+                  <h4>Fall 2022 Report</h4>
+                  <p class="text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi rutrum pretium elit, at iaculis dui congue facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    augue lectus, sagittis quis commodo commodo, congue a nibh.
+                    Donec ornare leo in ipsum consectetur euismod. Sed lorem
+                    urna, adipiscing eget pharetra ullamcorper, facilisis id
+                    sapien. Phasellus ac pellentesque odio. Curabitur quis
+                    tortor vel odio dignissim congue ac sit amet nisl. Nulla
+                    placerat nibh quis mi tincidunt pretium."
+                  </p>
+                  <div class="date_box">
+                    <p>2022.09.01</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="ov">
+            <a href="research1.html">
+              <div class="content_wrap">
+                <div class="img_wrap">
+                  <img src="../photo/work_content/summer2022.jpg" />
+                </div>
+                <div class="text_wrap">
+                  <h4>Summer 2022 Report</h4>
+                  <p class="text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi rutrum pretium elit, at iaculis dui congue facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    augue lectus, sagittis quis commodo commodo, congue a nibh.
+                    Donec ornare leo in ipsum consectetur euismod. Sed lorem
+                    urna, adipiscing eget pharetra ullamcorper, facilisis id
+                    sapien. Phasellus ac pellentesque odio. Curabitur quis
+                    tortor vel odio dignissim congue ac sit amet nisl. Nulla
+                    placerat nibh quis mi tincidunt pretium."
+                  </p>
+                  <div class="date_box">
+                    <p>2022.06.01</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="ov">
+            <a href="research1.html">
+              <div class="content_wrap">
+                <div class="img_wrap">
+                  <img src="../photo/work_content/spring2022.jpg" />
+                </div>
+                <div class="text_wrap">
+                  <h4>Spring 2022 Report</h4>
+                  <p class="text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi rutrum pretium elit, at iaculis dui congue facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    augue lectus, sagittis quis commodo commodo, congue a nibh.
+                    Donec ornare leo in ipsum consectetur euismod. Sed lorem
+                    urna, adipiscing eget pharetra ullamcorper, facilisis id
+                    sapien. Phasellus ac pellentesque odio. Curabitur quis
+                    tortor vel odio dignissim congue ac sit amet nisl. Nulla
+                    placerat nibh quis mi tincidunt pretium."
+                  </p>
+                  <div class="date_box">
+                    <p>2022.03.01</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="page_navigation">
+          <div class="nav-links" style="display: flex">
+            <a class="prev page-numbers disabled" data-paged="0"></a>
+            <span class="page-numbers current" data-paged="1">1</span>
+            <a class="next page-numbers" data-paged="2"></a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="top">
+          <a id="upBTN" href="#wrapper"
+            ><img src="../photo/icon/arrow.png" alt=""
+          /></a>
+        </div>
+        <div class="footer-container">
+          <div class="footer-box-left">
+            <div class="logo">
+              <h3>Protect Your Web</h3>
+              <h3 style="color: rgb(23, 146, 247)">WebSE</h3>
             </div>
-            <ul class="list_box">
-                <li class="ov">
-                    <a href="spring2023.html">
-                        <div class="content_wrap">
-                            <div class="img_wrap">
-                                <img src="../photo/work_content/spring2023.png">
-                            </div>
-                            <div class="text_wrap">
-                                <h4>Spring 2023 Report</h4>
-                                <p class="text">
-                                    오픈AI(OpenAI)의 최신 대규모 언어 모델(LLM) GPT-4의 등장이 사회에 미치는 긍정적인 영향과 함께 챗GPT(ChatGPT) 확산으로 인해 발생 가능한 어두운 이면에 대해 알아보고자 한다.
-                                </p>
-                                <div class="date_box">
-                                    <p>2023.03.01</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="ov">
-                    <a href="winter2022.html">
-                        <div class="content_wrap">
-                            <div class="img_wrap">
-                                <img src="../photo/work_content/winter2022.png">
-                            </div>
-                            <div class="text_wrap">
-                                <h4>Winter 2022 Report</h4>
-                                <p class="text">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium."
-                                </p>
-                                <div class="date_box">
-                                    <p>2022.12.01</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="ov">
-                    <a href="Fall2022.html">
-                        <div class="content_wrap">
-                            <div class="img_wrap">
-                                <img src="../photo/work_content/fall2022.jpg">
-                            </div>
-                            <div class="text_wrap">
-                                <h4>Fall 2022 Report</h4>
-                                <p class="text">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium."
-                                </p>
-                                <div class="date_box">
-                                    <p>2022.09.01</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="ov">
-                    <a href="research1.html">
-                        <div class="content_wrap">
-                            <div class="img_wrap">
-                                <img src="../photo/work_content/summer2022.jpg">
-                            </div>
-                            <div class="text_wrap">
-                                <h4>Summer 2022 Report</h4>
-                                <p class="text">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium."
-                                </p>
-                                <div class="date_box">
-                                    <p>2022.06.01</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="ov">
-                    <a href="research1.html">
-                        <div class="content_wrap">
-                            <div class="img_wrap">
-                                <img src="../photo/work_content/spring2022.jpg">
-                            </div>
-                            <div class="text_wrap">
-                                <h4>Spring 2022 Report</h4>
-                                <p class="text">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium."
-                                </p>
-                                <div class="date_box">
-                                    <p>2022.03.01</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <div class="page_navigation">
-                <div class="nav-links" style="display: flex;">
-                    <a class="prev page-numbers disabled" data-paged="0"></a>
-                    <span class="page-numbers current" data-paged="1">1</span>
-                    <a class="next page-numbers" data-paged="2"></a>
-                </div>
-            </div>      
-        </div>        
-        <footer>
-            <div class="top">
-              <a id="upBTN" href="#wrapper"
-                ><img src="../photo/icon/arrow.png" alt=""
+            <div class="copyright">
+              <p style="font-size: 10px">
+                Copyright 2023 WebSE Inc. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="footer-box-right">
+            <div class="github">
+              <a href="https://github.com/Happy-Lotus/WebSE">
+                <img src="../photo/startPage/github.png"
               /></a>
             </div>
-            <div class="footer-container">
-              <div class="footer-box-left">
-                <div class="logo">
-                  <h3>Protect Your Web</h3>
-                  <h3 style="color:  rgb(23, 146, 247);">WebSE</h3> 
-                </div>
-                <div class="copyright">
-                  <p style="font-size: 10px">
-                    Copyright 2023 WebSE Inc. All Rights Reserved.
-                  </p>
-                </div>
-              </div>
-              <div class="footer-box-right">
-                <div class="github">
-                  <a href="https://github.com/Happy-Lotus/WebSE">
-                    <img src="../photo/startPage/github.png"
-                  /></a>
-                </div>
-                <div class="company-info">
-                  <p>경기도 수원시 영통구 광교산로 154-42</p>
-                  <p>T.031-249-9114</p>
-                </div>
-                <div id="box-content">
-                  <a class="utility">개인정보처리방침</a>
-                  <a class="utility">법적고지</a>
-                </div>
-              </div>
+            <div class="company-info">
+              <p>경기도 수원시 영통구 광교산로 154-42</p>
+              <p>T.031-249-9114</p>
             </div>
-          </footer>
+            <div id="box-content">
+              <a class="utility">개인정보처리방침</a>
+              <a class="utility">법적고지</a>
+            </div>
+          </div>
         </div>
-        <script src="../style/action.js"></script>
-        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
-        <script>
-        </script>
-      </body>
+      </footer>
+    </div>
+    <script src="../style/action.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+  </body>
 </html>
