@@ -1,188 +1,187 @@
-#bg{
-    position:relative;
-    background-image:url("../photo/workPage_bg.jpg");
-    background-size: cover;
-    object-fit:fill;
-    max-width: 100%;
-    height: 230px;
+#bg {
+  position: relative;
+  background-image: url("../photo/workPage_bg.jpg");
+  background-size: cover;
+  object-fit: fill;
+  max-width: 100%;
+  height: 230px;
 }
 
-#wrapper{
-    position:relative;
-    margin:0 auto;
-    background-color: white;
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
 }
 
 /* 시작 헤더 부분 */
-#start-container{
-    position:relative;
-    max-width: 100%;
-    margin:0 auto;    
+#start-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-#name-describe{
-    color:white;
-    position:relative;
-    z-index:1;
+#name-describe {
+  color: white;
+  position: relative;
+  z-index: 1;
 }
-#name-describe h1{
-    color: white;
-    padding: 75px;
-    text-align: center; 
-    font-size:40px;
+#name-describe h1 {
+  color: white;
+  padding: 75px;
+  text-align: center;
+  font-size: 40px;
 }
 
 /* 리포트 content*/
-#report-container{
-    animation:fadeInDown 1s;
+#report-container {
+  animation: fadeInDown 1s;
 }
 
-#report-content{
-    margin: 0 auto;
-    background-color: white;
-    max-width: 1440px;
-    padding: 0px 90px 10px 90px;
+#report-content {
+  margin: 0 auto;
+  background-color: white;
+  max-width: 1440px;
+  padding: 0px 90px 10px 90px;
 }
 
-#report-container{
-    max-width:1440px;
-    margin:0 auto;
-    position:relative;
+#report-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
 }
 
-.report-header{
-    position: relative;
-    background-color: transparent;
-    padding: 150px 0px 10px 0px;
+.report-header {
+  position: relative;
+  background-color: transparent;
+  padding: 150px 0px 10px 0px;
 }
-.report-header>h2{
-    font-size:2.47rem;
-    line-height:1.2;
-
+.report-header > h2 {
+  font-size: 2.47rem;
+  line-height: 1.2;
 }
 
 /* conent 내용 */
-.view-content{
-    margin: 0 auto;
-    max-width: 1440px;
-    padding-top: 50px;
-    padding-bottom: 20px;
+.view-content {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
-figure{
-    display:block;
+figure {
+  display: block;
 }
-#reportImg{
-    padding-bottom:50px;
-    text-align: center;
-}
-
-.content-subtitle{
-    color:var(--maincolor);
-    font-weight:bolder;
-    font-size:36px;
-}
-.view-content .middle-font-size{
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 10px 0px;
+#reportImg {
+  padding-bottom: 50px;
+  text-align: center;
 }
 
-#content_img{
-    padding: 15px 0px;
-    width: 800px;
-    display: block;
-    margin: auto;
+.content-subtitle {
+  color: var(--maincolor);
+  font-weight: bolder;
+  font-size: 36px;
+}
+.view-content .middle-font-size {
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px 0px;
 }
 
-@media (max-width: 1080px){
-    #content_img{
-        width: 600px;
-        height: 100%;
-    }
+#content_img {
+  padding: 15px 0px;
+  width: 800px;
+  display: block;
+  margin: auto;
 }
 
-#content_big{
-    padding-top: 20px;
+@media (max-width: 1080px) {
+  #content_img {
+    width: 600px;
+    height: 100%;
+  }
 }
-#content_write{
-    padding-bottom: 20px;
+
+#content_big {
+  padding-top: 20px;
 }
-#content_write h4{
-    padding-top: 10px;
+#content_write {
+  padding-bottom: 20px;
 }
-#content_write li{
-    margin-left: 15px;
-    font-weight: bold;
+#content_write h4 {
+  padding-top: 10px;
 }
-.view-content p{
-    padding: 5px 0px;
+#content_write li {
+  margin-left: 15px;
+  font-weight: bold;
+}
+.view-content p {
+  padding: 5px 0px;
 }
 
 /* download*/
-.download_nav{
-    display: flex;
-    padding: 20px 0px;
-    border-top: 1px solid rgba(15, 15, 15, 0.2);
+.download_nav {
+  display: flex;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(15, 15, 15, 0.2);
 }
 
-.download_nav p{
-   margin-right: 20px;
+.download_nav p {
+  margin-right: 20px;
 }
 
-.report_file{
-    margin-right: 5px;
-    height: 30px;
-    width: 130px;
-    border: none;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
+.report_file {
+  margin-right: 5px;
+  height: 30px;
+  width: 130px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
 }
-.report_file div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.report_file div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.report_file img{
-    height: 25px;
-    width: 25px;
-}
-
-.report_file:hover{
-    cursor: pointer;
-    margin-right: 5px;
-    height: 30px;
-    width: 130px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--maincolor);
-    color: white; 
-}
-.report_file div:hover{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.report_file img:hover{
-    height: 25px;
-    width: 25px;
+.report_file img {
+  height: 25px;
+  width: 25px;
 }
 
-.date{
-    position:relative;
-    left:0;
-    bottom:0;
-    padding:52px 0 32px;
-    border-bottom:1px solid rgba(15,15,15,0.15);
+.report_file:hover {
+  cursor: pointer;
+  margin-right: 5px;
+  height: 30px;
+  width: 130px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--maincolor);
+  color: white;
+}
+.report_file div:hover {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.report_file img:hover {
+  height: 25px;
+  width: 25px;
 }
 
-#downloadReport{
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding:20px 0;
-    float:right;
-    position:relative;
-    width:200px;
+.date {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding: 52px 0 32px;
+  border-bottom: 1px solid rgba(15, 15, 15, 0.15);
+}
+
+#downloadReport {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0;
+  float: right;
+  position: relative;
+  width: 200px;
 }

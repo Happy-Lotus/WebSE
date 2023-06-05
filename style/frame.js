@@ -1,4 +1,5 @@
 var data;
+var chk_num = 0;
 
 var returnData = function (techName) {
   data = techName;
@@ -47,6 +48,11 @@ function jsonfunc(jsonText) {
 
 function colorChange(attackName, step) {
   $(function () {
+    chk_num += 1;
+    if (chk_num == 2) {
+      chk_num = 0;
+      partDelete(attackName, step);
+    }
     $(step).css({
       "background-color": "rgb(23 146 247 / 48%)",
       border: "5px solid black",
@@ -58,6 +64,21 @@ function colorChange(attackName, step) {
     $(".technique-cell." + attackName)
       .find(".popup")
       .css({ "background-color": "rgb(23 146 247)" });
+  });
+}
+
+function partDelete(attackName, step) {
+  $(function () {
+    $(step).css({
+      "background-color": "white",
+      border: "1px solid black",
+    });
+    $(".technique-cell." + attackName).css({
+      "background-color": "white",
+    });
+    $(".technique-cell." + attackName)
+      .find(".popup")
+      .css({ "background-color": "rgb(23 146 247 / 48%)" });
   });
 }
 

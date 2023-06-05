@@ -1,281 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   
+  <head>
     <title>spring2023</title>
-    <link rel="stylesheet" href="../style/report.css">
-    <link rel="stylesheet" href="../style/share.css">
+    <link rel="stylesheet" href="../style/report.css" />
+    <link rel="stylesheet" href="../style/share.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-<body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
     <div id="wrapper">
-        <div id="opacityScreen" class="dimmend"></div>
-        <header id="act_header">
-            <div class="header">
-                <div id="header-container">
-                    <div class="wrap">
-                        <a href = "startPage.html">
-                            <h1 style="font-size: 50px;">WebSE</h1>
-                        </a>
-                        <div class="nav">
-                            <div id="active-navicon" class="nav-icon">
-                                <div>
-                                    <div id="menu-box"></div>
-                                </div>
-                            </div>
-                            <div class="navbar">
-                                <div id="active-logoicon" class="logo-active">
-                                    <a href = "startPage.html">
-                                        <h1 style="font-size: 50px;color:white;">WebSE</h1>
-                                    </a>
-                                <div id="active-exiticon" class="exit-active">
-                                    <h1>X</h1>
-                                </div>
-                                </div>
-                                <div class="menu-container">
-                                    <ul id="menu" class="navi">
-                                        <li class="nav-item"><a href = "startPage.html">소개</a></li>
-                                        <li class="nav-item"><a href = "frameworkPage.html">프레임워크</a></li>
-                                        <li class="nav-item"><a href = "workPage.html">연구</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div id="opacityScreen" class="dimmend"></div>
+      <header id="act_header">
+        <div class="header">
+          <div id="header-container">
+            <div class="wrap">
+              <a href="startPage.html">
+                <h1 style="font-size: 50px">WebSE</h1>
+              </a>
+              <div class="nav">
+                <div id="active-navicon" class="nav-icon">
+                  <div>
+                    <div id="menu-box"></div>
+                  </div>
                 </div>
+                <div class="navbar">
+                  <div id="active-logoicon" class="logo-active">
+                    <a href="startPage.html">
+                      <h1 style="font-size: 50px; color: white">WebSE</h1>
+                    </a>
+                    <div id="active-exiticon" class="exit-active">
+                      <h1>X</h1>
+                    </div>
+                  </div>
+                  <div class="menu-container">
+                    <ul id="menu" class="navi">
+                      <li class="nav-item">
+                        <a href="startPage.html">소개</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="frameworkPage.html">프레임워크</a>
+                      </li>
+                      <li class="nav-item"><a href="workPage.html">연구</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-        </header>
-        <div id="bg">
-            <div id="start-container">
-                <div id="name-describe">
-                    <h1 style="font-size: 60px;">2023 Spring Report</h1>
-                </div>
-            </div>           
+          </div>
         </div>
-        <div id="report-content">
-            <div id="report-container">
-                <div class="report-header">
-                    <h2>최신 보안 트렌드 분석 및 취약점 분석 (랜섬웨어 편) </h2>
-                    <h3 style="padding-top:10px;">Latest security trend analysis and vulnerability analysis (Ransomway)</h3>
-                    <div class="date">
-                        <p>2023.03.10</p>
-                    </div>
-                </div>
-                
-                <div class="view-content">
-                    <figure id="reportImg">
-                        <img style="width: 800px; height: 500px;" src="../photo/work_content/spring2023.png" alt="image">
-                    </figure>
-                    <p>
-                        국내에서 1년동안 랜섬웨어에 대한 관심도는 2022월 8월 30일 발생한 알약 랜섬웨어 오진 사태를 제외하면 한자리에 머물 정도로 낮은 관심을 보이며
-                        다른 내용인 해킹이나 보안 키워드와 비교했을 때 랜섬웨어라는 주제는 상대적으로 낮은 관심을 보이는 것을 알 수 있다.
-                        이스트 시큐리티의 2022년 7월 설문조사에서도 역시나 랜섬웨어가 무엇인지 잘 알고있는 비중은 17%에 불과하였고, 약 13%의 사람들은 잘 모른다고 답하였다. 
-                        이 통계로 랜섬웨어에 대한 일반 사용자의 수준이 아직 부족하다는 걸 알 수 있으나, 2022년 해킹 사고 유형별 피해에서는 랜섬웨어 피해가 개인정보 유출 피해 다음으로 24%의 비중을 담당하는 것으로 알려졌다. 
-                    </p>
+      </header>
 
-                    <div id="content_big">
-                        <p class="content-subtitle">
-                            <strong>01. 최신 취약점 트랜드</strong>
-                        </p>
-                        <div id="content_write">
-                            <p class="middle-font-size">
-                                <strong> 1) 최신 사이버 공격 피해</strong>
-                            </p>
-                            <p>최근 국내 랜섬웨어 피해는 매년 급증하고 있으며 21년 기준 피해액은 약 2조 5천억에 이를거라는 조사 결과가 있었다.
-                                한국 랜섬웨어 침해 대응 센터의 조사에 따르면 2015년부터 7년간 피해액을 모두 합치면 6억 8천 6백억에 달할 것으로 조사되었으며
-                                랜섬웨어 피해를 당한 곳은 중소기업(43%), 소상공인(25%), 개인(22%)가 대부분을 차지했다.
-                                반면 공공기관(2%)와 대기업(1%)은 상대적으로 피해를 적게 입은 것으로 파악되었다. 
-                             </p>
-                             <img id="content_img" src="../photo/report/그림 1.png" alt="image">
-                        </div>
-                        <div id="content_write">
-                            <p class="middle-font-size">
-                                <strong> 2) 랜섬웨어의 동향</strong>
-                            </p>
-                            <p>랜섬웨어는 로컬 및 네트워크 스토리지의 중요한 파일을 암호화하고 파일을 해독하기 위해 몸값을 요구하는 멀웨어을 말한다. 
-                                랜섬웨어 공격은 금점적 이익을 얻을 수 있는 기업들을 주요 타켓으로 삼고 있으며 지능화된 공격으로 발전하고 있다.
-                                2021년 러시아 보안기업 GROUP-IP의 랜섬웨어 분석 보고서에 의하면 전체 랜섬웨어 피해 대비서비형형 랜섬웨어 (Ransomware as a Service, RaaS)에 대한 피해가 64%로 조사되었다.  
-                                RaaS를 활용하면 배경지식이 많지 않은 사람도 손쉽게 랜섬웨어 공격을 감행할 수 있어, 앞으로 RaaS 공격 비율은 앞으로도 더욱 증가할것으로 예상된다.
-                            </p>
-                            <p>또한 APT 공격도 다시금 주목받고 있다. 
-                                APT 공격 방식을 결합한 랜섬웨어는 워터링홀,드라이브 바이 다운로드와 같은 사회공학기법을 이용해 사용자 계정을 탈취하거나 알려진 취약점을 이용해 침투한다.<br>
-                                코로나-19로 인해 원격 근무가 많아지면서 공격 표면이 확대돼 공격자가 취약점에 접근하는게 더욱 쉬워졌다. 
-                                팔로알토 네트웍스가 조사한 지난 21년 랜섬웨어 유출 사이트에 공개된 피해 건수는 2566개로 전년대비 85% 증가한 것이다. 
-                                이 중 유명한 콘티에 대한 피해 사례는 511건, 록빗 2.0에 의한 것은 406건이었다.
-                            </p>
-                            <img src="../photo/report/그림 2.png" id="content_img" alt="">
-                        </div>
-                        <div id="content_write">
-                            <p class="middle-font-size">
-                                <strong> 3) 랜섬웨어 공격 사례</strong>
-                            </p>
-                            <h4>Drive-by-Download을 이용한 랜섬웨어 피해사례</h4>
-                            <p>2017년 5월 wannaCry 랜섬웨어 공격이 있다. 이 공격은 악성 코드가 포함된 이메일을 통해 전파되었으며, 이메일 수신자가 링크를 클릭하면 악성 코드가 다운로드되고 실행되어 전체 네트워크를 감염시키는 방식으로 작동했다. 
-                                이외에 kaseya 랜섬웨어 공격이 있었으며 이 공격은 kaseya의 소프트웨어 업데이트 서버에 악성 코드가 심어져 이를 다운로드한 사용자들의 컴퓨터를 감염시켰다.
-                                이 공격으로 수천개의 it 서비스 제공업체를 포함한 수백만대의 컴퓨터를 감염시켰으며, 수천개의 회사와 기관이 데이터와 시스템을 잃게 되었다.
-                            </p>
-                            <br>
-                            <h4>워터링홀을 이용한 랜섬웨어 피해 사례</h4>
-                            <img id="content_img" src="../photo/report/그림 4.png" alt="">
-                            <p>지난 23년 4월 북한의 해킹 그룹 라자루스가 워터링 홀 기법을 활용해 랜섬웨어를 배포한 사건이 있었다. 
-                                해킹 정황을 살펴보면 국내 유용 금융보안인증 업체를 해킹한 후, 소프트웨어 취약점을 악용해 공격에 활용할 웹 서버와 명령,제어 경유지 등 공격 인프라를 장기간 치밀하게 준비하였다. 
-                                또한 특정 언론사 사이트에 접속할 경우 자동으로 악성코드가 설치되는 워터링 홀 수법을 이용하였으며 이를 통해 국내 61개 기관이 해킹되는 등의 대규모 피해가 발생한 걸 확인 할 수 있었다.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div id="content_big">
-                        <p class="content-subtitle">
-                            <strong>02. 랜섬웨어 가상 시나리오</strong>
-                        </p>
-                        <div id="content_write">
-                            <p class="middle-font-size">
-                                <strong> 1) 공격 시나리오</strong>
-                            </p>
-                            <img id="content_img" src="../photo/report/그림 5.png" alt="">
-                            <p>웹에서 랜섬웨어가 감염되는 대표적인 경로는 다음과 같다.</p>
-                            <br>
-                            <ol>
-                                <li>Drive-by-download</li>
-                                <p>사용자 모르게 다운로드 되어 실행되는 악성 프로그램으로 웹 브라우저나 웹 어플리케이션의 취약점을 이용하여 사이트 방문시 자동으로 
-                                    악성코드를 다운로드해서 감염되게 하는 공격유형을 의미한다.
-                                </p>
-                                <img id="content_img" src="../photo/report/그림 6.png" alt="">
-                                <br>
-                                <li>Watering Hole</li>
-                                <p>타겟이 자주 들어가는 홈페이지를 파악했다가, 그 홈페이지의 취약점을 통해 악성코드를 심어 사용자가 모르게 해당 악성코드를 다운로드 받게 하고,
-                                    다운로드 된 악성코드를 통해 공격을 하는 유형이다.<br>
-                                    대표적으로 브라우저에서 동작하는 Flash, Javascript, VBScript, ActiveX, XSS, HTML, Image 취약점 등을 공격에 사용한다.
-                                </p>
-                                <img id="content_img" src="../photo/report/그림 7.png" alt="">
-                            </ol>
-                        </div>
-                        <div id="content_write">
-                            <p class="middle-font-size">
-                                <strong> 2) 시나리오 분석</strong>
-                            </p>
-                            <p>본 시나리오를 보다 체계적으로 대응하기 위해 사이버 킬체인으로 시나리오를 단계적으로 분류한다. 
-                                이를 통해 시나리오에서 각 단계별 대응책을 마련할 수 있으며, 해당 시나리오가 충분히 실현가능한 공격이란 점을 다시 확인할 수 있다.
-                            </p>
-                            <br>
-                            <h4>사이버 킬체인(Cyber Kill Chain)이란?</h4>
-                            <p>사이버킬체인이란 군사용어 킬체인에서 비롯되어 생성된 용어로, 사이버 공격을 방어하기 위한 적극적인 방어 전략이며 
-                                여러 공격 단계들 중 일부를 무력화 또는 지연시켜 공격의 효율성을 낮추고 피해를 최소화하는데 그 목적이 있다.
-                            </p>
-                            <img id="content_img" src="../photo/report/표 1.png" alt="">
-                            <p>이 5단계는 방어자의 입장에서 공격 전(before)과 공격 후(after)로 나눌 수 있으며 공격 전(before)단계에서 체인을 끊어내는 게 이 전략의 목표라고 할 수 있다.</p>
-                            <br><br>
-                            <ol>
-                                <li>Drive-by-download Cyber kill chain</li>
-                                <p>첫 시나리오를 사이버 킬체인에 따라 나누면 다음과 같다.</p>
-                                <img id="content_img" src="../photo/report/표 2.png" alt="">
-                                <br><br>
-                                <li>Watering hole Cyber kill chain</li>
-                                <p>두번째 Watering hole 공격을 사이버 킬체인에 따라 나누면 다음과 같다.</p>
-                                <img id="content_img" src="../photo/report/표 3.png" alt="">
-                            </ol>
-                        </div>
-                        <div id="content_write">
-                            <p class="middle-font-size">
-                                <strong> 3) 마이터 어택 매핑</strong>
-                            </p>
-                            <p>사이버 킬체인에 맞추어 각 공격 시나리오를 단계별로 분류했다. 
-                                하지만 단계별 시나리오를 구분하여도 각 단계에서 발생할 수 있는 공격은 다양하다. 우리는 이를 각 단계에서 발생가능한 공격을 나열하여 효과적인 대응책을 구성할 수 있다.
-                            </p>
-                            <br><br>
-                            <h4>MITRE ATT&CK이란?</h4>
-                            <p>MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) 은 실제 사이버 공격 사례를 관찰한 후 공격자가 사용한 악의적 행위(Adversary behaviors)에 대해서 
-                                공격방법(Tactics)과 기술(Techniques)의 관점으로 분석해 다양한 공격그룹의 공격기법 들에 대한 정보를 분류해 목록화 해 놓은 표준적인 데이터이다.
-                            </p>
-                            <img id="content_img" src="../photo/report/그림 8.png">
-                            <p>전통적인 사이버 킬체인의 개념과는 약간 관점을 달리하여 지능화된 공격의 탐지를 향상시키기 위해 위협적인 전술과 기술을 체계화(패턴화)한 것인데, 
-                                원래 ATT&CK는 MITRE에서 윈도우 기업 네트워크 환경에 사용되는 해킹 공격에 대해서 방법(Tactics), 기술(Techniques), 절차(Procedures) 등 TTPs를 문서화하는 것으로 시작되었으며 
-                                이후 공격자로부터 발생한 일관된 공격 행동 패턴에 대한 분석을 기반으로 TTPs 정보를 매핑하여 공격자의 행위를 식별해 줄 수 있는 프레임워크로 발전하였다.
-                            </p>
-                            <br><br>
-                            <h4>MITRE ATT&CK Navigator</h4>
-                            <p>앞서 말했던 TTPS를 시각적으로 매핑하여 보여줄 수 있는 기능이다. 여러가지의 시나리오를 구성하고 각 시나리오를 합침으로써 하나의 공격과정을 시각적으로 보여줄 수 있다.</p>
-                            <br>
-                            <ol>
-                                <li> Drive-by-download TTPS Mapping</li>
-                                <img id="content_img" src="../photo/report/표 4.png" alt="">
-                                <br><br>
-                                <li>Watering hole TTPS Mapping</li>
-                                <img id="content_img" src="../photo/report/표 5.png" alt="">
-                                <br><br>
-                                <li>Ransomware TTPS Mapping</li>
-                                <img id="content_img" src="../photo/report/표 6.png" alt="">
-                                <br><br>
-                            </ol>
-                        </div>
-                    </div>
-                    <br><br><br><br>
-                    <p>더 자세한 내용은 아래 리포트에서 확인하실 수 있습니다.</p>
-                </div>
-                <div class="download_nav">
-                    <p>2023 Spring Report (Ransomway) .pdf</p>
-                    <button class="report_file" id="A_Report"> 
-                        <div>
-                            <span>무료 보고서</span>
-                            <img src="../photo/icon/download.png" alt="">
-                        </div>
-                    </button>
-                    <script>
-                        $("#A_Report").click(function(){
-                            var url = "../photo/report/Spring 2023 Report.pdf";
-                            location.href=url;
-                        })
-                    </script>
-                    <button class="report_file" id="B_Report"> 
-                        <div>
-                            <span>유료 보고서</span>
-                            <img src="../photo/icon/download.png" alt="">
-                        </div>
-                </button>
-                </div>
+      <div id="bg">
+        <div id="start-container">
+          <div id="name-describe">
+            <h1 style="font-size: 60px">2023 Spring Report</h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="report-content">
+        <div id="report-container">
+          <div class="report-header">
+            <h2>최신 보안 트렌드 분석 및 취약점 분석 (랜섬웨어 편)</h2>
+            <h3 style="padding-top: 10px">
+              Latest security trend analysis and vulnerability analysis
+              (Ransomway)
+            </h3>
+            <div class="date">
+              <p>2023.03.10</p>
             </div>
-        </div>
+          </div>
 
-        <footer>
-            <div class="top">
-              <a id="upBTN" href="#wrapper"
-                ><img src="../photo/icon/arrow.png" alt=""
+          <div class="view-content">
+            <figure id="reportImg">
+              <img
+                style="width: 800px; height: 500px"
+                src="../photo/work_content/spring2023.png"
+                alt="image"
+              />
+            </figure>
+            <p>
+              국내에서 1년동안 랜섬웨어에 대한 관심도는 2022월 8월 30일 발생한
+              알약 랜섬웨어 오진 사태를 제외하면 한자리에 머물 정도로 낮은
+              관심을 보이며 다른 내용인 해킹이나 보안 키워드와 비교했을 때
+              랜섬웨어라는 주제는 상대적으로 낮은 관심을 보이는 것을 알 수 있다.
+              이스트 시큐리티의 2022년 7월 설문조사에서도 역시나 랜섬웨어가
+              무엇인지 잘 알고있는 비중은 17%에 불과하였고, 약 13%의 사람들은 잘
+              모른다고 답하였다. 이 통계로 랜섬웨어에 대한 일반 사용자의 수준이
+              아직 부족하다는 걸 알 수 있으나, 2022년 해킹 사고 유형별
+              피해에서는 랜섬웨어 피해가 개인정보 유출 피해 다음으로 24%의
+              비중을 담당하는 것으로 알려졌다.
+            </p>
+
+            <div id="content_big">
+              <p class="content-subtitle">
+                <strong>01. 최신 취약점 트랜드</strong>
+              </p>
+              <div id="content_write">
+                <p class="middle-font-size">
+                  <strong> 1) 최신 사이버 공격 피해</strong>
+                </p>
+                <p>
+                  최근 국내 랜섬웨어 피해는 매년 급증하고 있으며 21년 기준
+                  피해액은 약 2조 5천억에 이를거라는 조사 결과가 있었다. 한국
+                  랜섬웨어 침해 대응 센터의 조사에 따르면 2015년부터 7년간
+                  피해액을 모두 합치면 6억 8천 6백억에 달할 것으로 조사되었으며
+                  랜섬웨어 피해를 당한 곳은 중소기업(43%), 소상공인(25%),
+                  개인(22%)가 대부분을 차지했다. 반면 공공기관(2%)와
+                  대기업(1%)은 상대적으로 피해를 적게 입은 것으로 파악되었다.
+                </p>
+                <img
+                  id="content_img"
+                  src="../photo/report/그림 1.png"
+                  alt="image"
+                />
+              </div>
+              <div id="content_write">
+                <p class="middle-font-size">
+                  <strong> 2) 랜섬웨어의 동향</strong>
+                </p>
+                <p>
+                  랜섬웨어는 로컬 및 네트워크 스토리지의 중요한 파일을
+                  암호화하고 파일을 해독하기 위해 몸값을 요구하는 멀웨어을
+                  말한다. 랜섬웨어 공격은 금점적 이익을 얻을 수 있는 기업들을
+                  주요 타켓으로 삼고 있으며 지능화된 공격으로 발전하고 있다.
+                  2021년 러시아 보안기업 GROUP-IP의 랜섬웨어 분석 보고서에
+                  의하면 전체 랜섬웨어 피해 대비서비형형 랜섬웨어 (Ransomware as
+                  a Service, RaaS)에 대한 피해가 64%로 조사되었다. RaaS를
+                  활용하면 배경지식이 많지 않은 사람도 손쉽게 랜섬웨어 공격을
+                  감행할 수 있어, 앞으로 RaaS 공격 비율은 앞으로도 더욱
+                  증가할것으로 예상된다.
+                </p>
+                <p>
+                  또한 APT 공격도 다시금 주목받고 있다. APT 공격 방식을 결합한
+                  랜섬웨어는 워터링홀,드라이브 바이 다운로드와 같은
+                  사회공학기법을 이용해 사용자 계정을 탈취하거나 알려진 취약점을
+                  이용해 침투한다.<br />
+                  코로나-19로 인해 원격 근무가 많아지면서 공격 표면이 확대돼
+                  공격자가 취약점에 접근하는게 더욱 쉬워졌다. 팔로알토
+                  네트웍스가 조사한 지난 21년 랜섬웨어 유출 사이트에 공개된 피해
+                  건수는 2566개로 전년대비 85% 증가한 것이다. 이 중 유명한
+                  콘티에 대한 피해 사례는 511건, 록빗 2.0에 의한 것은
+                  406건이었다.
+                </p>
+                <img src="../photo/report/그림 2.png" id="content_img" alt="" />
+              </div>
+              <div id="content_write">
+                <p class="middle-font-size">
+                  <strong> 3) 랜섬웨어 공격 사례</strong>
+                </p>
+                <h4>Drive-by-Download을 이용한 랜섬웨어 피해사례</h4>
+                <p>
+                  2017년 5월 wannaCry 랜섬웨어 공격이 있다. 이 공격은 악성
+                  코드가 포함된 이메일을 통해 전파되었으며, 이메일 수신자가
+                  링크를 클릭하면 악성 코드가 다운로드되고 실행되어 전체
+                  네트워크를 감염시키는 방식으로 작동했다. 이외에 kaseya
+                  랜섬웨어 공격이 있었으며 이 공격은 kaseya의 소프트웨어
+                  업데이트 서버에 악성 코드가 심어져 이를 다운로드한 사용자들의
+                  컴퓨터를 감염시켰다. 이 공격으로 수천개의 it 서비스 제공업체를
+                  포함한 수백만대의 컴퓨터를 감염시켰으며, 수천개의 회사와
+                  기관이 데이터와 시스템을 잃게 되었다.
+                </p>
+                <br />
+                <h4>워터링홀을 이용한 랜섬웨어 피해 사례</h4>
+                <img id="content_img" src="../photo/report/그림 4.png" alt="" />
+                <p>
+                  지난 23년 4월 북한의 해킹 그룹 라자루스가 워터링 홀 기법을
+                  활용해 랜섬웨어를 배포한 사건이 있었다. 해킹 정황을 살펴보면
+                  국내 유용 금융보안인증 업체를 해킹한 후, 소프트웨어 취약점을
+                  악용해 공격에 활용할 웹 서버와 명령,제어 경유지 등 공격
+                  인프라를 장기간 치밀하게 준비하였다. 또한 특정 언론사 사이트에
+                  접속할 경우 자동으로 악성코드가 설치되는 워터링 홀 수법을
+                  이용하였으며 이를 통해 국내 61개 기관이 해킹되는 등의 대규모
+                  피해가 발생한 걸 확인 할 수 있었다.
+                </p>
+              </div>
+            </div>
+
+            <div id="content_big">
+              <p class="content-subtitle">
+                <strong>02. 랜섬웨어 가상 시나리오</strong>
+              </p>
+              <div id="content_write">
+                <p class="middle-font-size">
+                  <strong> 1) 공격 시나리오</strong>
+                </p>
+                <img id="content_img" src="../photo/report/그림 5.png" alt="" />
+                <p>웹에서 랜섬웨어가 감염되는 대표적인 경로는 다음과 같다.</p>
+                <br />
+                <ol>
+                  <li>Drive-by-download</li>
+                  <p>
+                    사용자 모르게 다운로드 되어 실행되는 악성 프로그램으로 웹
+                    브라우저나 웹 어플리케이션의 취약점을 이용하여 사이트 방문시
+                    자동으로 악성코드를 다운로드해서 감염되게 하는 공격유형을
+                    의미한다.
+                  </p>
+                  <img
+                    id="content_img"
+                    src="../photo/report/그림 6.png"
+                    alt=""
+                  />
+                  <br />
+                  <li>Watering Hole</li>
+                  <p>
+                    타겟이 자주 들어가는 홈페이지를 파악했다가, 그 홈페이지의
+                    취약점을 통해 악성코드를 심어 사용자가 모르게 해당
+                    악성코드를 다운로드 받게 하고, 다운로드 된 악성코드를 통해
+                    공격을 하는 유형이다.<br />
+                    대표적으로 브라우저에서 동작하는 Flash, Javascript,
+                    VBScript, ActiveX, XSS, HTML, Image 취약점 등을 공격에
+                    사용한다.
+                  </p>
+                  <img
+                    id="content_img"
+                    src="../photo/report/그림 7.png"
+                    alt=""
+                  />
+                </ol>
+              </div>
+              <div id="content_write">
+                <p class="middle-font-size">
+                  <strong> 2) 시나리오 분석</strong>
+                </p>
+                <p>
+                  본 시나리오를 보다 체계적으로 대응하기 위해 사이버 킬체인으로
+                  시나리오를 단계적으로 분류한다. 이를 통해 시나리오에서 각
+                  단계별 대응책을 마련할 수 있으며, 해당 시나리오가 충분히
+                  실현가능한 공격이란 점을 다시 확인할 수 있다.
+                </p>
+                <br />
+                <h4>사이버 킬체인(Cyber Kill Chain)이란?</h4>
+                <p>
+                  사이버킬체인이란 군사용어 킬체인에서 비롯되어 생성된 용어로,
+                  사이버 공격을 방어하기 위한 적극적인 방어 전략이며 여러 공격
+                  단계들 중 일부를 무력화 또는 지연시켜 공격의 효율성을 낮추고
+                  피해를 최소화하는데 그 목적이 있다.
+                </p>
+                <img id="content_img" src="../photo/report/표 1.png" alt="" />
+                <p>
+                  이 5단계는 방어자의 입장에서 공격 전(before)과 공격
+                  후(after)로 나눌 수 있으며 공격 전(before)단계에서 체인을
+                  끊어내는 게 이 전략의 목표라고 할 수 있다.
+                </p>
+                <br /><br />
+                <ol>
+                  <li>Drive-by-download Cyber kill chain</li>
+                  <p>첫 시나리오를 사이버 킬체인에 따라 나누면 다음과 같다.</p>
+                  <img id="content_img" src="../photo/report/표 2.png" alt="" />
+                  <br /><br />
+                  <li>Watering hole Cyber kill chain</li>
+                  <p>
+                    두번째 Watering hole 공격을 사이버 킬체인에 따라 나누면
+                    다음과 같다.
+                  </p>
+                  <img id="content_img" src="../photo/report/표 3.png" alt="" />
+                </ol>
+              </div>
+              <div id="content_write">
+                <p class="middle-font-size">
+                  <strong> 3) 마이터 어택 매핑</strong>
+                </p>
+                <p>
+                  사이버 킬체인에 맞추어 각 공격 시나리오를 단계별로 분류했다.
+                  하지만 단계별 시나리오를 구분하여도 각 단계에서 발생할 수 있는
+                  공격은 다양하다. 우리는 이를 각 단계에서 발생가능한 공격을
+                  나열하여 효과적인 대응책을 구성할 수 있다.
+                </p>
+                <br /><br />
+                <h4>MITRE ATT&CK이란?</h4>
+                <p>
+                  MITRE ATT&CK (Adversarial Tactics, Techniques, and Common
+                  Knowledge) 은 실제 사이버 공격 사례를 관찰한 후 공격자가
+                  사용한 악의적 행위(Adversary behaviors)에 대해서
+                  공격방법(Tactics)과 기술(Techniques)의 관점으로 분석해 다양한
+                  공격그룹의 공격기법 들에 대한 정보를 분류해 목록화 해 놓은
+                  표준적인 데이터이다.
+                </p>
+                <img id="content_img" src="../photo/report/그림 8.png" />
+                <p>
+                  전통적인 사이버 킬체인의 개념과는 약간 관점을 달리하여
+                  지능화된 공격의 탐지를 향상시키기 위해 위협적인 전술과 기술을
+                  체계화(패턴화)한 것인데, 원래 ATT&CK는 MITRE에서 윈도우 기업
+                  네트워크 환경에 사용되는 해킹 공격에 대해서 방법(Tactics),
+                  기술(Techniques), 절차(Procedures) 등 TTPs를 문서화하는 것으로
+                  시작되었으며 이후 공격자로부터 발생한 일관된 공격 행동 패턴에
+                  대한 분석을 기반으로 TTPs 정보를 매핑하여 공격자의 행위를
+                  식별해 줄 수 있는 프레임워크로 발전하였다.
+                </p>
+                <br /><br />
+                <h4>MITRE ATT&CK Navigator</h4>
+                <p>
+                  앞서 말했던 TTPS를 시각적으로 매핑하여 보여줄 수 있는
+                  기능이다. 여러가지의 시나리오를 구성하고 각 시나리오를
+                  합침으로써 하나의 공격과정을 시각적으로 보여줄 수 있다.
+                </p>
+                <br />
+                <ol>
+                  <li>Drive-by-download TTPS Mapping</li>
+                  <img id="content_img" src="../photo/report/표 4.png" alt="" />
+                  <br /><br />
+                  <li>Watering hole TTPS Mapping</li>
+                  <img id="content_img" src="../photo/report/표 5.png" alt="" />
+                  <br /><br />
+                  <li>Ransomware TTPS Mapping</li>
+                  <img id="content_img" src="../photo/report/표 6.png" alt="" />
+                  <br /><br />
+                </ol>
+              </div>
+            </div>
+            <br /><br /><br /><br />
+            <p>더 자세한 내용은 아래 리포트에서 확인하실 수 있습니다.</p>
+          </div>
+          <div class="download_nav">
+            <p>2023 Spring Report (Ransomway) .pdf</p>
+            <button class="report_file" id="A_Report">
+              <div>
+                <span>무료 보고서</span>
+                <img src="../photo/icon/download.png" alt="" />
+              </div>
+            </button>
+            <script>
+              $("#A_Report").click(function () {
+                var url = "../photo/report/Spring 2023 Report.pdf";
+                location.href = url;
+              });
+            </script>
+            <button class="report_file" id="B_Report">
+              <div>
+                <span>유료 보고서</span>
+                <img src="../photo/icon/download.png" alt="" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="top">
+          <a id="upBTN" href="#wrapper"
+            ><img src="../photo/icon/arrow.png" alt=""
+          /></a>
+        </div>
+        <div class="footer-container">
+          <div class="footer-box-left">
+            <div class="logo">
+              <h3>Protect Your Web</h3>
+              <h3 style="color: rgb(23, 146, 247)">WebSE</h3>
+            </div>
+            <div class="copyright">
+              <p style="font-size: 10px">
+                Copyright 2023 WebSE Inc. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="footer-box-right">
+            <div class="github">
+              <a href="https://github.com/Happy-Lotus/WebSE">
+                <img src="../photo/startPage/github.png"
               /></a>
             </div>
-            <div class="footer-container">
-              <div class="footer-box-left">
-                <div class="logo">
-                  <h3>Protect Your Web</h3>
-                  <h3 style="color:  rgb(23, 146, 247);">WebSE</h3> 
-                </div>
-                <div class="copyright">
-                  <p style="font-size: 10px">
-                    Copyright 2023 WebSE Inc. All Rights Reserved.
-                  </p>
-                </div>
-              </div>
-              <div class="footer-box-right">
-                <div class="github">
-                  <a href="https://github.com/Happy-Lotus/WebSE">
-                    <img src="../photo/startPage/github.png"
-                  /></a>
-                </div>
-                <div class="company-info">
-                  <p>경기도 수원시 영통구 광교산로 154-42</p>
-                  <p>T.031-249-9114</p>
-                </div>
-                <div id="box-content">
-                  <a class="utility">개인정보처리방침</a>
-                  <a class="utility">법적고지</a>
-                </div>
-              </div>
+            <div class="company-info">
+              <p>경기도 수원시 영통구 광교산로 154-42</p>
+              <p>T.031-249-9114</p>
             </div>
-          </footer>
+            <div id="box-content">
+              <a class="utility">개인정보처리방침</a>
+              <a class="utility">법적고지</a>
+            </div>
+          </div>
         </div>
-        <script src="../style/action.js"></script>
-        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
-        <script>
-        </script>
-      </body>
+      </footer>
+    </div>
+    <script src="../style/action.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+  </body>
 </html>
