@@ -279,7 +279,12 @@ body {
   font-size: 1em;
   padding-bottom: 10px;
 }
-
+.content-text{
+  font-size: 1rem;
+  line-height: 1.77;
+  height: 50px;
+  overflow: hidden;
+}
 /*framework slider 관련 css*/
 
 .slidewrapper {
