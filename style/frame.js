@@ -1,5 +1,7 @@
 var data;
-var chk_num = 0;
+var chk_num1 = 0;
+var chk_num2 = 0;
+var chk_num3 = 0;
 
 var returnData = function (techName) {
   data = techName;
@@ -48,10 +50,27 @@ function jsonfunc(jsonText) {
 
 function colorChange(attackName, step) {
   $(function () {
-    chk_num += 1;
-    if (chk_num == 2) {
-      chk_num = 0;
-      partDelete(attackName, step);
+    if (attackName == "Ransomware") {
+      if (chk_num1 == 1) {
+        chk_num1 = 0;
+        partDelete(attackName, step);
+      } else {
+        chk_num1 += 1;
+      }
+    } else if (attackName == "Drive-by-download") {
+      if (chk_num2 == 1) {
+        chk_num2 = 0;
+        partDelete(attackName, step);
+      } else {
+        chk_num2 += 1;
+      }
+    } else {
+      if (chk_num3 == 1) {
+        chk_num3 = 0;
+        partDelete(attackName, step);
+      } else {
+        chk_num3 += 1;
+      }
     }
     $(step).css({
       "background-color": "rgb(23 146 247 / 48%)",
