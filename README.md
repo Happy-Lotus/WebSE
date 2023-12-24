@@ -1,5 +1,5 @@
 # WebSE
-<img src="https://github.com/Happy-Lotus/WebSE/blob/master/photo/webse.png" width="100%">
+<img src="https://github.com/Happy-Lotus/WebSE/blob/main/photo/webse.png" width="100%">
 2023-1 컴퓨터공학기초캡스톤디자인 - HTML, CSS, JavaScript를 활용한 프로젝트입니다.
 <br>
 
